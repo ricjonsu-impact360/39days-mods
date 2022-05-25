@@ -20026,6 +20026,7 @@ questRewardGyrocopterPartsBundle
 	<property name="DescriptionKey" value="bookInfantrySkillDesc"/>
 	<property name="Unlocks" value="perkInfantry1"/>
 	<property name="Group" value="Books,Mods,BooksOnly"/>
+	<property name="NoScrapping" value="true"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -20121,6 +20122,7 @@ questRewardGyrocopterPartsBundle
 	<property name="DescriptionKey" value="bookGunFighterSkillDesc"/>
 	<property name="Unlocks" value="perkGunFighter1"/>
 	<property name="Group" value="Books,Mods,BooksOnly"/>
+	<property name="NoScrapping" value="true"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -20216,6 +20218,7 @@ questRewardGyrocopterPartsBundle
 	<property name="DescriptionKey" value="bookSharpshooterSkillDesc"/>
 	<property name="Unlocks" value="perkSharpshooter1"/>
 	<property name="Group" value="Books,Mods,BooksOnly"/>
+	<property name="NoScrapping" value="true"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -20311,6 +20314,7 @@ questRewardGyrocopterPartsBundle
 	<property name="DescriptionKey" value="bookArcherManSkillDesc"/>
 	<property name="Unlocks" value="perkArcherMan1"/>
 	<property name="Group" value="Books,Mods,BooksOnly"/>
+	<property name="NoScrapping" value="true"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -20406,6 +20410,7 @@ questRewardGyrocopterPartsBundle
 	<property name="DescriptionKey" value="bookUrbanWarriorSkillDesc"/>
 	<property name="Unlocks" value="perkUrbanWarrior1"/>
 	<property name="Group" value="Books,Mods,BooksOnly"/>
+	<property name="NoScrapping" value="true"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -20501,6 +20506,7 @@ questRewardGyrocopterPartsBundle
 	<property name="DescriptionKey" value="bookAssassinSkillDesc"/>
 	<property name="Unlocks" value="perkAssassin1"/>
 	<property name="Group" value="Books,Mods,BooksOnly"/>
+	<property name="NoScrapping" value="true"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -20596,6 +20602,7 @@ questRewardGyrocopterPartsBundle
 	<property name="DescriptionKey" value="bookBerserkerSkillDesc"/>
 	<property name="Unlocks" value="perkBerserker1"/>
 	<property name="Group" value="Books,Mods,BooksOnly"/>
+	<property name="NoScrapping" value="true"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -20691,6 +20698,7 @@ questRewardGyrocopterPartsBundle
 	<property name="DescriptionKey" value="bookSupporterSkillDesc"/>
 	<property name="Unlocks" value="perkSupporter1"/>
 	<property name="Group" value="Books,Mods,BooksOnly"/>
+	<property name="NoScrapping" value="true"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -20786,6 +20794,7 @@ questRewardGyrocopterPartsBundle
 	<property name="DescriptionKey" value="bookDonatorSkillDesc"/>
 	<property name="Unlocks" value="perkDonator1"/>
 	<property name="Group" value="Books,Mods,BooksOnly"/>
+	<property name="NoScrapping" value="true"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
