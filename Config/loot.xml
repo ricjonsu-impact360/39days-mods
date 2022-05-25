@@ -1,0 +1,1709 @@
+<config>
+<!-- \/ Vanilla settings -->
+<set xpath="/lootcontainers/lootcontainer[@id='1' and @size]/@size">9,10</set>
+<set xpath="/lootcontainers/lootcontainer[@id='2' and @size]/@size">9,15</set>
+<set xpath="/lootcontainers/lootcontainer[@id='3' and @size]/@size">9,10</set>
+<set xpath="/lootcontainers/lootcontainer[@id='4' and @size]/@size">9,10</set>
+<set xpath="/lootcontainers/lootcontainer[@id='5' and @size]/@size">9,10</set>
+<set xpath="/lootcontainers/lootcontainer[@id='6']/@size">8,6</set><!-- Nightstand, wooden desk: pistol, ammo, magazines, books-->
+<set xpath="/lootcontainers/lootcontainer[@id='7']/@size">6,6</set><!-- Medicine cabinets-->
+<set xpath="/lootcontainers/lootcontainer[@id='17']/@size">8,9</set><!-- Cabinets-->
+<set xpath="/lootcontainers/lootcontainer[@id='47']/@size">8,9</set><!-- Refridgerator-->
+<set xpath="/lootcontainers/lootcontainer[@id='42']/@size">8,9</set><!-- Gunsafe-->
+<set xpath="/lootcontainers/lootcontainer[@id='43']/@size">8,6</set><!-- Lockers -->
+<set xpath="/lootcontainers/lootcontainer[@id='49']/@size">6,6</set><!-- Bookcase cabinets-->
+<set xpath="/lootcontainers/lootcontainer[@id='106']/@size">6,6</set><!-- Medical Cabinet and Pill Case-->
+<set xpath="/lootcontainers/lootcontainer[@id='95']/@size">6,6</set><!-- Hidden Stash -->
+<set xpath="/lootcontainers/lootcontainer[@id='95']/@count">5,8</set><!-- Hidden Stash -->
+<set xpath="/lootcontainers/lootcontainer[@id='76']/@size">1,0</set><!-- Vehicles storage -->
+<set xpath="/lootcontainers/lootcontainer[@id='77']/@size">1,0</set><!-- Vehicles storage -->
+<set xpath="/lootcontainers/lootcontainer[@id='78']/@size">1,0</set><!-- Vehicles storage -->
+<set xpath="/lootcontainers/lootcontainer[@id='79']/@size">1,0</set><!-- Vehicles storage -->
+<set xpath="/lootcontainers/lootcontainer[@id='80']/@size">1,0</set><!-- Vehicles storage -->
+<set xpath="/lootcontainers/lootcontainer[@id='139']/@size">1,0</set><!-- Drone storage -->
+<!-- \/ Remove drone -->
+<remove xpath="/lootcontainers/lootgroup/item[starts-with(@name,'gunBotT3JunkDrone')]"/>
+<remove xpath="/lootcontainers/lootgroup/item[starts-with(@name,'modRoboticDrone')]"/>
+<!-- \/ Burried supply destroy on close -->
+<remove xpath="/lootcontainers/lootcontainer[@id='102']"/>
+<insertAfter xpath="/lootcontainers/lootcontainer[@id='101']"> 
+<lootcontainer id="102" name="buriedSuppliesT1" destroy_on_close="true" size="8,9" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="qualPlus1Template">
+	<item group="groupZpackBoss"/>
+</lootcontainer>
+</insertAfter>
+<!-- \/ Remove learning elixir schem -->
+<remove xpath="/lootcontainers/lootgroup/item[@name='drinkJarGrandpasLearningElixirSchematic']"/>
+<remove xpath="/lootcontainers/lootgroup/item[@name='drinkJarGrandpasLearningElixir']"/>
+<remove xpath="/lootcontainers/lootgroup/item[@name='drinkJarGrandpasMoonshineSchematic']"/>
+<remove xpath="/lootcontainers/lootgroup/item[@name='drinkJarGrandpasMoonshine']"/>
+<!-- /\ Remove learning elixir schem -->
+<!-- /\ Add loot prob template for rare items -->
+<append xpath="/lootcontainers/lootprobtemplates">
+<lootprobtemplate name="ProbT4">
+		<loot level="0,291" prob="0"/>
+		<loot level="292" prob="0.02"/>
+		<loot level="293" prob="0.03"/>
+		<loot level="294" prob="0.04"/>
+		<loot level="295" prob="0.05"/>
+		<loot level="296" prob="0.06"/>
+		<loot level="297" prob="0.07"/>
+		<loot level="298" prob="0.08"/>
+		<loot level="299" prob="0.09"/>
+		<loot level="300" prob="0.10"/>
+		<loot level="301" prob="0.11"/>
+		<loot level="302" prob="0.12"/>
+		<loot level="303" prob="0.13"/>
+		<loot level="304" prob="0.14"/>
+		<loot level="305" prob="0.15"/>
+		<loot level="306" prob="0.16"/>
+		<loot level="307" prob="0.17"/>
+		<loot level="308" prob="0.18"/>
+		<loot level="309" prob="0.19"/>
+		<loot level="310" prob="0.20"/>
+		<loot level="311" prob="0.21"/>
+		<loot level="312" prob="0.22"/>
+		<loot level="313" prob="0.23"/>
+		<loot level="314" prob="0.24"/>
+		<loot level="315" prob="0.25"/>
+		<loot level="316" prob="0.26"/>
+		<loot level="317" prob="0.27"/>
+		<loot level="318" prob="0.28"/>
+		<loot level="319" prob="0.29"/>
+		<loot level="320" prob="0.30"/>
+		<loot level="321" prob="0.31"/>
+		<loot level="322" prob="0.32"/>
+		<loot level="323" prob="0.33"/>
+		<loot level="324" prob="0.34"/>
+		<loot level="325" prob="0.35"/>
+		<loot level="326" prob="0.36"/>
+		<loot level="327" prob="0.37"/>
+		<loot level="328" prob="0.38"/>
+		<loot level="329" prob="0.39"/>
+		<loot level="330" prob="0.40"/>
+		<loot level="331" prob="0.41"/>
+		<loot level="332" prob="0.42"/>
+		<loot level="333" prob="0.43"/>
+		<loot level="334" prob="0.44"/>
+		<loot level="335" prob="0.45"/>
+		<loot level="336" prob="0.46"/>
+		<loot level="337" prob="0.47"/>
+		<loot level="338" prob="0.48"/>
+		<loot level="339" prob="0.49"/>
+		<loot level="340" prob="0.50"/>
+		<loot level="341" prob="0.51"/>
+		<loot level="342" prob="0.52"/>
+		<loot level="343" prob="0.53"/>
+		<loot level="344" prob="0.54"/>
+		<loot level="345" prob="0.55"/>
+		<loot level="346" prob="0.56"/>
+		<loot level="347" prob="0.57"/>
+		<loot level="348" prob="0.58"/>
+		<loot level="349" prob="0.59"/>
+		<loot level="350" prob="0.60"/>
+		<loot level="351" prob="0.61"/>
+		<loot level="352" prob="0.62"/>
+		<loot level="353" prob="0.63"/>
+		<loot level="354" prob="0.64"/>
+		<loot level="355" prob="0.65"/>
+		<loot level="356" prob="0.66"/>
+		<loot level="357" prob="0.67"/>
+		<loot level="358" prob="0.68"/>
+		<loot level="359" prob="0.69"/>
+		<loot level="360" prob="0.70"/>
+		<loot level="361" prob="0.71"/>
+		<loot level="362" prob="0.72"/>
+		<loot level="363" prob="0.73"/>
+		<loot level="364" prob="0.74"/>
+		<loot level="365" prob="0.75"/>
+		<loot level="366" prob="0.76"/>
+		<loot level="367" prob="0.77"/>
+		<loot level="368" prob="0.78"/>
+		<loot level="369" prob="0.79"/>
+		<loot level="370" prob="0.80"/>
+		<loot level="371" prob="0.81"/>
+		<loot level="372" prob="0.82"/>
+		<loot level="373" prob="0.83"/>
+		<loot level="374" prob="0.84"/>
+		<loot level="375" prob="0.85"/>
+		<loot level="376" prob="0.86"/>
+		<loot level="377" prob="0.87"/>
+		<loot level="378" prob="0.88"/>
+		<loot level="379" prob="0.89"/>
+		<loot level="380" prob="0.90"/>
+		<loot level="381" prob="0.91"/>
+		<loot level="382" prob="0.92"/>
+		<loot level="383" prob="0.93"/>
+		<loot level="384" prob="0.94"/>
+		<loot level="385" prob="0.95"/>
+		<loot level="386" prob="0.96"/>
+		<loot level="387" prob="0.97"/>
+		<loot level="388" prob="0.98"/>
+		<loot level="389" prob="0.99"/>
+		<loot level="390,999999" prob="1"/>
+</lootprobtemplate>
+</append>
+<!-- \/ Custom Armor Schem add to loot -->
+<append xpath="/lootcontainers/lootgroup[@name='schematicsWeaponsArmorT2']" >
+	<item name="armorDiamondHelmetSchematic" loot_prob_template="med"/>
+	<item name="armorDiamondChestSchematic" loot_prob_template="med"/>
+	<item name="armorDiamondGlovesSchematic" loot_prob_template="med"/>
+	<item name="armorDiamondLegsSchematic" loot_prob_template="med"/>
+	<item name="armorDiamondBootsSchematic" loot_prob_template="med"/>
+	<item name="armorObsidianHelmetSchematic" loot_prob_template="medLow"/>
+	<item name="armorObsidianChestSchematic" loot_prob_template="medLow"/>
+	<item name="armorObsidianGlovesSchematic" loot_prob_template="medLow"/>
+	<item name="armorObsidianLegsSchematic" loot_prob_template="medLow"/>
+	<item name="armorObsidianBootsSchematic" loot_prob_template="medLow"/>
+	<item name="armorCarbonFiberHelmetSchematic" loot_prob_template="med"/>
+	<item name="armorCarbonFiberVestSchematic" loot_prob_template="med"/>
+	<item name="armorCarbonFiberGlovesSchematic" loot_prob_template="med"/>
+	<item name="armorCarbonFiberLegsSchematic" loot_prob_template="med"/>
+	<item name="armorCarbonFiberBootsSchematic" loot_prob_template="med"/>
+	<item name="armorTitaniumHelmetSchematic" loot_prob_template="medLow"/>
+	<item name="armorTitaniumVestSchematic" loot_prob_template="medLow"/>
+	<item name="armorTitaniumGlovesSchematic" loot_prob_template="medLow"/>
+	<item name="armorTitaniumLegsSchematic" loot_prob_template="medLow"/>
+	<item name="armorTitaniumBootsSchematic" loot_prob_template="medLow"/>
+</append>
+<!-- /\ Custom Armor Schem add to loot -->
+<!-- /\ Vanilla settings -->
+
+<!-- \/ New lootgroups -->
+<!-- First group -->
+<insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
+<lootgroup name="groupSpecialItems">
+	<item name="resourceGloryCoin"/>
+</lootgroup>
+<lootgroup name="groupSpecialParts">
+	<item name="meleeEliteTwinBladesPart"/>
+	<item name="gunElitePP19BizonPart"/>
+	<item name="gunEliteRugerMP9Part"/>
+	<item name="gunEliteSpringfieldSaintPart"/>
+	<item name="gunEliteSterlingSAR87Part"/>
+	<item name="gunEliteM368VectorPart"/>
+	<item name="gunEliteSteyrAUGPart"/>
+	<item name="gunEliteOTs14GrozaPart"/>
+	<item name="gunEliteTAR21Part"/>
+	<item name="gunElitePumpShotgunPart"/>
+	<item name="gunEliteGatingPart"/>
+	<item name="gunEliteAWMPart"/>
+	<item name="bowEliteCompoundBowPart"/>
+	<item name="bowEliteCompoundCrossbowPart"/>
+	<item name="meleeEliteScythePart"/>
+	<item name="gunEliteQuadBarrelsShotgunPart"/>
+	<item name="gunEliteQuantumGunPart"/>
+	<item name="gunEliteBarrettM107Part"/>
+	<item name="gunEliteGoldenEaglePart"/>
+	<item name="gunEliteGlock9Part"/>
+	<item name="armorEliteTitaniumHelmetPart"/>
+	<item name="armorEliteTitaniumVestPart"/>
+	<item name="armorEliteTitaniumGlovesPart"/>
+	<item name="armorEliteTitaniumLegsPart"/>
+	<item name="armorEliteTitaniumBootsPart"/>
+	<item name="armorEliteObsidianHelmetPart"/>
+	<item name="armorEliteObsidianChestPart"/>
+	<item name="armorEliteObsidianGlovesPart"/>
+	<item name="armorEliteObsidianLegsPart"/>
+	<item name="armorEliteObsidianBootsPart"/>
+	<item name="toolEliteAugerPart"/>
+	<item name="toolEliteChainsawPart"/>
+	<item name="toolElitePickaxePart"/>
+	<item name="toolEliteFireaxePart"/>
+	<item name="toolEliteShovelPart"/>
+	<item name="toolEliteWrenchPart"/>
+	<item name="gunBotEliteAutoTurretPart"/>
+	<item name="gunEliteMG42Part" prop="0.1"/>
+	<item name="gunEliteBazokaPart" prop="0.1"/>
+	<item name="gunEliteHyperBlasterPart" prop="0.1"/>
+	<item name="gunEliteZeusPart" prop="0.1"/>
+	<item name="gunEliteGreenHornetPart" prop="0.1"/>
+	<item name="meleeEliteHeavySledgehammerPart" prop="0.1"/>
+	<item name="meleeEliteVampireGauntletsPart" prop="0.1"/>
+	<item name="gunEliteSilverHawkPart" prop="0.1"/>
+	<item name="gunEliteAK47GoldPart" prop="0.1"/>
+	<item name="bowEliteBolterOfTitansPart" prop="0.1"/>
+	<item name="gunBotInsaneAutoTurretPart" prop="0.1"/>
+</lootgroup>
+<lootgroup name="M4A1ammo" count="all" loot_quality_template="QLTemplateT2">
+	<item name="gunM4A1AssaultRifle"/>
+	<item name="ammo762mmBulletBall" count="6,25"/>
+</lootgroup>
+<lootgroup name="groupWeapons556T3_Machinegunner" count="all" loot_quality_template="QLTemplateT1">
+    <item name="gunM416AssaultRifle"/>
+    <item name="ammo556mmBulletBall" count="6,25"/>
+</lootgroup>
+<lootgroup name="AWMSniperRifle" count="all" loot_quality_template="QLTemplateT3">
+    <item name="gunSniperAWM"/>
+    <item name="ammo44MagnumBulletBall" count="5,15"/>
+</lootgroup>
+<lootgroup name="groupWeaponsEffect_Netgun" count="2" loot_quality_template="QLTemplateT3">
+    <item name="gunGridLauncher"/>
+    <item name="ammoNet" count="6,25"/>
+</lootgroup>
+<lootgroup name="groupWeaponsT2_MiniUZI" count="all" loot_quality_template="QLTemplateT2">
+    <item name="gunMiniUZI"/>
+    <item name="ammo9mmBulletBall" count="15,35" />
+</lootgroup>
+<lootgroup name="groupWeapons556T4_Machinegunner" count="all" loot_quality_template="QLTemplateT3">
+    <item name="gunM249SquadRifle"/>
+    <item name="ammo556mmBulletBall" count="6,25"/>
+</lootgroup>
+<lootgroup name="Slinggun" count="all" loot_quality_template="QLTemplateT3">
+    <item name="bowAutoSlingGun"/>
+    <item name="ammoArrowIron" count="6,25"/>
+</lootgroup>
+<lootgroup name="groupModCustomT1">
+	<item name="questRewardT1ArmorModsBundle"/>
+	<item name="questRewardT1RingsBundle"/>
+	<item name="questRewardT1NecklacesBundle"/>
+	<item name="questRewardT1JadesBundle"/>
+	<item name="questRewardT1CharmedsBundle"/>
+	<item name="treasureRandomLootBoxT1"/>
+	<item name="treasureRandomLootBoxT2"/>
+</lootgroup>
+<lootgroup name="groupModCustomT2">
+	<item name="questRewardT2ArmorModsBundle"/>
+	<item name="questRewardT2RingsBundle"/>
+	<item name="questRewardT2NecklacesBundle"/>
+	<item name="questRewardT2JadesBundle"/>
+	<item name="questRewardT2CharmedsBundle"/>
+	<item name="treasureRandomLootBoxT2"/>
+	<item name="treasureRandomLootBoxT3"/>
+</lootgroup>
+<lootgroup name="groupModCustomT3">
+	<item name="questRewardT3ArmorModsBundle"/>
+	<item name="questRewardT3RingsBundle"/>
+	<item name="questRewardT3NecklacesBundle"/>
+	<item name="questRewardT3JadesBundle"/>
+	<item name="questRewardT3CharmedsBundle"/>
+	<item name="treasureRandomLootBoxT3"/>
+	<item name="treasureRandomLootBoxT4"/>
+</lootgroup>
+<lootgroup name="groupQuestSkillBooks">
+	<item name="bookInfantrySkillVol1"/>
+	<item name="bookInfantrySkillVol2"/>
+	<item name="bookInfantrySkillVol3"/>
+	<item name="bookInfantrySkillVol4"/>
+	<item name="bookInfantrySkillVol5"/>
+	<item name="bookInfantrySkillVol6"/>
+	<item name="bookInfantrySkillVol7"/>
+	<item name="bookGunFighterSkillVol1"/>
+	<item name="bookGunFighterSkillVol2"/>
+	<item name="bookGunFighterSkillVol3"/>
+	<item name="bookGunFighterSkillVol4"/>
+	<item name="bookGunFighterSkillVol5"/>
+	<item name="bookGunFighterSkillVol6"/>
+	<item name="bookGunFighterSkillVol7"/>
+	<item name="bookSharpshooterSkillVol1"/>
+	<item name="bookSharpshooterSkillVol2"/>
+	<item name="bookSharpshooterSkillVol3"/>
+	<item name="bookSharpshooterSkillVol4"/>
+	<item name="bookSharpshooterSkillVol5"/>
+	<item name="bookSharpshooterSkillVol6"/>
+	<item name="bookSharpshooterSkillVol7"/>
+	<item name="bookArcherManSkillVol1"/>
+	<item name="bookArcherManSkillVol2"/>
+	<item name="bookArcherManSkillVol3"/>
+	<item name="bookArcherManSkillVol4"/>
+	<item name="bookArcherManSkillVol5"/>
+	<item name="bookArcherManSkillVol6"/>
+	<item name="bookArcherManSkillVol7"/>
+	<item name="bookUrbanWarriorSkillVol1"/>
+	<item name="bookUrbanWarriorSkillVol2"/>
+	<item name="bookUrbanWarriorSkillVol3"/>
+	<item name="bookUrbanWarriorSkillVol4"/>
+	<item name="bookUrbanWarriorSkillVol5"/>
+	<item name="bookUrbanWarriorSkillVol6"/>
+	<item name="bookUrbanWarriorSkillVol7"/>
+	<item name="bookAssassinSkillVol1"/>
+	<item name="bookAssassinSkillVol2"/>
+	<item name="bookAssassinSkillVol3"/>
+	<item name="bookAssassinSkillVol4"/>
+	<item name="bookAssassinSkillVol5"/>
+	<item name="bookAssassinSkillVol6"/>
+	<item name="bookAssassinSkillVol7"/>
+	<item name="bookBerserkerSkillVol1"/>
+	<item name="bookBerserkerSkillVol2"/>
+	<item name="bookBerserkerSkillVol3"/>
+	<item name="bookBerserkerSkillVol4"/>
+	<item name="bookBerserkerSkillVol5"/>
+	<item name="bookBerserkerSkillVol6"/>
+	<item name="bookBerserkerSkillVol7"/>
+	<item name="bookSupporterSkillVol1"/>
+	<item name="bookSupporterSkillVol2"/>
+	<item name="bookSupporterSkillVol3"/>
+	<item name="bookSupporterSkillVol4"/>
+	<item name="bookSupporterSkillVol5"/>
+	<item name="bookSupporterSkillVol6"/>
+	<item name="bookSupporterSkillVol7"/>
+	<item name="bookDonatorSkillVol1"/>
+	<item name="bookDonatorSkillVol2"/>
+	<item name="bookDonatorSkillVol3"/>
+	<item name="bookDonatorSkillVol4"/>
+	<item name="bookDonatorSkillVol5"/>
+	<item name="bookDonatorSkillVol6"/>
+	<item name="bookDonatorSkillVol7"/>
+</lootgroup>
+</insertAfter>
+<!-- Last group -->
+<insertAfter xpath="/lootcontainers/lootgroup[@name='twitch_T4_Rewards']">
+<lootgroup name="groupEliteWeaponBoxs">
+	<item name="meleeEliteTwinBladesBox"/>
+	<item name="gunElitePP19BizonBox"/>
+	<item name="gunEliteRugerMP9Box"/>
+	<item name="gunEliteSpringfieldSaintBox"/>
+	<item name="gunEliteSterlingSAR87Box"/>
+	<item name="gunEliteM368VectorBox"/>
+	<item name="gunEliteSteyrAUGBox"/>
+	<item name="gunEliteOTs14GrozaBox"/>
+	<item name="gunEliteTAR21Box"/>
+	<item name="gunElitePumpShotgunBox"/>
+	<item name="gunEliteGatingBox"/>
+	<item name="gunEliteAWMBox"/>
+	<item name="bowEliteCompoundBowBox"/>
+	<item name="bowEliteCompoundCrossbowBox"/>
+	<item name="meleeEliteScytheBox"/>
+	<item name="gunEliteQuadBarrelsShotgunBox"/>
+	<item name="gunEliteQuantumGunBox"/>
+	<item name="gunEliteBarrettM107Box"/>
+	<item name="gunEliteGoldenEagleBox"/>
+	<item name="gunEliteGlock9Box"/>
+	<item name="gunBotEliteAutoTurretBox"/>
+	<item name="gunEliteMG42Box" prop="0.1"/>
+	<item name="gunEliteBazokaBox" prop="0.1"/>
+	<item name="gunEliteHyperBlasterBox" prop="0.1"/>
+	<item name="gunEliteZeusBox" prop="0.1"/>
+	<item name="gunEliteGreenHornetBox" prop="0.1"/>
+	<item name="meleeEliteHeavySledgehammerBox" prop="0.1"/>
+	<item name="meleeEliteVampireGauntletsBox" prop="0.1"/>
+	<item name="gunEliteSilverHawkBox" prop="0.1"/>
+	<item name="gunEliteAK47GoldBox" prop="0.1"/>
+	<item name="bowEliteBolterOfTitansBox" prop="0.1"/>
+	<item name="gunBotInsaneAutoTurretBox" prop="0.1"/>
+</lootgroup>
+<lootgroup name="groupEliteArmorBoxs">
+	<item name="treasureBoxEliteTitaniumHelmet"/>
+	<item name="treasureBoxEliteTitaniumVest"/>
+	<item name="treasureBoxEliteTitaniumGloves"/>
+	<item name="treasureBoxEliteTitaniumLegs"/>
+	<item name="treasureBoxEliteTitaniumBoots"/>
+	<item name="treasureBoxEliteObsidianHelmet"/>
+	<item name="treasureBoxEliteObsidianChest"/>
+	<item name="treasureBoxEliteObsidianGloves"/>
+	<item name="treasureBoxEliteObsidianLegs"/>
+	<item name="treasureBoxEliteObsidianBoots"/>
+</lootgroup>
+<lootgroup name="groupEliteToolBoxs">
+	<item name="treasureBoxEliteAuger"/>
+	<item name="treasureBoxEliteChainsaw"/>
+	<item name="treasureBoxElitePickaxe"/>
+	<item name="treasureBoxEliteFireaxe"/>
+	<item name="treasureBoxEliteShovel"/>
+	<item name="treasureBoxEliteWrench"/>
+</lootgroup>
+<lootgroup name="groupCharmedOrbBoxs">
+	<item name="apparelUncommonRing"/>
+	<item name="apparelRareRing" prob="0.3"/>
+	<item name="apparelCommonNecklace"/>
+	<item name="apparelUncommonNecklace" prob="0.3"/>
+	<item name="apparelRareNecklace" prob="0.1"/>
+	<item name="modProtectionJade1"/>
+	<item name="modResistJade1"/>
+	<item name="modHealthJade1"/>
+	<item name="modStaminaJade1"/>
+	<item name="modMobilityJade1"/>
+	<item name="modGamestageJade1"/>
+	<item name="modEntityDamageJade1" prob="0.1"/>
+	<item name="modCraftingTierJade1"/>
+	<item name="modSilentJade1"/>
+	<item name="modSpeedJade1"/>
+	<item name="modAttributePerception1"/>
+	<item name="modAttributeStrength1"/>
+	<item name="modAttributeFortitude1"/>
+	<item name="modAttributeAgility1"/>
+	<item name="modAttributeIntellect1"/>
+</lootgroup>
+<lootgroup name="groupRingBoxs">
+	<item name="apparelCommonRing" prob="0.1"/>
+	<item name="apparelUncommonRing" prob="0.05"/>
+	<item name="apparelRareRing" prob="0.01"/>
+</lootgroup>
+<lootgroup name="groupNecklaceBoxs">
+	<item name="apparelCommonNecklace" prob="0.1"/>
+	<item name="apparelUncommonNecklace" prob="0.05"/>
+	<item name="apparelRareNecklace" prob="0.01"/>
+	<item name="modProtectionJade1" prob="0.5"/>
+	<item name="modResistJade1" prob="0.5"/>
+	<item name="modHealthJade1" prob="0.5"/>
+	<item name="modStaminaJade1" prob="0.5"/>
+	<item name="modMobilityJade1" prob="0.5"/>
+	<item name="modGamestageJade1" prob="0.5"/>
+	<item name="modEntityDamageJade1" prob="0.5"/>
+	<item name="modCraftingTierJade1" prob="0.5"/>
+	<item name="modAttributePerception1" prob="0.5"/>
+	<item name="modAttributeStrength1" prob="0.5"/>
+	<item name="modAttributeFortitude1" prob="0.5"/>
+	<item name="modAttributeAgility1" prob="0.5"/>
+	<item name="modAttributeIntellect1" prob="0.5"/>
+	<item name="modSilentJade1" prob="0.5"/>
+	<item name="modSpeedJade1" prob="0.5"/>
+	<item name="modProtectionJade2" prob="0.05"/>
+	<item name="modResistJade2" prob="0.05"/>
+	<item name="modHealthJade2" prob="0.05"/>
+	<item name="modStaminaJade2" prob="0.05"/>
+	<item name="modMobilityJade2" prob="0.05"/>
+	<item name="modGamestageJade2" prob="0.05"/>
+	<item name="modEntityDamageJade2" prob="0.05"/>
+	<item name="modCraftingTierJade2" prob="0.05"/>
+	<item name="modSilentJade2" prob="0.05"/>
+	<item name="modSpeedJade2" prob="0.05"/>
+	<item name="modAttributePerception2" prob="0.05"/>
+	<item name="modAttributeStrength2" prob="0.05"/>
+	<item name="modAttributeFortitude2" prob="0.05"/>
+	<item name="modAttributeAgility2" prob="0.05"/>
+	<item name="modAttributeIntellect2" prob="0.05"/>
+</lootgroup>
+<lootgroup name="groupJadeBoxs">
+	<item name="modProtectionJade1" prob="0.5"/>
+	<item name="modResistJade1" prob="0.5"/>
+	<item name="modHealthJade1" prob="0.5"/>
+	<item name="modStaminaJade1" prob="0.5"/>
+	<item name="modMobilityJade1" prob="0.5"/>
+	<item name="modGamestageJade1" prob="0.5"/>
+	<item name="modEntityDamageJade1" prob="0.5"/>
+	<item name="modCraftingTierJade1" prob="0.5"/>
+	<item name="modSilentJade1" prob="0.5"/>
+	<item name="modSpeedJade1" prob="0.5"/>
+	<item name="modAttributePerception1" prob="0.5"/>
+	<item name="modAttributeStrength1" prob="0.5"/>
+	<item name="modAttributeFortitude1" prob="0.5"/>
+	<item name="modAttributeAgility1" prob="0.5"/>
+	<item name="modAttributeIntellect1" prob="0.5"/>
+	<item name="modProtectionJade2" prob="0.05"/>
+	<item name="modResistJade2" prob="0.05"/>
+	<item name="modHealthJade2" prob="0.05"/>
+	<item name="modStaminaJade2" prob="0.05"/>
+	<item name="modMobilityJade2" prob="0.05"/>
+	<item name="modGamestageJade2" prob="0.05"/>
+	<item name="modEntityDamageJade2" prob="0.05"/>
+	<item name="modCraftingTierJade2" prob="0.05"/>
+	<item name="modSilentJade2" prob="0.05"/>
+	<item name="modSpeedJade2" prob="0.05"/>
+	<item name="modAttributePerception2" prob="0.05"/>
+	<item name="modAttributeStrength2" prob="0.05"/>
+	<item name="modAttributeFortitude2" prob="0.05"/>
+	<item name="modAttributeAgility2" prob="0.05"/>
+	<item name="modAttributeIntellect2" prob="0.05"/>
+</lootgroup>
+<lootgroup name="EliteParts">
+	<item name="meleeEliteTwinBladesPart"/>
+	<item name="gunElitePP19BizonPart"/>
+	<item name="gunEliteRugerMP9Part"/>
+	<item name="gunEliteSpringfieldSaintPart"/>
+	<item name="gunEliteSterlingSAR87Part"/>
+	<item name="gunEliteM368VectorPart"/>
+	<item name="gunEliteSteyrAUGPart"/>
+	<item name="gunEliteOTs14GrozaPart"/>
+	<item name="gunEliteTAR21Part"/>
+	<item name="gunElitePumpShotgunPart"/>
+	<item name="gunEliteGatingPart"/>
+	<item name="gunEliteAWMPart"/>
+	<item name="bowEliteCompoundBowPart"/>
+	<item name="bowEliteCompoundCrossbowPart"/>
+	<item name="meleeEliteScythePart"/>
+	<item name="gunEliteQuadBarrelsShotgunPart"/>
+	<item name="gunEliteQuantumGunPart"/>
+	<item name="gunEliteBarrettM107Part"/>
+	<item name="gunEliteGoldenEaglePart"/>
+	<item name="gunEliteGlock9Part"/>
+	<item name="armorEliteTitaniumHelmetPart"/>
+	<item name="armorEliteTitaniumVestPart"/>
+	<item name="armorEliteTitaniumGlovesPart"/>
+	<item name="armorEliteTitaniumLegsPart"/>
+	<item name="armorEliteTitaniumBootsPart"/>
+	<item name="armorEliteObsidianHelmetPart"/>
+	<item name="armorEliteObsidianChestPart"/>
+	<item name="armorEliteObsidianGlovesPart"/>
+	<item name="armorEliteObsidianLegsPart"/>
+	<item name="armorEliteObsidianBootsPart"/>
+	<item name="toolEliteAugerPart"/>
+	<item name="toolEliteChainsawPart"/>
+	<item name="toolElitePickaxePart"/>
+	<item name="toolEliteFireaxePart"/>
+	<item name="toolEliteShovelPart"/>
+	<item name="toolEliteWrenchPart"/>
+	<item name="gunBotEliteAutoTurretPart"/>
+</lootgroup>
+<lootgroup name="InsaneParts">
+	<item name="gunEliteMG42Part"/>
+	<item name="gunEliteBazokaPart"/>
+	<item name="gunEliteHyperBlasterPart"/>
+	<item name="gunEliteZeusPart"/>
+	<item name="gunEliteGreenHornetPart"/>
+	<item name="meleeEliteHeavySledgehammerPart"/>
+	<item name="meleeEliteVampireGauntletsPart"/>
+	<item name="gunEliteSilverHawkPart"/>
+	<item name="gunEliteAK47GoldPart"/>
+	<item name="bowEliteBolterOfTitansPart"/>
+	<item name="gunBotInsaneAutoTurretPart"/>
+</lootgroup>
+<lootgroup name="BossBoxAmmo">
+	<item name="grenadeLethal" count="5,10"/>
+	<item name="ammo556mmBulletBall" count="500,800"/>
+	<item name="ammo556mmBulletAP" count="500,800"/>
+	<item name="ammo762mmBulletBall" count="500,800"/>
+	<item name="ammo762mmBulletAP" count="500,800"/>
+	<item name="ammo9mmBulletBall" count="500,800"/>
+	<item name="ammo9mmBulletAP" count="500,800"/>
+	<item name="ammoShotgunShell" count="300,500"/>
+	<item name="ammoShotgunSlug" count="300,500"/>
+	<item name="ammo44MagnumBulletBall" count="300,500"/>
+	<item name="ammo44MagnumBulletAP" count="300,500"/>
+</lootgroup>
+<lootgroup name="BossBoxResource">
+	<item name="resourceRawDiamond" count="1,3" prob="0.5"/>
+	<item name="resourceGoldNugget" count="1,5" prob="0.7"/>
+	<item name="resourceSilverNugget" count="3,8" prob="0.9"/>
+	<item name="drinkJarGrandpasForgettingElixir" prob="0.05"/>
+	<item name="resourceGloryCoin" count="1,5" prob="0.1"/>
+	<item name="resourceObsidianStone" prob="0.1"/>
+</lootgroup>
+<lootgroup name="BossBoxTool">
+	<item name="meleeToolPickT2SteelPickaxe" prob="0.8"/>
+	<item name="meleeToolAxeT2SteelAxe" prob="0.8"/>
+	<item name="meleeToolShovelT2SteelShovel" prob="0.8"/>
+	<item name="meleeWpnSledgeT3SteelSledgehammer" prob="0.8"/>
+	<item name="toolObsidianChainsaw"/>
+	<item name="toolObsidianAuger"/>
+	<item name="toolObsidianPickaxe"/>
+	<item name="toolObsidianFireaxe"/>
+	<item name="toolObsidianWrench"/>
+	<item name="toolDiamondWrench" prob="0.1"/>
+	<item name="toolDiamondChainsaw" prob="0.1"/>
+	<item name="toolDiamondAuger" prob="0.1"/>
+	<item name="toolDiamondPickaxe" prob="0.1"/>
+	<item name="toolDiamondFireaxe" prob="0.1"/>
+</lootgroup>
+<lootgroup name="BossBoxWeapon">
+	<item name="gunPumpShotgunImproved1"/>
+	<item name="gunPumpShotgunImproved2"/>
+	<item name="gunPumpShotgunImproved3"/>
+	<item name="bowCompoundCrossbowImproved1"/>
+	<item name="bowCompoundCrossbowImproved2"/>
+	<item name="bowCompoundCrossbowImproved3"/>
+	<item name="bowCompoundImproved1"/>
+	<item name="bowCompoundImproved2"/>
+	<item name="bowCompoundImproved3"/>
+	<item name="meleeDiamondSledgehammer"/>
+	<item name="meleeObsidianSledgehammer"/>
+</lootgroup>
+<lootgroup name="BossBoxArmorDiamond">
+	<item name="armorDiamondHelmet"/>
+	<item name="armorDiamondChest"/>
+	<item name="armorDiamondGloves"/>
+	<item name="armorDiamondLegs"/>
+	<item name="armorDiamondBoots"/>
+</lootgroup>
+<lootgroup name="BossBoxArmorCarbon">
+	<item name="armorCarbonFiberHelmet"/>
+	<item name="armorCarbonFiberVest"/>
+	<item name="armorCarbonFiberGloves"/>
+	<item name="armorCarbonFiberLegs"/>
+	<item name="armorCarbonFiberBoots"/>
+</lootgroup>
+<lootgroup name="BossBoxArmorTitanium">
+	<item name="armorTitaniumHelmet"/>
+	<item name="armorTitaniumVest"/>
+	<item name="armorTitaniumGloves"/>
+	<item name="armorTitaniumLegs"/>
+	<item name="armorTitaniumBoots"/>
+</lootgroup>
+<lootgroup name="BossBoxArmorObsidian">
+	<item name="armorObsidianHelmet"/>
+	<item name="armorObsidianChest"/>
+	<item name="armorObsidianGloves"/>
+	<item name="armorObsidianLegs"/>
+	<item name="armorObsidianBoots"/>
+</lootgroup>
+<lootgroup name="MiniBossBoxMods">
+	<item name="modGunMagazineExtender2"/>
+	<item name="modWeaponBrace"/>
+	<item name="modArmorBrace"/>
+	<item name="modRodnSpring1"/>
+	<item name="modBowQuiver1"/>
+	<item name="modWeaponBite" prob="0.3"/>
+	<item name="modArmorHealthPlus1"/>
+	<item name="modArmorStaminaPlus1"/>
+	<item name="modArmorBlockDmgPlus1"/>
+	<item name="modArmorRunningFast1"/>
+	<item name="modWeaponPearcingArmor1"/>
+	<item name="modArmorResistantEffect1"/>
+	<item name="modEnhancedArrowhead1"/>
+	<item name="modTurretCylinder1"/>
+	<item name="modTurretBracket1"/>
+	<item name="bookExtraSkillPoint" prob="0.3"/>
+	<item name="modArmorSkillInfantry" prob="0.05"/>
+	<item name="modArmorSkillGunfighter" prob="0.05"/>
+	<item name="modArmorSkillSharpshooter" prob="0.05"/>
+	<item name="modArmorSkillArcherMan" prob="0.05"/>
+	<item name="modArmorSkillUrbanWarrior" prob="0.05"/>
+	<item name="modArmorSkillAssassin" prob="0.05"/>
+	<item name="modArmorSkillBerserker" prob="0.05"/>
+	<item name="modArmorSkillSupporter" prob="0.05"/>
+</lootgroup>
+<lootgroup name="MiniBossBoxRingsJades">
+	<item name="modAttributePerception1" prob="0.5"/>
+	<item name="modAttributeStrength1" prob="0.5"/>
+	<item name="modAttributeFortitude1" prob="0.5"/>
+	<item name="modAttributeAgility1" prob="0.5"/>
+	<item name="modAttributeIntellect1" prob="0.5"/>
+</lootgroup>
+<lootgroup name="BossBoxMods">
+	<item name="modArmorSkillInfantry" prob="0.3"/>
+	<item name="modArmorSkillGunfighter" prob="0.3"/>
+	<item name="modArmorSkillSharpshooter" prob="0.3"/>
+	<item name="modArmorSkillArcherMan" prob="0.3"/>
+	<item name="modArmorSkillUrbanWarrior" prob="0.3"/>
+	<item name="modArmorSkillAssassin" prob="0.3"/>
+	<item name="modArmorSkillBerserker" prob="0.3"/>
+	<item name="modArmorSkillSupporter" prob="0.3"/>
+	<item name="modWeaponPhage" prob="0.3"/>
+	<item name="modArmorHealthPlus1"/>
+	<item name="modArmorStaminaPlus1"/>
+	<item name="modArmorBlockDmgPlus1"/>
+	<item name="modArmorRunningFast1"/>
+	<item name="modWeaponPearcingArmor1"/>
+	<item name="modArmorResistantEffect1"/>
+	<item name="modHeadBruised1"/>
+	<item name="modHeadBruised2"/>
+	<item name="modEnhancedArrowhead1"/>
+	<item name="modEnhancedArrowhead2"/>
+	<item name="modTurretCylinder1"/>
+	<item name="modTurretCylinder2"/>
+	<item name="modTurretBracket1"/>
+	<item name="modTurretBracket2"/>
+	<item name="bookExtraSkillPoint" prob="0.1"/>
+</lootgroup>
+<lootgroup name="BossBoxCharmed">
+	<item name="charmHealthSmall"/>
+	<item name="charmStaminaSmall"/>
+	<item name="charmDamageSmall"/>
+	<item name="charmBlockDamageSmall"/>
+	<item name="charmArmorSmall"/>
+	<item name="charmSilentSmall"/>
+	<item name="charmSpeedSmall" prob="0.3"/>
+	<item name="charmRegenerationSmall" prob="0.5"/>
+	<item name="charmResistantSmall"/>
+	<item name="charmHealthMedium" prob="0.1"/>
+	<item name="charmStaminaMedium" prob="0.1"/>
+	<item name="charmDamageMedium" prob="0.1"/>
+	<item name="charmBlockDamageMedium" prob="0.1"/>
+	<item name="charmArmorMedium" prob="0.1"/>
+	<item name="charmSilentMedium" prob="0.1"/>
+	<item name="charmSpeedMedium" prob="0.1"/>
+	<item name="charmRegenerationMedium" prob="0.1"/>
+	<item name="charmResistantMedium" prob="0.1"/>
+</lootgroup>
+<lootgroup name="BossBoxRingsJades">
+	<item name="apparelUncommonRing"/>
+	<item name="apparelRareRing" prob="0.3"/>
+	<item name="apparelEpicRing" prob="0.1"/>
+	<item name="apparelCommonNecklace"/>
+	<item name="apparelUncommonNecklace" prob="0.3"/>
+	<item name="apparelRareNecklace" prob="0.1"/>
+	<item name="modProtectionJade1"/>
+	<item name="modResistJade1"/>
+	<item name="modHealthJade1"/>
+	<item name="modStaminaJade1"/>
+	<item name="modMobilityJade1"/>
+	<item name="modGamestageJade1"/>
+	<item name="modEntityDamageJade1" prob="0.1"/>
+	<item name="modCraftingTierJade1"/>
+	<item name="modSilentJade1"/>
+	<item name="modSpeedJade1"/>
+	<item name="modAttributePerception1"/>
+	<item name="modAttributeStrength1"/>
+	<item name="modAttributeFortitude1"/>
+	<item name="modAttributeAgility1"/>
+	<item name="modAttributeIntellect1"/>
+	<item name="modProtectionJade2" prob="0.1"/>
+	<item name="modResistJade2" prob="0.1"/>
+	<item name="modHealthJade2" prob="0.1"/>
+	<item name="modStaminaJade2" prob="0.1"/>
+	<item name="modMobilityJade2" prob="0.1"/>
+	<item name="modGamestageJade2" prob="0.1"/>
+	<item name="modEntityDamageJade2" prob="0.1"/>
+	<item name="modCraftingTierJade2" prob="0.1"/>
+	<item name="modSilentJade2" prob="0.1"/>
+	<item name="modSpeedJade2" prob="0.1"/>
+	<item name="modAttributePerception2" prob="0.1"/>
+	<item name="modAttributeStrength2" prob="0.1"/>
+	<item name="modAttributeFortitude2" prob="0.1"/>
+	<item name="modAttributeAgility2" prob="0.1"/>
+	<item name="modAttributeIntellect2" prob="0.1"/>
+</lootgroup>
+<lootgroup name="BossBoxEliteWeapon">
+	<item name="gunEliteRugerMP9Box"/>
+	<item name="gunEliteSterlingSAR87Box"/>
+	<item name="gunEliteOTs14GrozaBox"/>
+	<item name="gunEliteTAR21Box"/>
+	<item name="gunEliteSteyrAUGBox"/>
+	<item name="gunEliteBarrettM107Box" prob="0.1"/>
+	<item name="gunElitePumpShotgunBox"/>
+	<item name="gunEliteGatingBox"/>
+	<item name="gunEliteAWMBox"/>
+	<item name="meleeEliteScytheBox"/>
+	<item name="meleeEliteTwinBladesBox"/>
+	<item name="meleeEliteHeavySledgehammerBox" prob="0.1"/>
+	<item name="gunEliteQuadBarrelsShotgunBox"/>
+	<item name="gunEliteQuantumGunBox"/>
+	<item name="bowEliteCompoundBowBox"/>
+	<item name="bowEliteCompoundCrossbowBox"/>
+	<item name="gunEliteOTs14GrozaBox"/>
+	<item name="gunEliteSpringfieldSaintBox"/>
+	<item name="gunElitePP19BizonBox"/>
+	<item name="gunEliteM368VectorBox"/>
+	<item name="gunEliteGoldenEagleBox"/>
+	<item name="gunEliteMG42Box" prob="0.1"/>
+	<item name="gunEliteGlock9Box"/>
+	<item name="gunEliteAK47GoldBox" prob="0.1"/>
+	<item name="gunEliteBazokaBox" prob="0.1"/>
+	<item name="gunEliteGreenHornetBox" prob="0.1"/>
+	<item name="gunEliteHyperBlasterBox" prob="0.1"/>
+	<item name="gunEliteZeusBox" prob="0.1"/>
+	<item name="gunEliteSilverHawkBox" prob="0.1"/>
+	<item name="gunBotInsaneAutoTurretBox" prob="0.1"/>
+	<item name="gunBotEliteAutoTurretBox"/>
+	<item name="treasureBoxEliteTitaniumHelmet"/>
+	<item name="treasureBoxEliteTitaniumVest"/>
+	<item name="treasureBoxEliteTitaniumGloves"/>
+	<item name="treasureBoxEliteTitaniumLegs"/>
+	<item name="treasureBoxEliteTitaniumBoots"/>
+	<item name="treasureBoxEliteObsidianHelmet"/>
+	<item name="treasureBoxEliteObsidianChest"/>
+	<item name="treasureBoxEliteObsidianGloves"/>
+	<item name="treasureBoxEliteObsidianLegs"/>
+	<item name="treasureBoxEliteObsidianBoots"/>
+</lootgroup>
+<lootgroup name="SuperBossBoxMods">
+	<item name="modWeaponPhage"/>
+	<item name="modArmorHealthPlus1"/>
+	<item name="modArmorStaminaPlus1"/>
+	<item name="modArmorBlockDmgPlus1"/>
+	<item name="modArmorRunningFast1"/>
+	<item name="modWeaponPearcingArmor1"/>
+	<item name="modArmorResistantEffect1"/>
+	<item name="modHeadBruised2"/>
+	<item name="modEnhancedArrowhead2"/>
+	<item name="modTurretCylinder2"/>
+	<item name="modTurretBracket2"/>
+	<item name="bookExtraSkillPoint"/>
+	<item name="modArmorSkillInfantry"/>
+	<item name="modArmorSkillGunfighter"/>
+	<item name="modArmorSkillSharpshooter"/>
+	<item name="modArmorSkillArcherMan"/>
+	<item name="modArmorSkillUrbanWarrior"/>
+	<item name="modArmorSkillAssassin"/>
+	<item name="modArmorSkillBerserker"/>
+	<item name="modArmorSkillSupporter"/>
+</lootgroup>
+<lootgroup name="SuperBossBoxCharmed">
+	<item name="charmHealthMedium"/>
+	<item name="charmStaminaMedium"/>
+	<item name="charmDamageMedium"/>
+	<item name="charmBlockDamageMedium"/>
+	<item name="charmArmorMedium"/>
+	<item name="charmSilentMedium"/>
+	<item name="charmSpeedMedium"/>
+	<item name="charmRegenerationMedium"/>
+	<item name="charmResistantMedium"/>
+	<item name="charmHealthLarge" prob="0.1"/>
+	<item name="charmStaminaLarge" prob="0.1"/>
+	<item name="charmDamageLarge" prob="0.1"/>
+	<item name="charmBlockDamageLarge" prob="0.1"/>
+	<item name="charmArmorLarge" prob="0.1"/>
+	<item name="charmSilentLarge" prob="0.1"/>
+	<item name="charmSpeedLarge" prob="0.1"/>
+	<item name="charmRegenerationLarge" prob="0.1"/>
+	<item name="charmResistantLarge" prob="0.1"/>
+</lootgroup>
+<lootgroup name="SuperBossBoxRingsJades">
+	<item name="apparelEpicRing"/>
+	<item name="apparelLegendaryRing" prob="0.1"/>
+	<item name="apparelEpicNecklace"/>
+	<item name="apparelLegendaryNecklace" prob="0.1"/>
+	<item name="modProtectionJade1"/>
+	<item name="modResistJade1"/>
+	<item name="modHealthJade1"/>
+	<item name="modStaminaJade1"/>
+	<item name="modMobilityJade1"/>
+	<item name="modGamestageJade1"/>
+	<item name="modEntityDamageJade1"/>
+	<item name="modCraftingTierJade1"/>
+	<item name="modSilentJade1"/>
+	<item name="modSpeedJade1"/>
+	<item name="modAttributePerception1"/>
+	<item name="modAttributeStrength1"/>
+	<item name="modAttributeFortitude1"/>
+	<item name="modAttributeAgility1"/>
+	<item name="modAttributeIntellect1"/>
+	<item name="modProtectionJade2"/>
+	<item name="modResistJade2" prob="0.1"/>
+	<item name="modHealthJade2" prob="0.1"/>
+	<item name="modStaminaJade2" prob="0.1"/>
+	<item name="modMobilityJade2" prob="0.1"/>
+	<item name="modGamestageJade2" prob="0.1"/>
+	<item name="modEntityDamageJade2" prob="0.1"/>
+	<item name="modCraftingTierJade2" prob="0.1"/>
+	<item name="modSilentJade2" prob="0.1"/>
+	<item name="modSpeedJade2" prob="0.1"/>
+	<item name="modAttributePerception2" prob="0.1"/>
+	<item name="modAttributeStrength2" prob="0.1"/>
+	<item name="modAttributeFortitude2" prob="0.1"/>
+	<item name="modAttributeAgility2" prob="0.1"/>
+	<item name="modAttributeIntellect2" prob="0.1"/>
+</lootgroup>
+<lootgroup name="NightmareMiscLoot">
+	<item group="groupRareToolsTiered"/>
+	<item group="groupAmmoRegular"/>
+	<item group="groupWeaponsAllScaled"/>
+	<item name="oldCash" count="10,30" prob=".5" />
+	<item name="casinoCoin" count="1000,3000" prob=".5" />
+	<item group="groupModAllScaled"/>
+	<item group="booksRareOnlyScaled" prob="2.5" />
+	<item name="resourceForgedSteel" count="6,15" prob="1.25" />
+	<item group="groupRareToolsTiered" prob=".2" />
+	<item group="groupArmorScaled" prob="3.75" />
+	<item name="armorSwatHelmet" mods="modArmorHelmetLight" mod_chance=".8" prob="2.5" />
+	<item group="groupApparelHazmat" prob="1.25" />
+	<item group="groupAmmoRegular" count="3" prob="8" />
+	<item group="groupWeaponsAllScaled" prob="14" />
+	<item name="apparelNightvisionGoggles" loot_prob_template="probTemplate0.5to1.0" />
+	<item name="oldCash" count="500,900" prob="2.5" />
+	<item name="drugVitamins" count="2,3" prob="1.75" />
+	<item name="drugSteroids" count="2,3" prob="1.75" />
+	<item group="groupTreasureMaps" prob="0.25" />
+	<item group="groupModAllScaled" prob="1" />
+	<item group="vehiclePartsTiered" loot_prob_template="probTemplate1.0" />
+</lootgroup>
+<lootgroup name="BossMiscLoot">
+	<item group="groupRareToolsTiered"/>
+	<item group="groupAmmoRegular"/>
+	<item group="groupWeaponsAllScaled"/>
+	<item name="oldCash" count="10,30" prob=".5" />
+	<item name="casinoCoin" count="1000,3000" prob=".5" />
+	<item group="groupModAllScaled"/>
+	<item group="booksRareOnlyScaled" prob="2.5" />
+	<item name="resourceForgedSteel" count="6,15" prob="1.25" />
+	<item group="groupRareToolsTiered" prob=".2" />
+	<item group="groupArmorScaled" prob="3.75" />
+	<item name="armorSwatHelmet" mods="modArmorHelmetLight" mod_chance=".8" prob="2.5" />
+	<item group="groupApparelHazmat" prob="1.25" />
+	<item group="groupAmmoRegular" count="3" prob="8" />
+	<item group="groupWeaponsAllScaled" prob="14" />
+	<item name="apparelNightvisionGoggles" loot_prob_template="probTemplate0.5to1.0" />
+	<item name="oldCash" count="500,900" prob="2.5" />
+	<item name="drugVitamins" count="2,3" prob="1.75" />
+	<item name="drugSteroids" count="2,3" prob="1.75" />
+	<item group="groupTreasureMaps" prob="0.25" />
+	<item group="groupModAllScaled" prob="1" />
+	<item group="vehiclePartsTiered" loot_prob_template="probTemplate1.0" />
+</lootgroup>
+<lootgroup name="SuperBossRareLoot">
+	<item group="SuperBossBoxRingsJades" prob="0.5"/>
+	<item group="SuperBossBoxCharmed" prob="0.3"/>
+	<item name="resourceGloryCoin" count="10,20"/>
+	<item group="BossBoxEliteWeapon" prob="0.01"/>
+	<item group="SuperBossBoxMods"/>
+	<item group="BossBoxMods"/>
+	<item group="EliteParts"/>
+	<item group="InsaneParts"/>
+	<item group="groupQuestSkillBooks"/>
+</lootgroup>
+<lootgroup name="BossRareLoot">
+	<item group="groupQuestSkillBooks" prob="0.3"/>
+	<item group="BossBoxWeapon"/>
+	<item group="BossBoxArmorTitanium"/>	
+	<item group="BossBoxArmorObsidian"/>
+	<item name="resourceGloryCoin" count="5,10"/>
+	<item group="BossBoxMods" count="1,2"/>
+	<item group="BossBoxRingsJades" prob="0.2"/>
+	<item group="BossBoxCharmed" prob="0.2"/>
+	<item group="MiniBossBoxMods" count="1,2" prob="0.5"/>	
+	<item group="EliteParts" count="1,2" prob="0.5"/>	
+	<item group="InsaneParts" prob="0.1"/>	
+</lootgroup>
+<lootgroup name="MiniBossRareLoot">
+	<item group="BossBoxResource"/>
+	<item group="BossBoxTool"/>
+	<item group="BossBoxAmmo"/>
+	<item name="resourceGloryCoin" count="3,8" prob="0.5"/>
+	<item group="BossBoxWeapon" prob="0.5"/>
+	<item group="BossBoxArmorDiamond"/>	
+	<item group="BossBoxArmorCarbon"/>	
+	<item group="MiniBossBoxMods" prob="0.2"/>	
+	<item group="MiniBossBoxRingsJades" prob="0.2"/>	
+	<item group="EliteParts" prob="0.05"/>
+</lootgroup>
+<lootgroup name="NightmareRareLoot" count="2,3">
+	<item group="BossBoxCharmed"/>
+	<item name="armorNightmarePart" count="1,2"/>
+	<item name="armorExoticPart" count="1,2"/>
+</lootgroup>
+<lootgroup name="SuperBossLoot" count="all">
+	<item group="BossMiscLoot" count="10,15"/>
+	<item group="SuperBossRareLoot" count="4,5"/>
+</lootgroup>
+<lootgroup name="SuperBossTyrantArmorLoot" count="1">
+	<item name="treasureBoxTyrantHelmet" count="1"/>
+	<item name="treasureBoxTyrantChest" count="1"/>
+	<item name="treasureBoxTyrantGloves" count="1"/>
+	<item name="treasureBoxTyrantLegs" count="1"/>
+	<item name="treasureBoxTyrantBoots" count="1"/>
+	<item name="armorSupremePart" count="10,15"/>
+	<item name="armorNightmarePart" count="10,15"/>
+</lootgroup>
+<lootgroup name="SuperBossAtheonArmorLoot" count="1">
+	<item name="treasureBoxAtheonHelmet" count="1"/>
+	<item name="treasureBoxAtheonVest" count="1"/>
+	<item name="treasureBoxAtheonGloves" count="1"/>
+	<item name="treasureBoxAtheonLegs" count="1"/>
+	<item name="treasureBoxAtheonBoots" count="1"/>
+	<item name="armorExoticPart" count="10,15"/>
+	<item name="armorNightmarePart" count="10,15"/>
+</lootgroup>
+<lootgroup name="SuperBossSciFiArmorLoot" count="1">
+	<item name="treasureBoxSciFiHelmet" count="1"/>
+	<item name="treasureBoxSciFiVest" count="1"/>
+	<item name="treasureBoxSciFiGloves" count="1"/>
+	<item name="treasureBoxSciFiLegs" count="1"/>
+	<item name="treasureBoxSciFiBoots" count="1"/>
+	<item name="armorExoticPart" count="10,15"/>
+	<item name="armorNightmarePart" count="10,15"/>
+</lootgroup>
+<lootgroup name="SuperBossRevenantArmorLoot" count="1">
+	<item name="treasureBoxRevenantHelmet" count="1"/>
+	<item name="treasureBoxRevenantChest" count="1"/>
+	<item name="treasureBoxRevenantGloves" count="1"/>
+	<item name="treasureBoxRevenantLegs" count="1"/>
+	<item name="treasureBoxRevenantBoots" count="1"/>
+	<item name="armorSupremePart" count="10,15"/>
+	<item name="armorNightmarePart" count="10,15"/>
+</lootgroup>
+<lootgroup name="SuperBossUltimeciaArmorLoot" count="1">
+	<item name="treasureBoxUltimeciaHelmet" count="1"/>
+	<item name="treasureBoxUltimeciaChest" count="1"/>
+	<item name="treasureBoxUltimeciaGloves" count="1"/>
+	<item name="treasureBoxUltimeciaLegs" count="1"/>
+	<item name="treasureBoxUltimeciaBoots" count="1"/>
+	<item name="armorExoticPart" count="10,15"/>
+	<item name="armorNightmarePart" count="10,15"/>
+</lootgroup>
+<lootgroup name="BossLoot" count="all">
+	<item group="BossMiscLoot" count="5,10"/>
+	<item group="BossRareLoot" count="2,3"/>
+</lootgroup>
+<lootgroup name="MiniBossLoot" count="all">
+	<item group="BossMiscLoot" count="4,8"/>
+	<item group="MiniBossRareLoot" count="2,3"/>
+</lootgroup>
+<lootgroup name="NightmareLoot" count="all">
+	<item group="NightmareMiscLoot" count="3,6"/>
+	<item group="NightmareRareLoot" count="1"/>
+</lootgroup>
+<lootgroup name="groupQuestFood">
+	<item group="groupIngredientsCommon" count="2,4" loot_prob_template="QuestT1Prob"/>
+	<item group="groupIngredientsUncommon" count="2,4" loot_prob_template="QuestT2Prob"/>
+	<item group="groupIngredientsRare" count="2,4" loot_prob_template="QuestT3Prob"/>
+	<item group="groupFoodCommon" count="2,4" loot_prob_template="QuestT1Prob"/>
+	<item group="groupFoodPileCommon" count="2,4" loot_prob_template="QuestT1Prob"/>
+	<item group="groupFoodUncommon" count="2,4" loot_prob_template="QuestT2Prob"/>
+	<item group="groupFoodRare" count="2,4" loot_prob_template="QuestT3Prob"/>
+	<item group="groupDrinksCommon" count="2,4" loot_prob_template="QuestT1Prob"/>
+	<item group="groupDrinksUncommon" count="2,4" loot_prob_template="QuestT2Prob"/>
+	<item group="groupDrinksRare" count="2,4" loot_prob_template="QuestT3Prob"/>
+	<item group="rareFoodDrink" count="2,4" loot_prob_template="QuestT3Prob"/>
+</lootgroup>
+</insertAfter>
+<!-- \/ New lootgroups -->
+<append xpath="/lootcontainers">
+<lootqualitytemplates>
+	<lootqualitytemplate name="qualQ456Template">
+		<qualitytemplate level="1,999999" default_quality="3">
+			<loot quality="3" prob=".6"/>
+			<loot quality="4" prob=".6"/>
+			<loot quality="5" prob=".4"/>
+			<loot quality="6" prob=".2"/>
+		</qualitytemplate>
+	</lootqualitytemplate>
+</lootqualitytemplates>
+<lootcontainer id="192" name="SuperBossLootTyrant" count="3" size="6,10" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate">
+	<item group="SuperBossTyrantArmorLoot" force_prob="true"/>
+	<item group="SuperBossLoot"/>
+	<item group="SuperBossLoot"/>
+</lootcontainer>
+<lootcontainer id="193" name="SuperBossLootAtheon" count="3" size="6,10" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate">
+	<item group="SuperBossAtheonArmorLoot" force_prob="true"/>
+	<item group="SuperBossLoot"/>
+	<item group="SuperBossLoot"/>
+</lootcontainer>
+<lootcontainer id="194" name="SuperBossLootSciFi" count="3" size="6,10" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate">
+	<item group="SuperBossSciFiArmorLoot" force_prob="true"/>
+	<item group="SuperBossLoot"/>
+	<item group="SuperBossLoot"/>
+</lootcontainer>
+<lootcontainer id="195" name="SuperBossLootRevenant" count="3" size="6,10" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate">
+	<item group="SuperBossRevenantArmorLoot" force_prob="true"/>
+	<item group="SuperBossLoot"/>
+	<item group="SuperBossLoot"/>
+</lootcontainer>
+<lootcontainer id="196" name="SuperBossLootUltimecia" count="3" size="6,10" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate">
+	<item group="SuperBossUltimeciaArmorLoot" force_prob="true"/>
+	<item group="SuperBossLoot"/>
+	<item group="SuperBossLoot"/>
+</lootcontainer>
+<lootcontainer id="186" name="SuperBossLoot" count="2" size="6,10" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate">
+	<item group="SuperBossLoot"/>
+</lootcontainer>
+<lootcontainer id="187" name="BossLoot" count="1" size="6,10" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate">
+	<item group="BossLoot"/>
+</lootcontainer>
+<lootcontainer id="188" name="NightmareLoot" count="1" size="6,10" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate">
+	<item group="NightmareLoot"/>
+</lootcontainer>
+<lootcontainer id="200" name="39DaysBoxLoot" count="1" size="6,10" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate">
+	<item group="BossLoot"/>
+</lootcontainer>
+<lootcontainer id="201" name="QuestGeneratorLoot" count="1" size="2,2" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate">
+	<item name="casinoCoin" count="1000,3000" prob=".1" />
+</lootcontainer>
+<lootcontainer id="191" name="AirdropLoot" count="3,5" size="6,10" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate">
+	<item group="BossBoxAmmo"/>
+	<item group="BossBoxResource"/>
+	<item group="BossBoxTool"/>
+	<item group="BossBoxWeapon"/>
+	<item group="BossBoxArmorDiamond"/>	
+	<item group="BossBoxArmorCarbon"/>	
+	<item name="resourceGloryCoin" count="10,30" prob="0.5"/>
+	<item group="BossBoxMods" prob="0.5"/>
+	<item group="BossBoxRingsJades" prob="0.5"/>
+	<item group="MiniBossBoxMods" prob="0.5"/>		
+	<item group="MiniBossBoxRingsJades" prob="0.5"/>
+	<item group="EliteParts" prob="0.05"/>	
+</lootcontainer>
+<lootcontainer id="185" name="MiniBossLoot" count="1" size="6,10" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate">
+	<item group="MiniBossLoot"/>
+</lootcontainer>
+<lootcontainer id="701" name="ZbHellLoot" count="3,5" size="6,3" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template">
+	<item group="groupRareToolsTiered"/>
+	<item group="groupAmmoRegular"/>
+	<item group="groupWeaponsAllScaled"/>
+	<item name="oldCash" count="100,300" prob=".3" />
+	<item name="casinoCoin" count="1000,3000" prob=".1" />
+	<item name="resourceGloryCoin" count="1,5" prob="0.01"/>
+	<item group="groupModAllScaled"/>
+	<item group="BossBoxResource" prob="0.05"/>
+	<item group="BossBoxTool" prob="0.05"/>
+	<item group="BossBoxAmmo" prob="0.05"/>
+	<item group="BossBoxWeapon" prob="0.01"/>
+	<item group="BossBoxArmorDiamond" prob="0.01"/>	
+	<item group="BossBoxArmorCarbon" prob="0.01"/>	
+	<item group="MiniBossBoxMods" prob="0.05"/>	
+	<item group="MiniBossBoxRingsJades" prob="0.05"/>
+	<item group="EliteParts" prob="0.03"/>	
+</lootcontainer>
+<lootcontainer id="702" name="ZbMutantLoot" count="3,5" size="6,3" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template">
+	<item group="groupRareToolsTiered"/>
+	<item group="groupAmmoRegular"/>
+	<item group="groupWeaponsAllScaled"/>
+	<item name="oldCash" count="100,300" prob=".3" />
+	<item name="casinoCoin" count="1000,3000" prob=".5" />
+	<item name="resourceGloryCoin" count="1,5" prob="0.1"/>
+	<item group="groupModAllScaled"/>
+	<item group="BossBoxResource" prob="0.05"/>
+	<item group="BossBoxTool" prob="0.05"/>
+	<item group="BossBoxAmmo" prob="0.05"/>
+	<item group="BossBoxWeapon" prob="0.05"/>
+	<item group="BossBoxArmorDiamond" prob="0.05"/>	
+	<item group="BossBoxArmorCarbon" prob="0.05"/>	
+	<item group="MiniBossBoxMods" prob="0.01"/>	
+	<item group="MiniBossBoxRingsJades" prob="0.01"/>
+	<item group="EliteParts" prob="0.01"/>	
+</lootcontainer>
+<lootcontainer id="900" name="EventBagLoot" count="3" size="3,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate">
+	<item name="treePlantedMountainPine1m" count="0,2"/>
+</lootcontainer>
+<lootcontainer id="901" name="EventBoxLoot" count="1" size="1,1" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate">
+	<item group="booksRareOnlyScaled" prob="2.5" />
+	<item name="resourceForgedSteel" count="6,15" prob="1.25" />
+	<item group="groupRareToolsTiered" prob=".2" />
+	<item group="groupArmorScaled" prob="3.75" />
+	<item name="armorSwatHelmet" mods="modArmorHelmetLight" mod_chance=".8" prob="2.5" />
+	<item group="groupApparelHazmat" prob="1.25" />
+	<item group="groupAmmoRegular" count="3" prob="8" />
+	<item group="groupWeaponsAllScaled" prob="14" />
+	<item name="apparelNightvisionGoggles" loot_prob_template="probTemplate0.5to1.0" />
+	<item name="oldCash" count="500,900" prob="2.5" />
+	<item name="drugVitamins" count="2,3" prob="1.75" />
+	<item name="drugSteroids" count="2,3" prob="1.75" />
+	<item group="groupTreasureMaps" prob="0.25" />
+	<item group="groupModAllScaled" prob="1" />
+	<item group="vehiclePartsTiered" loot_prob_template="probTemplate1.0" />
+</lootcontainer>
+<lootcontainer id="902" name="EventBoxLoot2" count="3" size="3,1" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate">
+	<item name="resourceObsidianStone" count="20"/>
+	<item name="resourceGloryCoin" count="50"/>
+	<item name="armorObsidianHelmet"/>
+	<item name="armorObsidianChest"/>
+	<item name="armorObsidianGloves"/>
+	<item name="armorObsidianLegs"/>
+	<item name="armorObsidianBoots"/>
+	<item name="armorTitaniumHelmet"/>
+	<item name="armorTitaniumVest"/>
+	<item name="armorTitaniumGloves"/>
+	<item name="armorTitaniumLegs"/>
+	<item name="armorTitaniumBoots"/>
+	<item name="toolObsidianChainsaw"/>
+	<item name="toolObsidianAuger"/>
+	<item name="toolObsidianPickaxe"/>
+	<item name="toolObsidianFireaxe"/>
+	<item name="toolObsidianWrench"/>
+	<item name="meleeObsidianSledgehammer"/>
+	<item name="bowEliteCompoundCrossbowBox" prob="0.5"/>
+	<item name="gunEliteQuantumGunBox" prob="0.5"/>
+	<item name="gunEliteQuadBarrelsShotgunBox" prob="0.5"/>
+	<item name="meleeEliteScytheBox" prob="0.5"/>
+	<item name="gunEliteAWMBox" prob="0.5"/>
+	<item name="gunEliteGatingBox" prob="0.5"/>
+	<item name="gunElitePumpShotgunBox" prob="0.5"/>
+	<item name="gunEliteTAR21Box" prob="0.5"/>
+	<item name="gunEliteSterlingSAR87Box" prob="0.5"/>
+	<item name="gunEliteRugerMP9Box" prob="0.5"/>
+	<item name="gunElitePP19BizonBox" prob="0.5"/>
+	<item name="gunEliteOTs14GrozaBox" prob="0.5"/>
+	<item name="gunEliteSpringfieldSaintBox" prob="0.5"/>
+	<item name="gunEliteM368VectorBox" prob="0.5"/>
+	<item name="meleeEliteTwinBladesBox" prob="0.5"/>
+	<item name="meleeEliteHeavySledgehammerBox" prob="0.5"/>
+	<item name="treasureBoxEliteTitaniumHelmet" prob="0.5"/>
+	<item name="treasureBoxEliteTitaniumVest" prob="0.5"/>
+	<item name="treasureBoxEliteTitaniumGloves" prob="0.5"/>
+	<item name="treasureBoxEliteTitaniumLegs" prob="0.5"/>
+	<item name="treasureBoxEliteTitaniumBoots" prob="0.5"/>
+	<item name="treasureBoxEliteObsidianHelmet" prob="0.5"/>
+	<item name="treasureBoxEliteObsidianChest" prob="0.5"/>
+	<item name="treasureBoxEliteObsidianGloves" prob="0.5"/>
+	<item name="treasureBoxEliteObsidianLegs" prob="0.5"/>
+	<item name="treasureBoxEliteObsidianBoots" prob="0.5"/>
+</lootcontainer>	
+<lootcontainer id="962" name="CharmedOrbLoot" count="1" size="1,1" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualQ456Template">
+	<item group="groupCharmedOrbBoxs"/>
+</lootcontainer>
+<lootcontainer id="963" name="RingLoot" count="1" size="1,1" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualQ456Template">
+	<item group="groupRingBoxs"/>
+</lootcontainer>
+<lootcontainer id="964" name="NecklaceLoot" count="1" size="1,1" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualQ456Template">
+	<item group="groupNecklaceBoxs"/>
+</lootcontainer>
+<lootcontainer id="965" name="JadeLoot" count="1" size="1,1" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualQ456Template">
+	<item group="groupJadeBoxs"/>
+</lootcontainer>
+<lootcontainer id="966" name="EliteWeaponMiscLoot" count="1" size="1,1" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualQ456Template">
+	<item group="groupEliteWeaponBoxs"/>
+</lootcontainer>
+<lootcontainer id="967" name="EliteArmorMiscLoot" count="1" size="1,1" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualQ456Template">
+	<item group="groupEliteArmorBoxs"/>
+</lootcontainer>
+<lootcontainer id="968" name="EliteToolMiscLoot" count="1" size="1,1" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualQ456Template">
+	<item group="groupEliteToolBoxs"/>
+</lootcontainer>
+<lootcontainer id="980" name="CharmedBoxLoot" count="1" size="1,1" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate">
+	<item name="charmHealthLarge" loot_prob_template="med"/>
+	<item name="charmStaminaLarge" loot_prob_template="med"/>
+	<item name="charmDamageLarge" loot_prob_template="med"/>
+	<item name="charmBlockDamageLarge" loot_prob_template="med"/>
+	<item name="charmArmorLarge" loot_prob_template="med"/>
+	<item name="charmSilentLarge" loot_prob_template="med"/>
+	<item name="charmSpeedLarge" loot_prob_template="med"/>
+	<item name="charmRegenerationSmall" loot_prob_template="med"/>
+</lootcontainer>
+<lootcontainer id="146" name="CustomBirdNestLoot" count="1,3" size="3,1" destroy_on_close="true" sound_open="UseActions/open_garbage" sound_close="UseActions/open_garbage" open_time="1" loot_quality_template="qualBaseTemplate">
+	<item name="foodEgg" count="1,2" prob=".5"/>
+	<item name="resourceFeather" count="1,3" prob="1"/>
+	<item name="foodRawMeat" count="1,4" prob="0.15"/>
+	<item name="foodCropCorn" count="1,4" prob="0.1"/>
+	<item name="foodRice" count="1,4" prob="0.1"/>
+</lootcontainer>
+<lootcontainer id="988" name="MiscLoot" count="1" size="6,10" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualQ456Template">
+<item name="gunPumpShotgunImproved1" prob="0.5"/>
+<item name="gunPumpShotgunImproved2" prob="0.3"/>
+<item name="gunPumpShotgunImproved3" prob="0.1"/>
+<item name="bowCompoundCrossbowImproved1" prob="0.5"/>
+<item name="bowCompoundCrossbowImproved2" prob="0.3"/>
+<item name="bowCompoundCrossbowImproved3" prob="0.1"/>
+<item name="bowCompoundImproved1" prob="0.5"/>
+<item name="bowCompoundImproved2" prob="0.3"/>
+<item name="bowCompoundImproved3" prob="0.1"/>
+<item name="armorDiamondHelmet" count="1" prob="0.1"/>
+<item name="armorDiamondChest" count="1" prob="0.1"/>
+<item name="armorDiamondGloves" count="1" prob="0.1"/>
+<item name="armorDiamondLegs" count="1" prob="0.1"/>
+<item name="armorDiamondBoots" count="1" prob="0.1"/>
+<item name="toolDiamondChainsaw" count="1" prob="0.1"/>
+<item name="toolDiamondAuger" count="1" prob="0.1"/>
+<item name="toolDiamondPickaxe" count="1" prob="0.1"/>
+<item name="toolDiamondFireaxe" count="1" prob="0.1"/>
+<item name="toolDiamondWrench" count="1" prob="0.1"/>
+<item name="meleeDiamondSledgehammer" count="1" prob="0.1"/>
+<item name="armorCarbonFiberHelmet" count="1" prob="0.1"/>
+<item name="armorCarbonFiberVest" count="1" prob="0.1"/>
+<item name="armorCarbonFiberGloves" count="1" prob="0.1"/>
+<item name="armorCarbonFiberLegs" count="1" prob="0.1"/>
+<item name="armorCarbonFiberBoots" count="1" prob="0.1"/>
+<item name="resourceObsidianStone" count="1" prob="0.1"/>
+<item name="armorObsidianHelmet" count="1" prob="0.05"/>
+<item name="armorObsidianChest" count="1" prob="0.05"/>
+<item name="armorObsidianGloves" count="1" prob="0.05"/>
+<item name="armorObsidianLegs" count="1" prob="0.05"/>
+<item name="armorObsidianBoots" count="1" prob="0.05"/>
+<item name="armorTitaniumHelmet" count="1" prob="0.05"/>
+<item name="armorTitaniumVest" count="1" prob="0.05"/>
+<item name="armorTitaniumGloves" count="1" prob="0.05"/>
+<item name="armorTitaniumLegs" count="1" prob="0.05"/>
+<item name="armorTitaniumBoots" count="1" prob="0.05"/>
+<item name="toolObsidianChainsaw" count="1" prob="0.05"/>
+<item name="toolObsidianAuger" count="1" prob="0.05"/>
+<item name="toolObsidianPickaxe" count="1" prob="0.05"/>
+<item name="toolObsidianFireaxe" count="1" prob="0.05"/>
+<item name="toolObsidianWrench" count="1" prob="0.05"/>
+<item name="meleeObsidianSledgehammer" count="1" prob="0.05"/>
+<item name="resourceObsidianStone" count="10" prob="0.05"/>
+<item name="resourceRawDiamond" count="50" prob="0.05"/>
+<item name="resourceGoldNugget" count="150" prob="0.05"/>
+<item name="resourceSilverNugget" count="550" prob="0.05"/>
+</lootcontainer>
+<lootcontainer id="950" name="Vehicle1Loot" count="0" size="10,10" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
+	</lootcontainer>
+<lootcontainer id="951" name="Vehicle2Loot" count="0" size="9,6" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
+</lootcontainer>
+<lootcontainer id="952" name="Vehicle3Loot" count="0" size="1,1" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
+</lootcontainer>
+<lootcontainer id="154" name="EliteWeaponBoxLoot" count="1" size="1,1" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate" loot_quality_template="qualQ456Template">
+	<item name="bowEliteCompoundCrossbowBox"/>
+	<item name="gunEliteQuantumGunBox"/>
+	<item name="gunEliteQuadBarrelsShotgunBox"/>
+	<item name="meleeEliteScytheBox"/>
+	<item name="gunEliteAWMBox"/>
+	<item name="gunEliteGatingBox"/>
+	<item name="gunElitePumpShotgunBox"/>
+	<item name="gunEliteTAR21Box"/>
+	<item name="gunEliteSterlingSAR87Box"/>
+	<item name="gunEliteRugerMP9Box"/>
+	<item name="meleeEliteTwinBladesBox"/>
+	<item name="meleeEliteHeavySledgehammerBox"/>
+</lootcontainer>
+<lootcontainer id="155" name="EliteArmorBoxLoot" count="1" size="1,1" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate" loot_quality_template="qualQ456Template">
+	<item name="treasureBoxEliteTitaniumHelmet"/>
+	<item name="treasureBoxEliteTitaniumVest"/>
+	<item name="treasureBoxEliteTitaniumGloves"/>
+	<item name="treasureBoxEliteTitaniumLegs"/>
+	<item name="treasureBoxEliteTitaniumBoots"/>
+	<item name="treasureBoxEliteObsidianHelmet"/>
+	<item name="treasureBoxEliteObsidianChest"/>
+	<item name="treasureBoxEliteObsidianGloves"/>
+	<item name="treasureBoxEliteObsidianLegs"/>
+	<item name="treasureBoxEliteObsidianBoots"/>
+</lootcontainer>
+</append>
+<!-- /\ New lootcontainers -->
+
+<!-- \/ Add groups/items to vanilla groups -->
+<append xpath="/lootcontainers/lootgroup[@name='groupQuestArmor']" >
+	<item group="groupSpecialParts" loot_prob_template="QuestT3Prob"/>
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='groupQuestWeapons']" >
+	<item group="groupSpecialParts" loot_prob_template="QuestT3Prob"/>
+</append>
+<insertAfter xpath="/lootcontainers/lootgroup[@name='rareFoodDrink']/item[@name='drinkCanMegaCrush']" >
+	<item name="foodYangzhouFriedRice"/>
+	<item name="foodPho"/>
+	<item name="foodTomYumGoong"/>
+	<item name="foodHoneyGlazedSham"/>
+	<item name="foodChickenNoodleSoup"/>
+	<item name="foodDogBeefStew"/>
+	<item name="foodOatsCatFood"/>
+	<item name="foodFruitPie"/>
+	<item name="foodPieceOfPizza"/>
+	<item name="foodPizza"/>
+	<item name="foodPieCrust"/>
+	<item name="foodJelloFruitSalad"/>
+	<item name="foodMeatSauceSpeghetti"/>
+	<item name="foodSpeghetti"/>
+	<item name="foodTunaSaladSandwich"/>
+	<item name="foodMisoRamen"/>
+	<item name="foodLambKheema"/>
+	<item name="foodBeefAndBarleySoup"/>
+	<item name="drinkBottleOfBrandy"/>
+	<item name="drinkGoldenrodMoonshine"/>
+</insertAfter>
+<insertAfter xpath="/lootcontainers/lootgroup[@name='seeds']/item[@name='plantedPumpkin1']" >
+	<item name="plantedRiceSeed"/>
+	<item name="foodSugar" count="5,10"/>
+</insertAfter>
+<append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT0']">
+  	<item name="drinkBerryTeaRecipe"/>
+  	<item name="drinkIcedMixedTeaRecipe"/>
+  	<item name="drinkIcedCoffeeRecipe"/>
+  	<item name="foodYuccaChipsRecipe"/>
+  	<item name="foodHashbrownRecipe"/>
+  	<item name="foodFriedMeatRecipe"/>
+  	<item name="foodCornChipsRecipe"/>
+  	<item name="foodFriedMushroomsRecipe"/>
+  	<item name="foodFriedEggRecipe"/>
+  	<item name="foodFrenchToastRecipe"/>
+  	<item name="drinkKvassSodaRecipe"/>
+  	<item name="drinkCarbonatedWaterRecipe"/>
+  	<item name="drugRockCandyRecipe"/>
+  	<item name="drugPlainFudgeRecipe"/>
+  	<item name="foodSpongeCakeRecipe"/>
+  	<item name="foodCustardPieRecipe"/>
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT1']">
+    <item name="foodCornGritsRecipe"/>
+    <item name="foodBlueberryJamRecipe"/>
+    <item name="foodYuccaJamRecipe"/>
+  	<item name="foodEggSaladRecipe"/>
+    <item name="foodHoneyGlazedMeatRecipe"/>
+    <item name="drinkBlueberrySodaRecipe"/>
+    <item name="drugBlueberryCandyRecipe"/>
+    <item name="foodBlueberrySpongeCakeRecipe"/>
+    <item name="foodYuccaSpongeCakeRecipe"/>
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT2']">
+    <item name="foodMashedPotatoRecipe"/>
+    <item name="foodCoffeeCakeRecipe"/>
+    <item name="foodMushroomPieRecipe"/>
+    <item name="foodMeatAndBeerPieRecipe"/>
+    <item name="drinkDistilledVodkaRecipe"/>
+    <item name="drinkSnowberryGinRecipe"/>
+    <item name="drugSnowberryCandyRecipe"/>
+    <item name="drugEnergyTabletRecipe"/>
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='brewerySafe']" >
+	<item group="groupSpecialItems" loot_prob_template="ProbT3"/>
+	<item group="groupSpecialParts" loot_prob_template="ProbT3"/>
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='groupBuriedWeaponChest']" >
+	<item group="groupSpecialItems" loot_prob_template="ProbT3"/>
+	<item group="groupSpecialParts" loot_prob_template="ProbT3"/>
+</append>
+<append xpath="/lootcontainers/lootcontainer[@id='95']" >
+	<item group="groupSpecialItems" loot_prob_template="ProbT3"/>
+	<item group="groupSpecialParts" loot_prob_template="ProbT3"/>
+</append>
+<insertAfter xpath="/lootcontainers/lootgroup[@name='rareOres']/item[@name='resourceRawDiamond']" >
+	<item name="modAttributePerception1" loot_prob_template="low"/>
+	<item name="modAttributeStrength1" loot_prob_template="low"/>
+	<item name="modAttributeFortitude1" loot_prob_template="low"/>
+	<item name="modAttributeAgility1" loot_prob_template="low"/>
+	<item name="modAttributeIntellect1" loot_prob_template="low"/>
+	<item name="modProtectionJade2" loot_prob_template="veryLow"/>
+	<item name="modAttributePerception2" loot_prob_template="veryLow"/>
+	<item name="modAttributeStrength2" loot_prob_template="veryLow"/>
+	<item name="modAttributeFortitude2" loot_prob_template="veryLow"/>
+	<item name="modAttributeAgility2" loot_prob_template="veryLow"/>
+	<item name="modAttributeIntellect2" loot_prob_template="veryLow"/>
+</insertAfter>
+<insertAfter xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT2']/item[@name='resourceMilitaryFiberSchematic']" >
+</insertAfter>
+<insertAfter xpath="/lootcontainers/lootgroup[@name='schematicsToolsT1']/item[@name='chemistryStationSchematic']" >
+	<item name="machineHealingBedSchematic" loot_prob_template="med"/>
+	<item name="ComputerWorkstationSchematic" loot_prob_template="medHigh"/>
+	<item name="AlchemyFurnaceSchematic" loot_prob_template="medHigh"/>
+	<item name="oreMinerSchematic" loot_prob_template="veryLow"/>
+	<item name="gasMachineSchematic" loot_prob_template="veryLow"/>
+</insertAfter>
+<insertAfter xpath="/lootcontainers/lootgroup[@name='schematicsToolsT2']/item[@name='meleeToolRepairT3NailgunSchematic']" >
+	<item name="toolAndDieSetSchematic" loot_prob_template="med"/>
+	<item name="GemCraftingMoldSchematic" loot_prob_template="med"/>
+	<item name="ThermometerSchematic" loot_prob_template="med"/>
+	<item name="SilverNuggetSchematic" loot_prob_template="medHigh"/>
+	<item name="GoldNuggetSchematic" loot_prob_template="medHigh"/>
+	<item name="RawDiamondSchematic" loot_prob_template="medHigh"/>
+	<item name="resourceObsidianStoneSchematic" loot_prob_template="med"/>
+	<item name="WorkbenchEngineSchematic" loot_prob_template="med"/>
+	<item name="ReactorKitSchematic" loot_prob_template="med"/>
+</insertAfter>
+<append xpath="/lootcontainers/lootgroup[@name='modGunT2']" >
+	<item name="modWeaponBrace" loot_prob_template="low"/>
+	<item name="modLessDegradation" loot_prob_template="low"/>
+	<item name="modWeaponPearcingArmor1" loot_prob_template="low"/>
+	<item name="modWeaponBite" loot_prob_template="low"/>
+	<item name="modGunMagazineExtender2" loot_prob_template="veryLow"/>
+	<item name="modRodnSpring1" loot_prob_template="low"/>
+	<item name="modBowQuiver1" loot_prob_template="low"/>
+	<item name="modGunBipod2" loot_prob_template="veryLow"/>
+	<item name="modGunForegrip2" loot_prob_template="veryLow"/>
+	<item name="modGunRetractingStock2" loot_prob_template="veryLow"/>
+	<item name="modEnhancedArrowhead1" loot_prob_template="low"/>
+	<item name="modTurretCylinder1" loot_prob_template="low"/>
+	<item name="modTurretBracket1" loot_prob_template="low"/>
+	<item name="modHeadBruised2" loot_prob_template="veryLow"/>
+	<item name="modEnhancedArrowhead2" loot_prob_template="veryLow"/>
+	<item name="modTurretCylinder2" loot_prob_template="veryLow"/>
+	<item name="modTurretBracket2" loot_prob_template="veryLow"/>
+	<item name="modBowQuiver2" loot_prob_template="veryLow"/>
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='modArmorT2']" >
+	<item name="modArmorBrace" loot_prob_template="low"/>
+	<item name="modArmorHigherJumping" loot_prob_template="low"/>
+	<item name="modArmorRegeneration" loot_prob_template="low"/>
+	<item name="modArmorResistantEffect1" loot_prob_template="low"/>
+	<item name="modArmorPlatingDiamond" loot_prob_template="low"/>
+	<item name="modArmorHealthPlus1" loot_prob_template="low"/>
+	<item name="modArmorStaminaPlus1" loot_prob_template="low"/>
+	<item name="modArmorBlockDmgPlus1" loot_prob_template="low"/>
+	<item name="modArmorRunningFast1" loot_prob_template="low"/>
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='modGunT3']" >
+	<item name="modWeaponBrace" prob="0.4" loot_prob_template="med"/>
+	<item name="modLessDegradation" prob="0.03" loot_prob_template="med"/>
+	<item name="modWeaponPearcingArmor1" prob="0.1" loot_prob_template="med"/>
+	<item name="modWeaponBite" prob="0.1" loot_prob_template="med"/>
+	<item name="modGunMagazineExtender2" prob="0.2" loot_prob_template="medLow"/>
+	<item name="modRodnSpring1" prob="0.1" loot_prob_template="med"/>
+	<item name="modBowQuiver1" prob="0.1" loot_prob_template="med"/>
+	<item name="modHeadBruised1" prob="0.1" loot_prob_template="med"/>
+	<item name="modEnhancedArrowhead1" prob="0.1" loot_prob_template="med"/>
+	<item name="modTurretCylinder1" prob="0.1" loot_prob_template="med"/>
+	<item name="modTurretBracket1" prob="0.1" loot_prob_template="med"/>
+	<item name="modGunBipod2" prob="0.2" loot_prob_template="medLow"/>
+	<item name="modGunForegrip2" prob="0.2" loot_prob_template="medLow"/>
+	<item name="modGunRetractingStock2" prob="0.2" loot_prob_template="medLow"/>
+	<item name="modWeaponPearcingArmor2" prob="0.01" loot_prob_template="medLow"/>
+	<item name="modWeaponPhage" prob="0.01" loot_prob_template="medLow"/>
+	<item name="modGunMagazineExtender3" prob="0.02" loot_prob_template="veryLow"/>
+	<item name="modRodnSpring2" prob="0.01" loot_prob_template="medLow"/>
+	<item name="modGunBipod3" prob="0.02" loot_prob_template="veryLow"/>
+	<item name="modGunForegrip3" prob="0.02" loot_prob_template="veryLow"/>
+	<item name="modGunRetractingStock3" prob="0.02" loot_prob_template="veryLow"/>
+	<item name="modHeadBruised1" prob="0.1" loot_prob_template="med"/>
+	<item name="modEnhancedArrowhead1" prob="0.1" loot_prob_template="med"/>
+	<item name="modTurretCylinder1" prob="0.1" loot_prob_template="med"/>
+	<item name="modTurretBracket1" prob="0.1" loot_prob_template="med"/>
+	<item name="modHeadBruised2" prob="0.02" loot_prob_template="medLow"/>
+	<item name="modEnhancedArrowhead2" prob="0.02" loot_prob_template="medLow"/>
+	<item name="modTurretCylinder2" prob="0.02" loot_prob_template="medLow"/>
+	<item name="modTurretBracket2" prob="0.02" loot_prob_template="medLow"/>
+	<item name="modBowQuiver2" prob="0.02" loot_prob_template="medLow"/>
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='modArmorT3']" >
+	<item name="modArmorBrace" prob="0.4" loot_prob_template="med"/>
+	<item name="modArmorHigherJumping" prob="0.3" loot_prob_template="med"/>
+	<item name="modArmorRegeneration" prob="0.3" loot_prob_template="med"/>
+	<item name="modArmorResistantEffect1" prob="0.2" loot_prob_template="med"/>
+	<item name="modArmorPlatingDiamond" prob="0.1" loot_prob_template="med"/>
+	<item name="modArmorHealthPlus1" prob="0.2" loot_prob_template="med"/>
+	<item name="modArmorStaminaPlus1" prob="0.2" loot_prob_template="med"/>
+	<item name="modArmorBlockDmgPlus1" prob="0.2" loot_prob_template="med"/>
+	<item name="modArmorRunningFast1" prob="0.2" loot_prob_template="med"/>
+	<item name="modArmorResistantEffect2" prob="0.02" loot_prob_template="medLow"/>
+	<item name="modArmorPlatingCarbon" prob="0.01" loot_prob_template="medLow"/>
+	<item name="modArmorHealthPlus2" prob="0.02" loot_prob_template="medLow"/>
+	<item name="modArmorStaminaPlus2" prob="0.02" loot_prob_template="medLow"/>
+	<item name="modArmorBlockDmgPlus2" prob="0.02" loot_prob_template="medLow"/>
+	<item name="modArmorRunningFast2" prob="0.02" loot_prob_template="medLow"/>
+</append>
+<insertAfter xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT2']/item[@name='resourceMilitaryFiberSchematic']" >
+	<item name="modWeaponBraceSchematic" loot_prob_template="med"/>
+	<item name="modArmorBraceSchematic" loot_prob_template="med"/>
+	<item name="modArmorRegenerationSchematic" loot_prob_template="med"/>
+	<item name="modArmorHigherJumpingSchematic" loot_prob_template="med"/>
+	<item name="toolMasterNailgunSchematic" loot_prob_template="med"/>
+	<item name="toolObsidianAugerSchematic" loot_prob_template="medLow"/>
+	<item name="toolObsidianChainsawSchematic" loot_prob_template="medLow"/>
+	<item name="toolObsidianFireaxeSchematic" loot_prob_template="medLow"/>
+	<item name="toolObsidianPickaxeSchematic" loot_prob_template="medLow"/>
+	<item name="toolObsidianShovelSchematic" loot_prob_template="medLow"/>
+	<item name="meleeObsidianSledgehammerSchematic" loot_prob_template="medLow"/>
+	<item name="toolObsidianWrenchSchematic" loot_prob_template="medLow"/>
+	<item name="meleeObsidianMacheteSchematic" loot_prob_template="medLow"/>
+	<item name="meleeObsidianClubSchematic" loot_prob_template="medLow"/>
+	<item name="meleeObsidianKnucklesSchematic" loot_prob_template="medLow"/>
+	<item name="meleeDiamondKnucklesSchematic" loot_prob_template="med"/>
+	<item name="meleeDiamondClubSchematic" loot_prob_template="med"/>
+	<item name="meleeDiamondMacheteSchematic" loot_prob_template="med"/>
+	<item name="toolDiamondFireaxeSchematic" loot_prob_template="med"/>
+	<item name="toolDiamondPickaxeSchematic" loot_prob_template="med"/>
+	<item name="toolDiamondShovelSchematic" loot_prob_template="med"/>
+	<item name="meleeDiamondSledgehammerSchematic" loot_prob_template="med"/>
+	<item name="toolDiamondWrenchSchematic" loot_prob_template="med"/>
+	<item name="toolDiamondAugerSchematic" loot_prob_template="med"/>
+	<item name="toolDiamondChainsawSchematic" loot_prob_template="med"/>
+	<item name="toolSuperBellowsSchematic" loot_prob_template="medLow"/>
+	<item name="toolSuperAnvilSchematic" loot_prob_template="medLow"/>
+	<item name="forgeSuperSchematic" loot_prob_template="medLow"/>
+	<item name="toolSuperCrucibleSchematic" loot_prob_template="medLow"/>
+	<item name="SolarBankSchematic" loot_prob_template="med"/>
+</insertAfter>
+<insertAfter xpath="/lootcontainers/lootgroup[@name='schematicsToolsT2']" >
+<lootgroup name="schematicsToolsT3">
+	<item name="toolMasterNailgunSchematic"/>
+	<item name="toolObsidianAugerSchematic"/>
+	<item name="toolObsidianChainsawSchematic"/>
+	<item name="toolObsidianFireaxeSchematic"/>
+	<item name="toolObsidianPickaxeSchematic"/>
+	<item name="toolObsidianShovelSchematic"/>
+	<item name="meleeObsidianSledgehammerSchematic"/>
+	<item name="toolObsidianWrenchSchematic"/>
+	<item name="meleeObsidianMacheteSchematic"/>
+	<item name="meleeObsidianClubSchematic"/>
+	<item name="meleeObsidianKnucklesSchematic"/>
+	<item name="meleeDiamondKnucklesSchematic"/>
+	<item name="meleeDiamondClubSchematic"/>
+	<item name="meleeDiamondMacheteSchematic"/>
+	<item name="toolDiamondFireaxeSchematic"/>
+	<item name="toolDiamondPickaxeSchematic"/>
+	<item name="toolDiamondShovelSchematic"/>
+	<item name="meleeDiamondSledgehammerSchematic"/>
+	<item name="toolDiamondWrenchSchematic"/>
+	<item name="toolDiamondAugerSchematic"/>
+	<item name="toolDiamondChainsawSchematic"/>
+	<item name="toolSuperBellowsSchematic"/>
+	<item name="toolSuperAnvilSchematic"/>
+	<item name="forgeSuperSchematic"/>
+	<item name="toolSuperCrucibleSchematic"/>
+	<item name="SolarBankSchematic"/>
+	<item name="apparelAntiRadiatedSuitSchematic"/>
+</lootgroup>
+</insertAfter>
+<insertAfter xpath="/lootcontainers/lootgroup[@name='schematicsToolsRare']/item[@group='schematicsToolsT2']" >
+	<item group="schematicsToolsT3" loot_prob_template="ProbT3" prob="0.5"/>
+</insertAfter>
+<insertAfter xpath="/lootcontainers/lootgroup[@name='schematicsWeaponsArmorT2']" >
+<lootgroup name="schematicsWeaponsArmorT3">
+	<item name="modArmorHigherJumpingSchematic" prob="0.3"/>
+	<item name="modArmorBraceSchematic" prob="0.3"/>
+	<item name="modWeaponBraceSchematic" prob="0.3"/>
+</lootgroup>
+</insertAfter>
+<insertAfter xpath="/lootcontainers/lootgroup[@name='schematicsWeaponsArmorRare']/item[@group='schematicsWeaponsArmorT2']" >
+	<item group="schematicsWeaponsArmorT3" loot_prob_template="ProbT3" prob="0.5"/>
+</insertAfter>
+<insertAfter xpath="/lootcontainers/lootgroup/item[@name='apparelCigar']" >
+	<item name="Marijuana" prob=".5"/>
+</insertAfter>
+<append xpath="lootcontainers/lootgroup[@name='schematicsWeaponsArmorT2']">
+	<item name="gunM4A1AssaultRifleSchematic"/>
+</append> 
+<append xpath="lootcontainers/lootgroup[@name='groupWeaponsT1_Ranged']">
+	<item group="M4A1ammo" loot_prob_template="med"/>
+</append> 
+<append xpath="lootcontainers/lootgroup[@name='groupWeaponsT1_Ranged']">
+	<item group="M4A1ammo" loot_prob_template="med"/>
+</append> 
+<insertAfter xpath="/lootcontainers/lootgroup[@name='groupQuestAmmo']/item[@name='ammo762mmBulletBall']" >
+	<item name="ammo556mmBulletBall" count="16,39"/>
+</insertAfter>
+<insertAfter xpath="/lootcontainers/lootgroup[@name='groupAmmoAdvanced']/item[@name='ammo762mmBulletHP']" >
+	<item name="ammo556mmBulletHP" count="6,25"/>
+	<item name="ammo556mmBulletAP" count="6,25"/>
+</insertAfter>
+<insertAfter xpath="/lootcontainers/lootgroup[@name='schematicsWeaponsArmorT2']/item[@name='gunExplosivesT3RocketLauncherSchematic']" >
+	<item name="gunBotT3AutoTurretSchematic" loot_prob_template="med"/>
+	<item name="gunGridLauncherSchematic" loot_prob_template="med"/>
+	<item name="gunMiniUZISchematic"/>
+	<item name="gunM416AssaultRifleSchematic" loot_prob_template="med"/>
+	<item name="gunM249SquadRifleSchematic" loot_prob_template="med"/>
+	<item name="gunSniperAWMSchematic" loot_prob_template="med"/>
+	<item name="schematicImprovedShotgun" loot_prob_template="med"/>
+	<item name="schematicImprovedBow" loot_prob_template="med"/>
+</insertAfter>
+<insertAfter xpath="/lootcontainers/lootgroup[@name='groupWeaponsT3_Archery']/item[@group='groupWeaponsT3_Archery02']" >
+	<item group="Slinggun" />
+</insertAfter>
+<insertAfter xpath="/lootcontainers/lootgroup[@name='groupWeaponsT3_Ranged']/item[@group='groupWeaponsT3_TurretsSyndrome']" >
+	<item group="groupWeapons556T3_Machinegunner" loot_prob_template="med"/>
+	<item group="groupWeaponsEffect_Netgun" loot_prob_template="med"/>
+	<item group="groupWeaponsT2_MiniUZI" loot_prob_template="med"/>
+	<item group="groupWeapons556T4_Machinegunner" loot_prob_template="med"/>
+	<item group="AWMSniperRifle" loot_prob_template="med"/>
+</insertAfter>
+
+<append xpath="lootcontainers/lootgroup[@name='groupQuestWeaponsRanged']">
+	<item group="groupSpecialParts" loot_prob_template="QuestT3Prob"/>
+</append>
+<append xpath="lootcontainers/lootgroup[@name='groupQuestArmor']">
+	<item group="groupSpecialParts" loot_prob_template="QuestT3Prob"/>
+</append>
+<append xpath="lootcontainers/lootgroup[@name='groupQuestSchematics']">
+	<item name="bookExtraExpSmall" loot_prob_template="QuestT1Prob"/>
+	<item name="AlchemyFurnaceSchematic" loot_prob_template="QuestT1Prob"/>
+	<item name="toolMasterNailgunSchematic" loot_prob_template="QuestT1Prob"/>
+	<item name="bookExtraExpMedium" loot_prob_template="QuestT2Prob"/>
+	<item name="ReactorKitSchematic" loot_prob_template="QuestT2Prob"/>
+	<item name="WorkbenchEngineSchematic" loot_prob_template="QuestT2Prob"/>
+	<item name="oreMinerSchematic" loot_prob_template="QuestT2Prob"/>
+	<item name="gasMachineSchematic" loot_prob_template="QuestT2Prob"/>
+	<item name="toolAndDieSetSchematic" loot_prob_template="QuestT2Prob"/>
+	<item name="toolSuperCrucibleSchematic" loot_prob_template="QuestT2Prob"/>
+	<item name="toolSuperBellowsSchematic" loot_prob_template="QuestT2Prob"/>
+	<item name="toolSuperAnvilSchematic" loot_prob_template="QuestT2Prob"/>
+	<item name="ComputerWorkstationSchematic" loot_prob_template="QuestT2Prob"/>
+	<item name="GemCraftingMoldSchematic" loot_prob_template="QuestT2Prob"/>
+	<item name="ThermometerSchematic" loot_prob_template="QuestT2Prob"/>
+	<item name="meleeDiamondMacheteSchematic" loot_prob_template="QuestT2Prob"/>
+	<item name="toolDiamondFireaxeSchematic" loot_prob_template="QuestT2Prob"/>
+	<item name="toolDiamondPickaxeSchematic" loot_prob_template="QuestT2Prob"/>
+	<item name="toolDiamondShovelSchematic" loot_prob_template="QuestT2Prob"/>
+	<item name="meleeDiamondSledgehammerSchematic" loot_prob_template="QuestT2Prob"/>
+	<item name="toolDiamondWrenchSchematic" loot_prob_template="QuestT2Prob"/>
+	<item name="toolDiamondChainsawSchematic" loot_prob_template="QuestT2Prob"/>
+	<item name="toolDiamondAugerSchematic" loot_prob_template="QuestT2Prob"/>
+	<item name="meleeDiamondKnucklesSchematic" loot_prob_template="QuestT2Prob"/>
+	<item name="meleeDiamondClubSchematic" loot_prob_template="QuestT2Prob"/>
+	<item name="meleeObsidianMacheteSchematic" loot_prob_template="QuestT3Prob"/>
+	<item name="toolObsidianFireaxeSchematic" loot_prob_template="QuestT3Prob"/>
+	<item name="toolObsidianPickaxeSchematic" loot_prob_template="QuestT3Prob"/>
+	<item name="toolObsidianShovelSchematic" loot_prob_template="QuestT3Prob"/>
+	<item name="meleeObsidianSledgehammerSchematic" loot_prob_template="QuestT3Prob"/>
+	<item name="toolObsidianWrenchSchematic" loot_prob_template="QuestT3Prob"/>
+	<item name="toolObsidianChainsawSchematic" loot_prob_template="QuestT3Prob"/>
+	<item name="toolObsidianAugerSchematic" loot_prob_template="QuestT3Prob"/>
+	<item name="meleeObsidianKnucklesSchematic" loot_prob_template="QuestT3Prob"/>
+	<item name="meleeObsidianClubSchematic" loot_prob_template="QuestT3Prob"/>
+	<item name="forgeSuperSchematic" loot_prob_template="QuestT3Prob"/>
+	<item name="bookExtraExpLarge" loot_prob_template="QuestT3Prob"/>
+	<item name="noteClassClear" loot_prob_template="QuestT3Prob"/>
+</append> 
+<append xpath="lootcontainers/lootgroup[@name='groupQuestMedical']">
+	<item name="drugInstantHealth100" count="1,3" loot_prob_template="QuestT2Prob"/>
+	<item name="drugInstantHealth200" count="1,3" loot_prob_template="QuestT3Prob"/>
+	<item name="drugInstantStamina100" count="1,3" loot_prob_template="QuestT2Prob"/>
+	<item name="drugInstantStamina200" count="1,3" loot_prob_template="QuestT3Prob"/>
+	<item name="drugPainkillerJar" count="1,3" loot_prob_template="QuestT1Prob"/>
+	<item name="drugNearDeathRemoverJar" count="1" loot_prob_template="QuestT3Prob"/>
+	<item name="drinkJarGrandpasLearningElixir" count="1" loot_prob_template="QuestT2Prob"/>
+	<item name="drinkJarGrandpasLearningElixirMedium" count="1" loot_prob_template="QuestT3Prob"/>
+	<item name="drugEnergyTablet" count="1,3" loot_prob_template="QuestT2Prob"/>
+	<item name="drugPlainFudge" count="1,3" loot_prob_template="QuestT2Prob"/>
+	<item name="drugRockCandy" count="1,3" loot_prob_template="QuestT2Prob"/>
+</append> 
+<append xpath="lootcontainers/lootgroup[@name='groupQuestMods']">
+	<item group="groupModCustomT1" loot_prob_template="QuestT1Prob"/>
+	<item group="groupModCustomT2" loot_prob_template="QuestT2Prob"/>
+	<item group="groupModCustomT3" loot_prob_template="QuestT3Prob"/>
+</append> 
+<append xpath="lootcontainers/lootgroup[@name='groupQuestTools']">
+	<item name="vehicleHellBeastPlaceable" loot_prob_template="QuestT3Prob"/>
+	<item name="vehicleHellFirePlaceable" loot_prob_template="QuestT2Prob"/>
+	<item name="vehicleHellDogPlaceable" loot_prob_template="QuestT1Prob"/>
+	<item name="vehicleHellHound4x4Placeable" loot_prob_template="QuestT3Prob"/>
+	<item name="vehicleHellSpikey4x4Placeable" loot_prob_template="QuestT2Prob"/>
+	<item name="vehicleHellCarPlaceable" loot_prob_template="QuestT1Prob"/>
+	<item name="vehicleWhirligigPlaceable" loot_prob_template="QuestT2Prob"/>
+	<item name="vehicleSharkBlimpPlaceable" loot_prob_template="QuestT3Prob"/>
+	<item name="vehicleSledPlaceable" loot_prob_template="QuestT1Prob"/>
+</append> 
+<!-- /\ Add groups/items to vanilla groups -->
+</config>

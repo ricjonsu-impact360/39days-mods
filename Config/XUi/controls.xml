@@ -1,0 +1,190 @@
+<ProjectZ2_CONTROLS>
+
+	<append xpath="/controls">
+		<new_backpack_item_stack controller="ItemStack" on_scroll="false" allow_dropping="true" prefix_id="false" show_favorites="false">
+			<rect controller="${controller}" style="itemStackCustom, hover" collider_scale="1.0" on_scroll="${on_scroll}" allow_dropping="${allow_dropping}" prefix_id="${prefix_id}" show_favorites="${show_favorites}" tooltip="{tooltip}" >
+				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="50" height="50" color="[black]" type="sliced" fillcenter="false" />
+				<sprite depth="3" name="background" sprite="menu_empty3px" width="48" height="48" color="{selectionbordercolor}" type="sliced" globalopacity="true" fillcenter="false"/>
+				<sprite depth="2" name="highlightOverlay" width="50" height="50" color="{backgroundcolor}" pos="0,0" type="sliced" globalopacity="true"/>
+
+				<texture depth="3" name="backgroundTexture" material="Materials/Transparent Colored" size="48,48" globalopacity="false"/>
+				<sprite depth="8" name="favoriteIcon" width="24" height="24" sprite="server_favorite" pos="2,-2" foregroundlayer="true" visible="{isfavorite}"/>
+				<sprite depth="6" name="itemIcon" width="40" height="40" atlas="ItemIconAtlas" sprite="{itemicon}" pos="20,-25" pivot="center" foregroundlayer="true" color="{iconcolor}" />
+				<sprite depth="8" name="lockTypeIcon" width="7" height="7" sprite="{locktypeicon}" pos="2,-2" foregroundlayer="true"/>
+				<sprite depth="8" name="itemtypeicon" width="24" height="24" sprite="ui_game_symbol_{itemtypeicon}" pos="2,-2" foregroundlayer="true" visible="{hasitemtypeicon}" color="{itemtypeicontint}" />
+
+				<sprite depth="3" name="durabilityBackground" width="46" height="5" sprite="menu_empty3px" color="[darkGrey]" type="sliced" pos="1, -42" foregroundlayer="true" visible="{hasdurability}" />
+				<filledsprite depth="4" name="durability" width="46" height="5" sprite="menu_empty2px" color="{durabilitycolor}" fill="{durabilityfill}" type="filled" pos="1, -42" foregroundlayer="true" visible="{hasdurability}" />
+
+				<sprite depth="5" name="disabledOverlay" width="47" height="47" color="[darkGrey_half_alpha]" pos="1,-1" type="sliced" visible="false"/>
+
+				<label depth="7" name="stackValue" pos="-2,-30" width="45" height="16" text="{itemcount}" font_size="18" effect="outline" justify="{#hasdurability ? 'Center' : 'Right'}" />
+				<label depth="7" name="timer" pos="35,-33" width="45" height="16" font_size="18" justify="center" pivot="center" effect="outline" color="[beige]"/>
+				<sprite depth="9" name="cancel" sprite="ui_game_symbol_x" width="45" height="45" color="255,0,0,255" type="sliced" visible="false" foregroundlayer="true"/>
+				<sprite depth="13" name="assembleIcon" size="28,28" sprite="{stacklockicon}" color="{stacklockcolor}" visible="{isassemblelocked}" pos="14,-14" foregroundlayer="true"/>
+			</rect>
+		</new_backpack_item_stack>
+		<new_item_stack controller="ItemStack" on_scroll="false" allow_dropping="true" prefix_id="false" show_favorites="false">
+			<rect controller="${controller}" style="itemStack, hover" collider_scale="1.5" on_scroll="${on_scroll}" allow_dropping="${allow_dropping}" prefix_id="${prefix_id}" show_favorites="${show_favorites}" tooltip="{tooltip}" >
+				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-2,0" width="52" height="52" color="[lightblue]" rotation="45" type="sliced" fillcenter="false" />
+				<sprite depth="3" name="background" sprite="menu_empty3px" width="49" height="49" color="{selectionbordercolor}" rotation="45" type="sliced" globalopacity="true" fillcenter="false"/>
+				<sprite depth="2" name="highlightOverlay" width="48" height="48" color="[lightGrey]" rotation="45" pos="0,0" type="sliced" globalopacity="true"/>
+
+				<texture depth="3" name="backgroundTexture" material="Materials/Transparent Colored" rotation="45" size="48,48" globalopacity="true"/>
+				<sprite depth="8" name="favoriteIcon" width="24" height="24" sprite="server_favorite" pos="2,-2" foregroundlayer="true" visible="{isfavorite}"/>
+				<sprite depth="6" name="itemIcon" width="62" height="62" atlas="ItemIconAtlas" sprite="{itemicon}" pos="35,0" pivot="center" foregroundlayer="true" color="{iconcolor}" />
+				<sprite depth="8" name="lockTypeIcon" width="22" height="22" sprite="{locktypeicon}" pos="2,-2" foregroundlayer="true"/>
+				<sprite depth="8" name="itemtypeicon" width="22" height="22" sprite="ui_game_symbol_{itemtypeicon}" pos="2,-2" foregroundlayer="true" visible="{hasitemtypeicon}" color="{itemtypeicontint}" />
+
+				<sprite depth="3" name="durabilityBackground" width="68" height="10" sprite="menu_empty3px" color="[darkGrey]" type="sliced" pos="1, -25" foregroundlayer="true" visible="{hasdurability}" />
+				<filledsprite depth="4" name="durability" width="68" height="10" sprite="menu_empty2px" color="{durabilitycolor}" fill="{durabilityfill}" type="filled" pos="1, -25" foregroundlayer="true" visible="{hasdurability}" />
+
+				<sprite depth="5" name="disabledOverlay" width="50" height="50" color="[darkGrey_half_alpha]" pos="1,-1" type="sliced" visible="false"/>
+
+				<label depth="7" name="stackValue" pos="0,-15" width="68" height="28" text="{itemcount}" font_size="26" effect="outline" justify="{#hasdurability ? 'Center' : 'Right'}" />
+				<label depth="7" name="timer" pos="35,0" width="68" height="24" font_size="24" justify="center" pivot="center" effect="outline" color="[beige]"/>
+				<sprite depth="9" name="cancel" sprite="ui_game_symbol_x" width="68" height="68" color="255,0,0,255" type="sliced" visible="false" foregroundlayer="true"/>
+				<sprite depth="13" name="assembleIcon" size="38,38" sprite="{stacklockicon}" color="{stacklockcolor}" visible="{isassemblelocked}" pos="14,-14" foregroundlayer="true" />
+			</rect>
+		</new_item_stack>
+		
+		<mod_item_stack controller="ItemStack" on_scroll="false" allow_dropping="true" prefix_id="false" show_favorites="false">
+			<rect controller="${controller}" style="itemStack, hover" collider_scale="0.8" on_scroll="${on_scroll}" allow_dropping="${allow_dropping}" prefix_id="${prefix_id}" show_favorites="${show_favorites}" tooltip="{tooltip}" >
+				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-1,1" width="38" height="38" color="[black]" type="sliced" fillcenter="false" />
+				<sprite depth="3" name="background" sprite="menu_empty3px" width="37" height="37" color="{selectionbordercolor}" type="sliced" globalopacity="true" fillcenter="false"/>
+				<sprite depth="2" name="highlightOverlay" width="36" height="36" color="{backgroundcolor}" pos="0,0" type="sliced" globalopacity="true"/>
+
+				<texture depth="3" name="backgroundTexture" material="Materials/Transparent Colored" size="36,36" globalopacity="true"/>
+				<sprite depth="8" name="favoriteIcon" width="12" height="12" sprite="server_favorite" pos="1,-1" foregroundlayer="true" visible="{isfavorite}"/>
+				<sprite depth="6" name="itemIcon" width="32" height="32" atlas="ItemIconAtlas" sprite="{itemicon}" pos="17,-17" pivot="center" foregroundlayer="true" color="{iconcolor}" />
+				<sprite depth="8" name="lockTypeIcon" width="12" height="12" sprite="{locktypeicon}" pos="1,-1" foregroundlayer="true"/>
+				<sprite depth="8" name="itemtypeicon" width="12" height="12" sprite="ui_game_symbol_{itemtypeicon}" pos="1,-1" foregroundlayer="true" visible="{hasitemtypeicon}" color="{itemtypeicontint}" />
+
+				<sprite depth="3" name="durabilityBackground" width="35" height="5" sprite="menu_empty3px" color="[darkGrey]" type="sliced" pos="1, -30" foregroundlayer="true" visible="{hasdurability}" />
+				<filledsprite depth="4" name="durability" width="35" height="5" sprite="menu_empty2px" color="{durabilitycolor}" fill="{durabilityfill}" type="filled" pos="1, -30" foregroundlayer="true" visible="{hasdurability}" />
+
+				<sprite depth="5" name="disabledOverlay" width="36" height="36" color="[darkGrey_half_alpha]" pos="1,-1" type="sliced" visible="false"/>
+
+				<label depth="7" name="stackValue" pos="-1,-22" width="35" height="14" text="{itemcount}" font_size="26" effect="outline" justify="{#hasdurability ? 'Center' : 'Right'}" />
+				<label depth="7" name="timer" pos="17,-19" width="35" height="12" font_size="12" justify="center" pivot="center" effect="outline" color="[beige]"/>
+				<sprite depth="9" name="cancel" sprite="ui_game_symbol_x" width="35" height="35" color="255,0,0,255" type="sliced" visible="false" foregroundlayer="true"/>
+				<sprite depth="13" name="assembleIcon" size="20,20" sprite="{stacklockicon}" color="{stacklockcolor}" visible="{isassemblelocked}" pos="7,-7" foregroundlayer="true" />
+			</rect>
+		</mod_item_stack>
+		<quick_stats_entry>
+			<rect height="33">
+				<sprite depth="8" sprite="menu_empty3px" height="33" color="[black]" type="sliced" fillcenter="false" />
+				<sprite depth="1" color="${backgroundcolor}" type="sliced" />
+				<label depth="3" pos="15,-5" width="198" font_size="26" text="${textcontent}" justify="left" color="[green]" effect="outline"/>
+				<label depth="3" pos="305,-5" width="88" font_size="26" text="${valuecontent}" justify="right" color="[lightblue]" pivot="topright" effect="outline"/>
+			</rect>
+		</quick_stats_entry>
+		<quick_stats_generic_entry>
+			<player_stats_entry backgroundcolor="${backgroundcolor}" textcontent="[00FF00]{playerstattitle${index}|once}" valuecontent="[1362E5]{playerstat${index}}" effect="outline"/>
+		</quick_stats_generic_entry>
+	</append>
+
+<!--	// Z2 // Quest Objective Tracker -->
+
+		<append xpath="/controls">
+			<Z2_quest_objective_tracker_entry>
+				<rect size="280,26" controller="QuestTrackerObjectiveEntry" visible="{hasobjective}">
+					<sprite name="iconTrackBG" depth="4" pos="-30,-16" size="11,11" sprite="menu_empty3px" color="[hudElementBRDR]" rotation="45" pivot="center" />
+					<sprite name="iconTrackFG" depth="5" pos="-30,-16" size="10,10" sprite="menu_empty3px" color="[hudDiamondFG]" rotation="45" pivot="center" />
+					<sprite name="iconTrack" depth="6" pos="-30,-16" size="7,7" color="{objectivecompletecolor}" sprite="menu_empty3px" rotation="45" pivot="center" visible="{objectiveshowicon}" />
+
+					<sprite name="diamondToDiamond" depth="2" pos="-30,-8" size="1,15" sprite="menu_empty3px" color="[mainLineColor]" pivot="bottom" />
+					<sprite name="diamondToObjective" depth="3" pos="-23,-16" size="22,1" sprite="menu_empty3px" color="[mainLineColor]" pivot="left" />
+
+					<sprite name="questTrackerObjectiveBackground" depth="1" pos="0,-16" size="280,24" sprite="menu_empty3px" color="[hudElementBG]" type="sliced" pivot="left" />
+
+					<label name="questTrackerObjective" depth="2" pos="10,-16" width="{objectivetextwidth}" text="{objectiveoptional}{objectivedescription} " color="[hudLabelPrimary]" font_size="20" crispness="Never" effect="outline" effect_distance="1,1" upper_case="true" justify="left" pivot="left" visible="{hasobjective}" overflow="ShrinkContent" />
+					<label name="questTrackerState" depth="2" pos="270,-16" width="{objectivetextwidth}" text=" [{objectivecompletehexcolor}]{objectivestate}[-]" color="[white]" font_size="20" crispness="Never" effect="outline" effect_distance="1,1" upper_case="true" justify="right" pivot="right" visible="{hasobjective}" overflow="ShrinkContent" />
+				</rect>
+			</Z2_quest_objective_tracker_entry>
+			
+			<new_quest_objective_entry>
+				<rect width="150" height="43" controller="QuestObjectiveEntry"  complete_icon="ui_game_symbol_check" incomplete_icon="ui_game_symbol_x" notstarted_icon="ui_game_symbol_quest" complete_color="[green]" incomplete_color="[red]" notstarted_color="[white]" visible="{hasobjective}" >
+
+					<sprite depth="2" name="iconTrack" style="icon22px" pos="4,0" color="{objectivecompletecolor}" sprite="{objectivecompletesprite}" />
+
+					<label depth="4" name="Description" pos="30,2" width="250" height="28" text="{objectiveoptional}{objectivedescription} [DECEA3]{objectivestate}[-]" color="{objectivephasecolor}" font_size="13" />
+				</rect>
+			</new_quest_objective_entry>
+		</append>
+
+
+<!--	// Z2 // Radial Menu -->
+
+		<remove xpath="/controls/radial_entry" />
+
+		<append xpath="/controls">
+			<radial_entry>
+				<rect depth="15" size="75,75" style="hover" highlight_color="[selectedColor]" pivot="center" controller="RadialEntry" sound_play_on_hover="[default_hover]">
+					<sprite name="border" depth="3" pos="0,0" size="62,62" sprite="menu_empty3px" color="[hudElementBRDR]" type="sliced" rotation="45" pivot="center" fillcenter="false" />
+					<sprite name="background" depth="4" pos="0,0" size="60,60" sprite="menu_empty3px" color="[hudDiamondFG]" type="sliced" rotation="45" pivot="center" fillcenter="false" />
+					<sprite name="Foreground" depth="5" pos="0,0" size="53,53" sprite="menu_empty2px" color="[hudElementBG]" type="sliced" rotation="45" pivot="center" />
+					<sprite name="icon" depth="6" pos="0,0" size="40,40" atlas="UIAtlas" color="255,255,255,255" pivot="center" foregroundlayer="true" />
+					<label name="text" depth="9" pos="-28,-28" size="62,24" font_size="16" color="[hudLabelPrimary]" crispness="Never" effect="outline" effect_distance="1,1" upper_case="true" justify="center" pivot="center" rotation="-45" />
+				</rect>
+			</radial_entry>
+		</append>
+
+
+<!--	// Z2 // Party Frames -->
+
+		<append xpath="/controls">
+			<Z2_party_entry>
+				<rect width="168" height="43" controller="PartyEntry" visible="{partyvisible}" default_health_color="255,0,0,128" twitch_health_color="100,65,165,128">
+					<sprite name="partyFramesLeftDiamondA1" depth="5" pos="-75,0" size="11,11" sprite="menu_empty3px" color="[hudElementBRDR]" rotation="45" pivot="center" />
+					<sprite name="partyFramesLeftDiamondA2" depth="6" pos="-75,0" size="10,10" sprite="menu_empty3px" color="[hudDiamondFG]" rotation="45" pivot="center" />
+
+					<sprite name="diamondToDiamond" depth="2" pos="-67,0" size="15,1" sprite="menu_empty3px" color="[mainLineColor]" pivot="left" />
+
+					<sprite name="border" depth="5" pos="-32,0" size="29,29" sprite="menu_empty2px" color="[hudElementBRDR]" type="sliced" rotation="45" pivot="center" fillcenter="false" />
+					<sprite name="background" depth="6" pos="-32,0" size="27,27" sprite="menu_empty2px" color="[hudDiamondFG]" type="sliced" rotation="45" pivot="center" fillcenter="false" />
+					<sprite name="foreground" depth="7" pos="-32,0" size="20,20" sprite="menu_empty2px" color="[hudElementBG]" type="sliced" rotation="45" pivot="center" />
+					<sprite name="arrowContent" depth="8" pos="-32,0" size="20,20" sprite="ui_game_symbol_map_player_arrow" color="{arrowcolor}" pivot="center" visible="{showarrow}" />
+
+					<sprite name="activeItemToCountA" depth="1" pos="-22,10" size="10,1" sprite="menu_empty3px" color="[mainLineColor]" pivot="left" rotation="45" />
+					<sprite name="activeItemToCountB" depth="1" pos="-16,17" size="120,1" sprite="menu_empty3px" color="[mainLineColor]" pivot="left" />
+					<sprite name="activeItemToCountD" depth="1" pos="104,17" size="1,10" sprite="menu_empty3px" color="[mainLineColor]" pivot="top" />
+
+					<sprite name="partyFramesLeftDiamondA1" depth="5" pos="104,0" size="11,11" sprite="menu_empty3px" color="[hudElementBRDR]" rotation="45" pivot="center" />
+					<sprite name="partyFramesLeftDiamondA2" depth="6" pos="104,0" size="10,10" sprite="menu_empty3px" color="[hudDiamondFG]" rotation="45" pivot="center" />
+
+					<sprite name="partyMemberHealthBackground" depth="2" pos="42,0" size="112,20" sprite="menu_empty3px" color="[statPartyHealthBG]" type="sliced" pivot="center" />
+					<filledsprite name="BarHealthModifiedMax" depth="3" pos="42,0" size="108,16" sprite="menu_empty3px" color="[hudElementBG]" type="filled" fill="{healthmodifiedmax}"  pivot="center" />
+					<filledsprite name="BarHealth" depth="4" pos="42,0" size="108,16" sprite="menu_empty3px" color="255,0,0,128" type="filled" fill="{healthfill}" pivot="center" />
+
+					<label name="TextContent" depth="6" pos="42,1" size="104,16" text="{name}" font_size="20" color="[white]" crispness="Never" effect="outline" effect_distance="1,1" justify="left" pivot="center" overflow="ShrinkContent" />
+
+					<sprite name="distanceBackground" depth="2" pos="137,0" size="52,16" sprite="menu_empty3px" color="[hudElementBG]" type="sliced" pivot="center" />
+					<label name="TextContent" depth="6" pos="137,1" size="42,16" text="{distance}" font_size="20" color="[white]" crispness="Never" effect="outline" effect_distance="1,1" justify="right" pivot="center" overflow="ShrinkContent" />
+
+					<sprite pos="-32,0" depth="8" name="icon2" style="icon30px" sprite="{icon2}" visible="{showicon2}" />
+					<sprite pos="0,0" depth="8" name="icon1" style="icon30px" sprite="{icon1}" visible="{showicon1}" />
+					
+					<!-- <sprite name="leader" depth="8" pos="-32,0" size="27,27" sprite="menu_empty3px" color="[teamLeaderIndicator]" type="sliced" rotation="45" pivot="center" fillcenter="false" visible="{showicon}" /> -->
+				</rect>
+			</Z2_party_entry>
+
+			<Z2_companion_entry>
+				<rect width="168" height="43" controller="CompanionEntry" visible="{partyvisible}">
+					<sprite name="partyFramesLeftDiamondA1" depth="5" pos="-75,0" size="11,11" sprite="menu_empty3px" color="[hudElementBRDR]" rotation="45" pivot="center" />
+					<sprite name="partyFramesLeftDiamondA2" depth="6" pos="-75,0" size="10,10" sprite="menu_empty3px" color="[hudDiamondFG]" rotation="45" pivot="center" />
+
+					<sprite name="diamondToDiamond" depth="2" pos="-67,0" size="15,1" sprite="menu_empty3px" color="[mainLineColor]" pivot="left" />
+					
+					<sprite name="border" depth="5" pos="-32,0" size="29,29" sprite="menu_empty2px" color="[hudElementBRDR]" type="sliced" rotation="45" pivot="center" fillcenter="false" />
+					<sprite name="background" depth="6" pos="-32,0" size="27,27" sprite="menu_empty2px" color="[hudDiamondFG]" type="sliced" rotation="45" pivot="center" fillcenter="false" />
+					<filledsprite name="BarHealthModifiedMax" depth="3" pos="42,0" size="108,16" sprite="menu_empty3px" color="[hudElementBG]" type="filled" fill="{healthmodifiedmax}"  pivot="center" />
+					<filledsprite name="BarHealth" depth="4" pos="42,0" size="108,16" sprite="menu_empty3px" color="255,0,0,128" type="filled" fill="{healthfill}" pivot="center" />
+					<label name="TextContent" depth="6" pos="42,1" size="104,16" text="{name}" font_size="20" color="[white]" crispness="Never" effect="outline" effect_distance="1,1" justify="left" pivot="center" overflow="ShrinkContent" />
+					<label name="TextContent" depth="6" pos="137,1" size="42,16" text="{distance}" font_size="20" color="{distancecolor}" crispness="Never" effect="outline" effect_distance="1,1" justify="right" pivot="center" overflow="ShrinkContent" />
+					<sprite name="arrowContent" depth="8" pos="-32,0" size="20,20" sprite="ui_game_symbol_map_player_arrow" color="{arrowcolor}" pivot="center" visible="{showarrow}" />
+				</rect>
+			</Z2_companion_entry>
+		</append>
+
+</ProjectZ2_CONTROLS>

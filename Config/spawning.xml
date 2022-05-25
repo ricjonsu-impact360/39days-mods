@@ -1,0 +1,30 @@
+<configs>
+<!-- Disable Screamer -->
+<set xpath="/spawning/entityspawner[@name='Scouts']/day/property[@name='TotalPerWave']/@value">0</set>
+<set xpath="/spawning/entityspawner[@name='Scouts']/day/property[@name='Time']/@value">Night</set>
+<!-- Disable zb naturfal spawning -->
+<remove xpath="/spawning/biome[@name='pine_forest']/spawn[@time='Day']"/>
+<remove xpath="/spawning/biome[@name='pine_forest']/spawn[@time='Night']"/>
+<remove xpath="/spawning/biome[@name='burnt_forest']/spawn[@time='Day']"/>
+<remove xpath="/spawning/biome[@name='burnt_forest']/spawn[@time='Night']"/>
+<remove xpath="/spawning/biome[@name='desert']/spawn[@time='Day']"/>
+<remove xpath="/spawning/biome[@name='desert']/spawn[@time='Night']"/>
+<remove xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='ZombiesAll']"/>
+<remove xpath="/spawning/biome[@name='snow']/spawn[@time='Day']"/>
+<remove xpath="/spawning/biome[@name='snow']/spawn[@time='Night']"/>
+<remove xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='SnowZombies']"/>
+<remove xpath="/spawning/biome[@name='wasteland']/spawn[@time='Day']"/>
+<remove xpath="/spawning/biome[@name='wasteland']/spawn[@time='Night']"/>
+<!-- <append xpath="/spawning/biome[@name='desert']">
+		<spawn maxcount="1" respawndelay="1.670" time="Any" entitygroup="ZombiesBossSnowDesert"/>
+</append>
+<append xpath="/spawning/biome[@name='snow']">
+		<spawn maxcount="1" respawndelay="1.670" time="Any" entitygroup="ZombiesBossSnowDesert"/>
+</append> -->
+<!-- <append xpath="/spawning/biome[@name='burnt_forest']">
+		<spawn maxcount="1" respawndelay="0.635" time="Any" entitygroup="ZombiesBossBurntForest" notags="commercial,industrial,downtown"/>
+</append> -->
+<append xpath="/spawning/biome[@name='wasteland']">
+		<spawn maxcount="1" respawndelay="3.5" time="Any" entitygroup="ZombiesBossWasteLand" notags="commercial,industrial,downtown"/>
+</append>
+</configs>

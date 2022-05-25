@@ -1,0 +1,351 @@
+<configs>
+	<!-- Crafting slots -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='crafting']/window[@name='windowCraftingQueue']/@name">NNCwindowCraftingQueue</set>
+	<!-- Campfire crafting slots -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_campfire']/window[@name='windowCraftingQueue']/@name">NNCwindowCraftingQueue</set>
+	<!-- <set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_campfire']/window[@name='windowOutput']/@name">windowOutput</set> -->
+	<!-- Forge crafting slots -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_forge']/window[@name='windowCraftingQueue']/@name">NNCwindowCraftingQueue</set>
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_forge']/window[@name='windowForgeInput']/@name">NNCwindowForgeInput</set>
+	<!-- Cement mixer crafting slots -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_cementMixer']/window[@name='windowCraftingQueue']/@name">NNCwindowCraftingQueue</set>
+	<!-- <set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_cementMixer']/window[@name='windowOutput']/@name">windowOutput</set> -->
+	<!-- Workbench crafting slots -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_workbench']/window[@name='windowCraftingQueue']/@name">NNCwindowCraftingQueue</set>
+	<!-- <set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_workbench']/window[@name='windowOutput']/@name">windowOutput</set> -->
+	<!-- Chemistry station crafting slots -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_chemistryStation']/window[@name='windowCraftingQueue']/@name">NNCwindowCraftingQueue</set>
+	<!-- <set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_chemistryStation']/window[@name='windowOutput']/@name">windowOutput</set> -->
+
+<!-- Creative admin menu -->
+<!-- <remove xpath="/xui/ruleset/window_group[@name='creative']"/> 
+
+<append xpath="/xui/ruleset">
+
+	<window_group name="workstation_CreativeMenu" controller="XUiC_WorkstationWindowGroup">
+		<window name="windowCreativeHH" />
+		<window name="windowNonPagingHeader" />
+		<window name="windowCraftingList1"/>
+		<window name="craftingInfoPanel1"/>
+		<window name="windowNonPagingHeader" />
+	</window_group>
+	
+</append> -->
+
+<!-- Add windownCommands to crafting window -->
+<insertAfter xpath="/xui/ruleset/window_group[@name='workstation_workbench']/window[@name='NNCwindowCraftingQueue']">
+	<window name="windowToolsSuperWorkbench"/>
+</insertAfter>
+<insertAfter xpath="/xui/ruleset/window_group[@name='workstation_chemistryStation']/window[@name='NNCwindowCraftingQueue']">
+	<window name="windowToolsSuperChemistry"/>
+</insertAfter>
+<insertAfter xpath="/xui/ruleset/window_group[@name='workstation_cementMixer']/window[@name='NNCwindowCraftingQueue']">
+	<window name="windowToolsCementMixer"/>
+</insertAfter>
+
+<append xpath="/xui/ruleset/window_group[@name='crafting']">
+	<window name="windowCommands"/>
+</append>
+<!-- Add windownCommands to crafting window -->
+<append xpath="/xui/ruleset/window_group[@name='toolbelt']">
+	<window name="LeftTopHUD" anchor="LeftTop"/>
+</append>
+
+<append xpath="/xui/ruleset[@name='default']">
+		
+		<window_group name="serverinfowindow">
+			<window name="serverinfowindow" />
+		</window_group>
+		
+		<window_group name="workstation_ArmoryWorkBench" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="NNCwindowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="workstation_WorkingCharcoalGrill" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="NNCwindowCraftingQueue"/>
+			<window name="windowToolsCampfire"/>
+			<window name="windowFuel"/>
+			<window name="windowOutput"/>
+			<window name="windowNonPagingHeader"/>
+		</window_group>
+		
+		<window_group name="workstation_WorkingWoodBurningStove" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="NNCwindowCraftingQueue"/>
+			<window name="windowToolsCampfire"/>
+			<window name="windowFuel"/>
+			<window name="windowOutput"/>
+			<window name="windowNonPagingHeader"/>
+        </window_group>
+		
+		<window_group name="workstation_computer" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="NNCwindowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>	
+		<window_group name="workstation_gcvending" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="NNCwindowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>	
+		<window_group name="workstation_rare" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="NNCwindowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>	
+		<window_group name="workstation_drinkingmixer" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="NNCwindowCraftingQueue"/>
+			<window name="windowFuel" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_cookingstove" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="NNCwindowCraftingQueue"/>
+			<window name="windowToolsCampfire" />
+			<window name="windowFuel" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_furnace" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="NNCwindowCraftingQueue"/>
+			<window name="windowToolsFurnace" />
+			<window name="windowFuel" />
+			<window name="windowFurnaceInput" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_superforge" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="NNCwindowCraftingQueue"/>
+			<window name="windowToolsSuperForge" />
+			<window name="windowFuel" />
+			<window name="NNCwindowForgeInput" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_superworkbench" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowToolsSuperWorkbench" />
+			<window name="NNCwindowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+			<!-- <window name="windowCombine" /> -->
+		</window_group>	
+		<window_group name="workstation_superchemistryStation" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowToolsSuperChemistry" />
+			<window name="NNCwindowCraftingQueue"/>
+			<window name="windowFuel" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_oreminer" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowToolsOreMiner" />
+			<window name="NNCwindowCraftingQueue"/>
+			<window name="windowOutput"/>
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_gasmachine" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="NNCwindowCraftingQueue"/>
+			<window name="windowFuel" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+</append>	
+
+<!--	// Z2 // Compass -->
+
+		<set xpath="/xui/ruleset[@name='default']/window_group[@name='compass']">
+			<window name="windowCompass" anchor="CenterTop" />
+			<window name="windowTargetBar" anchor="CenterTop" />
+			<window name="onScreenIcons" />
+			<window name="dayTimeHUD" anchor="LeftTop" />
+		</set>
+
+		<setattribute xpath="/xui//window_group[@name='compass']" name="actionset">false</setattribute>
+
+
+<!--	// Z2 // Interaction -->
+
+		<set xpath="/xui/ruleset[@name='default']/window_group[@name='interactionPrompt']">
+			<window name="interactionPrompt" />
+		</set>
+
+		<setattribute xpath="/xui//window_group[@name='interactionPrompt']" name="actionset">false</setattribute>
+
+
+<!--	// Z2 // Search Timer -->
+
+		<set xpath="/xui/ruleset[@name='default']/window_group[@name='timer']">
+			<window name="windowTimer" />
+		</set>
+
+
+<!--	// Z2 // Throw Power -->
+
+		<set xpath="/xui/ruleset[@name='default']/window_group[@name='throwpower']">
+			<window name="windowThrow" />
+		</set>
+
+		<setattribute xpath="/xui//window_group[@name='throwpower']" name="actionset">false</setattribute>
+
+
+<!--	// Z2 // Toolbelt -->
+
+		<set xpath="/xui/ruleset[@name='default']/window_group[@name='toolbelt']">
+			<window name="windowToolbelt" anchor="CenterBottom" />
+			<window name="HUDLeftStatBars" anchor="LeftBottom" />
+			<window name="HUDRightStatBars" anchor="RightBottom" />
+			<window name="windowQuestTracker" anchor="RightTop" />
+			<window name="windowGroupBars" anchor="LeftTop" />
+		</set>
+
+		<setattribute xpath="/xui//window_group[@name='toolbelt']" name="actionset">false</setattribute>
+
+
+<!--	// Z2 // Radial Menu -->
+
+		<set xpath="/xui/ruleset[@name='default']/window_group[@name='radial']">
+			<window name="windowRadial" />
+		</set>
+
+		<setattribute xpath="/xui//window_group[@name='radial']" name="actionset">keyboard</setattribute>
+		<setattribute xpath="/xui//window_group[@name='radial']" name="controller">Radial</setattribute>
+
+
+<!--	// Z2 // Chat Output -->
+
+		<set xpath="/xui/ruleset[@name='default']/window_group[@name='chatoutput']">
+			<window name="chatoutput" />
+		</set>
+
+		<setattribute xpath="/xui//window_group[@name='chatoutput']" name="actionset">false</setattribute>
+		
+
+<!--	// Z2 // Chat Input -->
+
+		<set xpath="/xui/ruleset[@name='default']/window_group[@name='chat']">
+			<window name="chat" />
+		</set>
+
+		<append xpath="/xui/ruleset/window_group[@name='chat']">
+			<window name="commandsinfo"/>
+		</append>
+
+<!--	// Z2 // Day / Time UI Inject -->
+
+		<append xpath="/xui/ruleset[@name='default']/window_group[@name='crafting']">
+			<window name="dayTimeUI" anchor="LeftTop" />
+		</append>
+
+		<append xpath="/xui/ruleset[@name='default']/window_group[@name='character']">
+			<window name="dayTimeUI" anchor="LeftTop" />
+		</append>
+
+		<append xpath="/xui/ruleset[@name='default']/window_group[@name='map']">
+			<window name="dayTimeUI" anchor="LeftTop" />
+		</append>
+
+		<append xpath="/xui/ruleset[@name='default']/window_group[@name='skills']">
+			<window name="dayTimeUI" anchor="LeftTop" />
+		</append>
+
+		<append xpath="/xui/ruleset[@name='default']/window_group[@name='players']">
+			<window name="dayTimeUI" anchor="LeftTop" />
+		</append>
+
+		<append xpath="/xui/ruleset[@name='default']/window_group[@name='quests']">
+			<window name="dayTimeUI" anchor="LeftTop" />
+		</append>
+
+		<append xpath="/xui/ruleset[@name='default']/window_group[@name='journal']">
+			<window name="dayTimeUI" anchor="LeftTop" />
+		</append>
+
+		<append xpath="/xui/ruleset[@name='default']/window_group[@name='creative']">
+			<window name="dayTimeUI" anchor="LeftTop" />
+		</append>
+
+		<append xpath="/xui/ruleset[@name='default']/window_group[@name='looting']">
+			<window name="dayTimeUI" anchor="LeftTop" />
+		</append>
+
+		<append xpath="/xui/ruleset[@name='default']/window_group[contains (@name, 'workstation')]">
+			<window name="dayTimeUI" anchor="LeftTop" />
+		</append>
+
+		<append xpath="/xui/ruleset[@name='default']/window_group[@name='vehicle']">
+			<window name="dayTimeUI" anchor="LeftTop" />
+		</append>
+
+		<append xpath="/xui/ruleset[@name='default']/window_group[@name='vehicleStorage']">
+			<window name="dayTimeUI" anchor="LeftTop" />
+		</append>
+
+		<append xpath="/xui/ruleset[@name='default']/window_group[@name='assemble']">
+			<window name="dayTimeUI" anchor="LeftTop" />
+		</append>
+
+		<append xpath="/xui/ruleset[@name='default']/window_group[@name='trader']">
+			<window name="dayTimeUI" anchor="LeftTop" />
+		</append>
+
+		<append xpath="/xui/ruleset[@name='default']/window_group[@name='questTurnIn']">
+			<window name="dayTimeUI" anchor="LeftTop" />
+		</append>
+
+		<append xpath="/xui/ruleset[@name='default']/window_group[@name='powersource']">
+			<window name="dayTimeUI" anchor="LeftTop" />
+		</append>
+
+		<append xpath="/xui/ruleset[@name='default']/window_group[@name='powertrigger']">
+			<window name="dayTimeUI" anchor="LeftTop" />
+		</append>
+
+		<append xpath="/xui/ruleset[@name='default']/window_group[@name='powerrangedtrap']">
+			<window name="dayTimeUI" anchor="LeftTop" />
+		</append>
+
+		<append xpath="/xui/ruleset[@name='default']/window_group[@name='powercamera']">
+			<window name="dayTimeUI" anchor="LeftTop" />
+		</append>
+
+		<append xpath="/xui/ruleset[@name='default']/window_group[@name='powerspotlight']">
+			<window name="dayTimeUI" anchor="LeftTop" />
+		</append>
+
+
+<!--	// Z2 // In-Game Clean Menu -->
+
+		<set xpath="/xui/ruleset[@name='default']/window_group[@name='ingameMenu']">
+			<window name="ingameMenu" />
+			<window name="cleanMenuBackground" />
+		</set>
+	
+</configs>

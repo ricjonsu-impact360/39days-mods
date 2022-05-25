@@ -1,0 +1,20 @@
+<configs>
+<!-- <set xpath="/paints/paint[@id='30']/property[@name='PaintCost']/@value">9999</set> -->
+<append xpath="/paints">
+
+<paint id="184" name="CustomPaint01"><property name="TextureId" value="596"/><property name="Group" value="txGroupMetal"/><property name="PaintCost" value="3" /></paint>
+<paint id="185" name="CustomPaint02"><property name="TextureId" value="597"/><property name="Group" value="txGroupMetal"/><property name="PaintCost" value="3" /></paint>
+<paint id="186" name="CustomPaint03"><property name="TextureId" value="598"/><property name="Group" value="txGroupMetal"/><property name="PaintCost" value="3" /></paint>
+<paint id="187" name="CustomPaint04"><property name="TextureId" value="554"/><property name="Group" value="txGroupMetal"/><property name="PaintCost" value="3" /></paint>
+<paint id="188" name="CustomPaint05"><property name="TextureId" value="442"/><property name="Group" value="txGroupMetal"/><property name="PaintCost" value="3" /></paint>
+<paint id="189" name="CustomPaint06"><property name="TextureId" value="410"/><property name="Group" value="txGroupMetal"/><property name="PaintCost" value="3" /></paint>
+<paint id="190" name="CustomPaint07"><property name="TextureId" value="382"/><property name="Group" value="txGroupMetal"/><property name="PaintCost" value="3" /></paint>
+<paint id="191" name="CustomPaint08"><property name="TextureId" value="334"/><property name="Group" value="txGroupMetal"/><property name="PaintCost" value="3" /></paint>
+<paint id="192" name="CustomPaint09"><property name="TextureId" value="340"/><property name="Group" value="txGroupMetal"/><property name="PaintCost" value="3" /></paint>
+<paint id="193" name="CustomPaint10"><property name="TextureId" value="176"/><property name="Group" value="txGroupMetal"/><property name="PaintCost" value="3" /></paint>
+<paint id="194" name="CustomPaint11"><property name="TextureId" value="189"/><property name="Group" value="txGroupMetal"/><property name="PaintCost" value="3" /></paint>
+<paint id="195" name="CustomPaint12"><property name="TextureId" value="47"/><property name="Group" value="txGroupMetal"/><property name="PaintCost" value="3" /></paint>
+</append>
+
+</configs>
+

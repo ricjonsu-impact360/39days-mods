@@ -1,0 +1,59 @@
+<configs>
+	<!-- <set xpath="/npc/npc_info/@dialog_id">traderjen</set> -->
+	<append xpath="/npc">
+	<npc_info
+		id="traderVagrant"
+		name="traderVagrant"
+		name_key="traderVagrant"
+		faction="whiteriver"
+		portrait="npc_joel"
+		greeting_type="nearby"
+		stance="Like" voice_set="trader"
+		trader_id="1" dialog_id="trader" quest_faction="6" />
+	<npc_info
+		id="traderRocker"
+		name="traderRocker"
+		name_key="traderRocker"
+		faction="whiteriver"
+		portrait="npc_joel"
+		greeting_type="nearby"
+		stance="Like" voice_set="trader"
+		trader_id="1" dialog_id="trader" quest_faction="11" />
+	<npc_info
+		id="traderGeist"
+		name="traderGeist"
+		name_key="traderGeist"
+		faction="whiteriver"
+		portrait="npc_bob"
+		greeting_type="nearby"
+		stance="Like" voice_set="trader"
+		trader_id="1" dialog_id="trader" quest_faction="7"/>
+	<npc_info
+		id="traderTanya"
+		name="traderTanya"
+		name_key="npc_traderJen"
+		faction="whiteriver"
+		portrait="npc_jen"
+		greeting_type="nearby"
+		stance="Like" voice_set="trader_jen"
+		trader_id="2" dialog_id="trader" quest_faction="8"/>
+	<npc_info
+		id="traderScarecrow"
+		name="traderScarecrow"
+		name_key="traderScarecrow"
+		faction="whiteriver"
+		portrait="npc_hugh"
+		greeting_type="nearby"
+		stance="Like" voice_set="trader"
+		trader_id="1" dialog_id="trader" quest_faction="9"/>
+	<npc_info
+		id="traderStriker"
+		name="traderStriker"
+		name_key="traderStriker"
+		faction="whiteriver"
+		portrait="npc_hugh"
+		greeting_type="nearby"
+		stance="Like" voice_set="trader"
+		trader_id="1" dialog_id="trader" quest_faction="10"/>
+	</append>
+</configs>

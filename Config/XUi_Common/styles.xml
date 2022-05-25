@@ -1,0 +1,94 @@
+<potato>
+	<!-- Make the icon select area a bit smaller so there's no overlap 
+    <set xpath="/styles/style[@name='itemStack']/style_entry[@name='width']/@value">50</set>
+    <set xpath="/styles/style[@name='itemStack']/style_entry[@name='height']/@value">50</set> -->
+<append xpath="/styles/global">
+	<style_entry name="yellow" 		value="255,255,0"/>
+	<style_entry name="blue" 		value="0,0,255"/>
+	<style_entry name="lightblue" 		value="19,98,229"/>
+	<style_entry name="pink" 		value="222,0,255"/>	
+</append>
+
+<append xpath="/styles">
+	<style name="itemStackCustom">
+		<style_entry name="select_color" value="[beige]"/>
+		<style_entry name="press_color" value="[limeGreen]"/>
+		<style_entry name="final_pressed_color" value="[lightGrey]"/>
+		<style_entry name="background_color" value="[mediumGrey]"/>
+		<style_entry name="highlight_color" value="[hoverColor]"/>
+		<style_entry name="holding_color" value="[white]"/>
+		<style_entry name="width" value="48"/>
+		<style_entry name="height" value="48"/>
+		<style_entry name="hover_icon_grow" value="1.5"/>
+		<style_entry name="on_press" value="true"/>
+		<style_entry name="sound_volume" value="0.75"/>
+		<style_entry name="pickup_sound" value="[pickup_click]"/>
+		<style_entry name="place_sound" value="[place_click]"/>
+	</style>
+
+</append>
+
+
+<!--	// Z2 // Globals -->
+
+		<append xpath="/styles/global">
+			<style_entry name="alignmenthelper"						value="255,128,0,255" />
+			<style_entry name="hudElementBG"						value="96,96,96,128" />
+			<style_entry name="hudElementBRDR"						value="0,0,0,255" />
+			<style_entry name="hudDiamondFG"						value="128,128,128,255" />
+			<style_entry name="hudDiamondVanityA1"					value="0,0,0,255" />
+			<style_entry name="hudDiamondVanityA2"					value="128,128,128,255" />
+			<style_entry name="hudDiamondFG2"						value="0,255,255,255" />
+			<style_entry name="hudDiamondNegative"					value="255,0,0,255" />
+			<style_entry name="chatOutputText"						value="255,255,255,255" />
+			<style_entry name="chatInputText"						value="255,255,255,255" />
+			<style_entry name="hudLabelPrimary"						value="255,255,255,255" />
+			<style_entry name="hudLabelSecondary"					value="255,255,255,255" />
+			<style_entry name="hudIconPrimary"						value="255,255,255,255" />
+			<style_entry name="hudIconBG"							value="0,0,0,128" />
+			<style_entry name="mainLineColor"						value="58,214,205,255" />
+			<style_entry name="mainLineColor2"						value="0,255,255,255" />
+			<style_entry name="compassIndicator"					value="255,128,0,255" />
+			<style_entry name="interactionPromptLabel"				value="255,255,255,255" />
+			<style_entry name="interactionPromptBG"					value="0,0,0,200" />
+			<style_entry name="searchTimerBackground"				value="96,96,96,128" />
+			<style_entry name="throwPowerBackground"				value="0,0,0,150" />
+			<style_entry name="throwPowerBar"						value="0,180,0,120" />
+			<style_entry name="playerHealthBar"						value="255,0,0,200" />
+			<style_entry name="playerStaminaBar"					value="0,54,255,200" />
+			<style_entry name="playerHungerBar"						value="23,81,23" />
+			<style_entry name="playerThirstBar"						value="16,77,96" />
+			<style_entry name="experienceBarMain"					value="255,255,255,128" />
+			<style_entry name="experienceBarGain"					value="204,255,229,128" />
+			<style_entry name="experienceBarLoss"					value="255,153,153,128" />
+			<style_entry name="statPartyHealthBG"					value="0,0,0,200" />
+			<style_entry name="statTargetHealthBar"					value="200,0,0,180" />
+			<style_entry name="teamLeaderIndicator"					value="255,215,0,200" />
+			<style_entry name="statBarVehicleHealth"				value="175,30,25,200" />
+			<style_entry name="statBarVehicleFuel"					value="154,205,50,200" />
+			<style_entry name="hudElementTempBG"					value="96,96,96,128" />
+			<style_entry name="hudElementTempBRDR"					value="0,0,0,255" />
+			<style_entry name="hudDiamondTempFG"					value="128,128,128,255" />
+			<style_entry name="hudTempIcon"							value="255,255,255,255" />
+			<style_entry name="hudLabelTemp"						value="255,255,255,255" />
+			
+			<style_entry name="hudElementsBG" value="64,64,64"/>
+			<style_entry name="hudElementsLine" value="255,255,255"/>
+			<style_entry name="hudElementsACNTClr1" value="175,30,25"/>
+			<style_entry name="hudElementsIcon" value="255,255,255"/>
+			<style_entry name="hudElementsLBLPri" value="255,255,255"/>
+			<style_entry name="hudElementsLBLSec" value="128,128,128"/>
+			<style_entry name="hudElementsCPSInd" value="114,114,114"/>
+			<style_entry name="hudElementsTBSlot" value="96,96,96"/>
+			<style_entry name="hudElementsTHRWBar" value="0,180,0,120"/>
+			<style_entry name="hudElementsHealth" value="175,30,25"/>
+			<style_entry name="hudElementsStamina" value="17,97,146"/>
+			<style_entry name="hudElementsFuel" value="152,174,0"/>
+			<style_entry name="hudElementsStealth" value="255,174,28"/>
+			<style_entry name="hudElementsFood" value="23,81,23"/>
+			<style_entry name="hudElementsWater" value="16,77,96"/>
+			<style_entry name="slotNumberLabelMain"					value="255,255,255,255" />
+			<style_entry name="slotNumberBackground"				value="0,0,0,255" />
+			<style_entry name="slotNumberForeground"				value="128,128,128,255" />
+		</append>
+</potato>

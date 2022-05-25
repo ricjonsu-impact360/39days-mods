@@ -1,0 +1,442 @@
+<config>
+<append xpath="/materials">
+<!-- Elite part -->
+<material id="MEliteParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="resourceEliteItemPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteTwinBladesParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="meleeEliteTwinBladesPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MElitePP19BizonParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="gunElitePP19BizonPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteRugerMP9Parts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="gunEliteRugerMP9Part"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteSpringfieldSaintParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="gunEliteSpringfieldSaintPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteSterlingSAR87Parts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="gunEliteSterlingSAR87Part"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteM368VectorParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="gunEliteM368VectorPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteSteyrAUGParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="gunEliteSteyrAUGPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteOTs14GrozaParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="gunEliteOTs14GrozaPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteTAR21Parts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="gunEliteTAR21Part"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MElitePumpShotgunParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="gunElitePumpShotgunPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteGatingParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="gunEliteGatingPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteAWMParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="gunEliteAWMPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteCompoundBowParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="bowEliteCompoundBowPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteCompoundCrossbowParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="bowEliteCompoundCrossbowPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteScytheParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="meleeEliteScythePart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteQuadBarrelsShotgunParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="gunEliteQuadBarrelsShotgunPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteQuantumGunParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="gunEliteQuantumGunPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteBarrettM107Parts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="gunEliteBarrettM107Part"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteGoldenEagleParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="gunEliteGoldenEaglePart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteGlock9Parts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="gunEliteGlock9Part"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteMG42Parts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="gunEliteMG42Part"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteBazokaParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="gunEliteBazokaPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteHyperBlasterParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="gunEliteHyperBlasterPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteZeusParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="gunEliteZeusPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteGreenHornetParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="gunEliteGreenHornetPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteHeavySledgehammerParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="meleeEliteHeavySledgehammerPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteVampireGauntletsParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="meleeEliteVampireGauntletsPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteSilverHawkParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="gunEliteSilverHawkPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteAK47GoldParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="gunEliteAK47GoldPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteBolterOfTitansParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="bowEliteBolterOfTitansPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteAutoTurretParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="gunBotEliteAutoTurretPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MInsaneAutoTurretParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="gunBotInsaneAutoTurretPart"/>
+	<property name="Experience" value="6"/>
+</material>
+
+<!-- Elite armor part mat -->
+<material id="MEliteTitaniumHelmetParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="armorEliteTitaniumHelmetPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteTitaniumVestParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="armorEliteTitaniumVestPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteTitaniumGlovesParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="armorEliteTitaniumGlovesPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteTitaniumLegsParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="armorEliteTitaniumLegsPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteTitaniumBootsParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="armorEliteTitaniumBootsPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteObsidianHelmetParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="armorEliteObsidianHelmetPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteObsidianChestParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="armorEliteObsidianChestPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteObsidianGlovesParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="armorEliteObsidianGlovesPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteObsidianLegsParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="armorEliteObsidianLegsPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteObsidianBootsParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="armorEliteObsidianBootsPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MNightmareParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="armorNightmarePart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MExoticParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="armorExoticPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MSupremeParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="armorSupremePart"/>
+	<property name="Experience" value="6"/>
+</material>
+
+<!-- Elite tools part mat -->
+<material id="MEliteChainsawParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="toolEliteChainsawPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteAugerParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="toolEliteAugerPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MElitePickaxeParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="toolElitePickaxePart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteFireaxeParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="toolEliteFireaxePart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteShovelParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="toolEliteShovelPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteWrenchParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="toolEliteWrenchPart"/>
+	<property name="Experience" value="6"/>
+</material>
+
+<!-- Basic mat -->
+<material id="MresourceSchem">
+	<property name="damage_category" value="cloth"/>
+	<property name="surface_category" value="cloth"/>
+	<property name="forge_category" value="schem"/>
+	<property name="Experience" value="1"/>
+</material>
+
+<material id="MrSteel">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="iron"/>
+	<property name="Hardness" type="float" value="1"/>
+	<property name="stepsound" value="metal"/>
+	<property name="stability_glue" value="300"/>
+	<property name="Mass" type="int" value="20"/>
+	<property name="explosionresistance" value="2.75"/>
+	<property name="MaxDamage" value="13000"/>
+	<property name="Experience" value="6"/>
+</material>
+
+<material id="MTitanium">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="iron"/>
+	<property name="Hardness" type="float" value="1"/>
+	<property name="stepsound" value="metal"/>
+	<property name="stability_glue" value="400"/>
+	<property name="Mass" type="int" value="20"/>
+	<property name="explosionresistance" value="3.55"/>
+	<property name="MaxDamage" value="16000"/>
+	<property name="Experience" value="7"/>
+</material>
+
+<material id="MDiamondBlock">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="iron"/>
+	<property name="Hardness" type="float" value="1"/>
+	<property name="stepsound" value="metal"/>
+	<property name="stability_glue" value="400"/>
+	<property name="Mass" type="int" value="20"/>
+	<property name="explosionresistance" value="4.55"/>
+	<property name="MaxDamage" value="20000"/>
+	<property name="Experience" value="7"/>
+</material>
+
+<material id="MObsidianBlock">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="iron"/>
+	<property name="Hardness" type="float" value="1"/>
+	<property name="stepsound" value="metal"/>
+	<property name="stability_glue" value="400"/>
+	<property name="Mass" type="int" value="20"/>
+	<property name="explosionresistance" value="5.55"/>
+	<property name="MaxDamage" value="25000"/>
+	<property name="Experience" value="7"/>
+</material>
+
+<material id="Msilver">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="silver"/>
+	<property name="Hardness" type="float" value="1"/>
+	<property name="stepsound" value="metal"/>
+	<property name="stability_glue" value="300"/>
+	<property name="Mass" type="int" value="20"/>
+	<property name="MaxDamage" value="200"/>
+	<property name="Experience" value="3"/>
+</material>
+
+<material id="Mgold">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="gold"/>
+	<property name="Hardness" type="float" value="1"/>
+	<property name="stepsound" value="metal"/>
+	<property name="stability_glue" value="300"/>
+	<property name="Mass" type="int" value="20"/>
+	<property name="MaxDamage" value="200"/>
+	<property name="Experience" value="4"/>
+</material>
+
+<material id="Mgolddust">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="golddust"/>
+	<property name="Hardness" type="float" value="1"/>
+	<property name="stepsound" value="metal"/>
+	<property name="stability_glue" value="300"/>
+	<property name="Mass" type="int" value="20"/>
+	<property name="MaxDamage" value="200"/>
+	<property name="Experience" value="4"/>
+</material>
+
+<material id="Mdiamond">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="diamond"/>
+	<property name="Hardness" type="float" value="1"/>
+	<property name="stepsound" value="metal"/>
+	<property name="stability_glue" value="300"/>
+	<property name="Mass" type="int" value="20"/>
+	<property name="MaxDamage" value="200"/>
+	<property name="Experience" value="5"/>
+</material>
+
+<material id="Mobsidian">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="diamond"/>
+	<property name="Hardness" type="float" value="1"/>
+	<property name="stepsound" value="metal"/>
+	<property name="stability_glue" value="300"/>
+	<property name="Mass" type="int" value="20"/>
+	<property name="MaxDamage" value="200"/>
+	<property name="Experience" value="6"/>
+</material>
+</append>
+<!-- <set xpath="/materials/material/property[@name='Experience']/@value">0</set> -->
+</config>

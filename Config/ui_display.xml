@@ -1,0 +1,327 @@
+<configs>
+<append xpath="/ui_display_info/crafting_category_display">
+<crafting_category_list display_type="forgeSuper">
+	<crafting_category name="Resources" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+	<crafting_category name="Building" icon="ui_game_symbol_map_house" display_name="lblCategoryBuilding" />
+	<crafting_category name="Ammo/Weapons" icon="ui_game_symbol_knife" display_name="lblCategoryAmmoWeapons" />
+	<crafting_category name="Tools/Traps" icon="ui_game_symbol_tool" display_name="lblCategoryToolsTraps" />
+</crafting_category_list>
+<crafting_category_list display_type="AlchemyFurnace">
+	<crafting_category name="Resources" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+	<crafting_category name="Tools/Traps" icon="ui_game_symbol_tool" display_name="lblCategoryToolsTraps" />
+</crafting_category_list>	
+<crafting_category_list display_type="WorkingCharcoalGrill">
+	<crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" />
+	<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink" />
+	<crafting_category name="CFChemicals" icon="ui_game_symbol_chemistry" display_name="lblCategoryChemicals" />
+</crafting_category_list>
+<crafting_category_list display_type="WorkingWoodBurningStove">
+	<crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" />
+	<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink" />
+	<crafting_category name="CFChemicals" icon="ui_game_symbol_chemistry" display_name="lblCategoryChemicals" />
+</crafting_category_list>
+<crafting_category_list display_type="ComputerWorkstation">
+	<crafting_category name="Mods" icon="ui_game_symbol_assemble" display_name="lblCategoryMods" />
+</crafting_category_list>
+<crafting_category_list display_type="gasMachine">
+	<crafting_category name="Resources" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+</crafting_category_list>
+<crafting_category_list display_type="oreMiner">
+	<crafting_category name="Resources" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+</crafting_category_list>
+</append>
+<append xpath="/ui_display_info/item_display">
+<item_display_info display_type="ring" display_group="groupAttire" >
+	<display_entry name="HealthMax" title_key="Health" display_type="Integer" display_leading_plus="true"/>
+	<display_entry name="StaminaMax" title_key="Stamina" display_type="Integer" display_leading_plus="true"/>
+	<display_entry name="PhysicalDamageResist" title_key="Armor" display_type="Integer" display_leading_plus="true"/>
+	<display_entry name="BuffResistance" title_key="statBuffResistance" display_type="Percent" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger" show_inverted="true"/>
+	<display_entry name="dRunSpeed" title_key="Moving Speed" display_type="Percent" display_leading_plus="true"/>
+	<display_entry name="Mobility" title_key="statMobility" display_type="Percent" display_leading_plus="true" show_inverted="true" negative_preferred="false"/>
+	<!-- <display_entry name="dCraftingTier" title_key="statCraftingTier" display_leading_plus="true"/> -->
+	<!-- <display_entry name="AttributeLevel" title_key="All Attribute" display_leading_plus="true"/> -->
+	<display_entry name="dPlayerExpGain" title_key="statShowPlayerExpGain" display_type="Percent" display_leading_plus="true"/>
+</item_display_info>
+<item_display_info display_type="Necklace" display_group="groupAttire" >
+	<display_entry name="HealthMax" title_key="Health" display_type="Integer" display_leading_plus="true"/>
+	<display_entry name="StaminaMax" title_key="Stamina" display_type="Integer" display_leading_plus="true"/>
+	<display_entry name="dWeaponHandling" title_key="Weapon Handling" display_type="Percent" display_leading_plus="true"/>
+	<display_entry name="dAttacksPerMinute" title_key="Melee Attack Speed" display_type="Percent" display_leading_plus="true"/>
+	<display_entry name="dEntityDamage" title_key="Damage" display_type="Percent" display_leading_plus="true"/>
+	<display_entry name="dNoiseMultiplier" title_key="Noise" display_type="Percent" negative_preferred="true"/>
+	<display_entry name="dPlayerExpGain" title_key="Kill/Quest XP Gain" display_type="Percent" display_leading_plus="true"/>
+</item_display_info>
+<item_display_info display_type="jadeHealthMax" display_group="modAttire" >
+	<display_entry name="HealthMax" title_key="Health" display_type="Integer" display_leading_plus="true"/>
+</item_display_info>
+<item_display_info display_type="jadeStaminaMax" display_group="modAttire" >
+	<display_entry name="StaminaMax" title_key="Stamina" display_type="Integer" display_leading_plus="true"/>
+</item_display_info>
+<item_display_info display_type="jadePhysicalDamageResist" display_group="modAttire" >
+	<display_entry name="PhysicalDamageResist" title_key="Armor" display_type="Integer" display_leading_plus="true"/>
+</item_display_info>
+<item_display_info display_type="jadeBuffResistance" display_group="modAttire" >
+	<display_entry name="BuffResistance" title_key="statBuffResistance" display_type="Percent" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger" show_inverted="true"/>
+</item_display_info>
+<item_display_info display_type="jadeMobility" display_group="modAttire" >
+	<display_entry name="Mobility" title_key="statMobility" display_type="Percent" display_leading_plus="true" show_inverted="true" negative_preferred="false"/>
+</item_display_info>
+<item_display_info display_type="jadeEntityDamage" display_group="modAttire" >
+	<display_entry name="dEntityDamage" title_key="Entity Damage" display_type="Percent" display_leading_plus="true"/>
+</item_display_info>
+<item_display_info display_type="jadeGamestage" display_group="modAttire" >
+	<display_entry name="dGamestage" title_key="Game Stage" display_type="Integer" display_leading_plus="true"/>
+</item_display_info>
+<item_display_info display_type="jadeCraftingTier" display_group="modAttire" >
+	<display_entry name="dCraftingTier" title_key="statCraftingTier" display_leading_plus="true"/>
+</item_display_info>
+<item_display_info display_type="jadeNoiseMultiplier" display_group="modAttire" >
+	<display_entry name="dNoiseMultiplier" title_key="Noise" display_type="Percent"/>
+</item_display_info>
+<item_display_info display_type="jadeSpeed" display_group="modAttire" >
+	<display_entry name="dSpeed" title_key="Speed" display_type="Percent"/>
+</item_display_info>
+<item_display_info display_type="ammoArrowFreezing" display_group="groupAmmo">
+	<display_entry name="EntityDamage" title_key="statEntityDamageRanged" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+	<display_entry name="BlockDamage" title_key="statBlockDamage" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+	<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+	<display_entry name="dChance" title_key="Freezing Chance" display_type="Percent"/>
+	<display_entry name="ProjectileVelocity" title_key="statProjectileVelocity" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+</item_display_info>
+<item_display_info display_type="ammoArrowShocked" display_group="groupAmmo">
+	<display_entry name="EntityDamage" title_key="statEntityDamageRanged" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+	<display_entry name="BlockDamage" title_key="statBlockDamage" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+	<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+	<display_entry name="dChance" title_key="Shocked Chance" display_type="Percent"/>
+	<display_entry name="ProjectileVelocity" title_key="statProjectileVelocity" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+</item_display_info>
+<item_display_info display_type="modarmorbreaking" display_group="modAttire">
+	<display_entry name="dBreakingArmor" title_key="Breaking Target Armor" display_type="Percent" display_leading_plus="true"/>
+</item_display_info>
+<item_display_info display_type="modBuffResistant" display_group="modAttire">
+	<display_entry name="dFireBuffResistant" title_key="Fire Resistant" display_type="Percent" display_leading_plus="true"/>
+	<display_entry name="dShockedBuffResistant" title_key="Shocked Resistant" display_type="Percent" display_leading_plus="true"/>
+	<display_entry name="dFreezeBuffResistant" title_key="Freeze Resistant" display_type="Percent" display_leading_plus="true"/>
+	<display_entry name="dInjuryBuffResistant" title_key="Injury Resistant" display_type="Percent" display_leading_plus="true"/>
+	<display_entry name="dEffectBuffResistant" title_key="Effect Resistant" display_type="Percent" display_leading_plus="true"/>
+</item_display_info>
+<item_display_info display_type="toolWorkbenchEngine" display_group="workstationTools">
+	<display_entry name="dCraftingTime" title_key="Workbench Crafting Speed" display_type="Percent" display_leading_plus="true" negative_preferred="false" />
+</item_display_info>
+<item_display_info display_type="toolReactorKit" display_group="workstationTools">
+	<display_entry name="dCraftingTime" title_key="Chemistry Crafting Speed" display_type="Percent" display_leading_plus="true" negative_preferred="false" />
+</item_display_info>
+<item_display_info display_type="meleeEWeapon" display_group="groupMelee">
+	<display_entry name="dEliteWeapon" title_key="[A42ACC]ELITE WEAPON - MELEE"/>
+	<display_entry name="EntityDamage" title_key="statEntityDamageMelee" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin,perkClassAssassin,perkClassBarbarian"/>
+	<display_entry name="EntityDamage" title_key="statPowerAttack" tags="secondary,perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin,perkClassAssassin,perkClassBarbarian"/>
+	<display_entry name="BlockDamage" title_key="statBlockDamage" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin,perkClassAssassin,perkClassBarbarian"/>
+	<display_entry name="AttacksPerMinute" title_key="statAttacksPerMinute" tags="perkFlurryOfBlows,perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin,perkClassAssassin,perkClassBarbarian"/>
+	<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin,perkClassAssassin,perkClassBarbarian"/>
+	<display_entry name="PhysicalDamageResist" title_key="[ffff00]Armor Ratting" negative_preferred="true"/>
+</item_display_info>
+<item_display_info display_type="augerTool" display_group="groupMelee">
+	<display_entry name="EntityDamage" title_key="statEntityDamageMelee" tags="perkMiner69r" />
+	<display_entry name="BlockDamage" title_key="statBlockDamage" tags="perkMiner69r" />
+	<display_entry name="MagazineSize" title_key="statFuelCapacity" tags="perkMiner69r" />
+	<display_entry name="RoundsPerMinute" title_key="statAttacksPerMinute" tags="perkMiner69r" />
+	<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkMiner69r,admin" />
+	<display_entry name="dCraftingTime" title_key="Ore Miner Crafting Speed" display_type="Percent" display_leading_plus="true" negative_preferred="false" />
+</item_display_info>
+<item_display_info display_type="rangedSnipGun" display_group="groupRanged">
+	<display_entry name="EntityDamage" title_key="statEntityDamageRanged" tags="perkGunslinger,revolver,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+	<display_entry name="MagazineSize" title_key="statMagazineSize" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+	<display_entry name="RoundsPerMinute" title_key="statRoundsPerMinute" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+	<display_entry name="DamageFalloffRange" title_key="statDamageFalloffRange" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+	<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+	<display_entry name="dEntityDamageSneak" title_key="[FFFF00]Sneak Damage Bonus" display_type="Percent" display_leading_plus="true"/>
+</item_display_info>
+<item_display_info display_type="rangedESMGGun" display_group="groupRanged">
+	<display_entry name="dEliteWeapon" title_key="[A42ACC]ELITE WEAPON - GUNFIGHTER CLASS"/>
+	<display_entry name="EntityDamage" title_key="statEntityDamageRanged" tags="perkGunslinger,revolver,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin,perkClassOfficer,perkClassUrbanWarrior,perkClassSharpshooter,perkClassInfantry,perkClassSupporter"/>
+	<display_entry name="MagazineSize" title_key="statMagazineSize" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin,perkClassOfficer,perkClassUrbanWarrior,perkClassSharpshooter,perkClassInfantry,perkClassSupporter"/>
+	<display_entry name="RoundsPerMinute" title_key="statRoundsPerMinute" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin,perkClassOfficer,perkClassUrbanWarrior,perkClassSharpshooter,perkClassInfantry,perkClassSupporter"/>
+	<display_entry name="DamageFalloffRange" title_key="statDamageFalloffRange" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin,perkClassOfficer,perkClassUrbanWarrior,perkClassSharpshooter,perkClassInfantry,perkClassSupporter"/>
+	<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin,perkClassOfficer,perkClassUrbanWarrior,perkClassSharpshooter,perkClassInfantry,perkClassSupporter"/>
+</item_display_info>
+<item_display_info display_type="rangedEGun" display_group="groupRanged">
+	<display_entry name="dEliteWeapon" title_key="[A42ACC]ELITE WEAPON - MACHINE GUNNER"/>
+	<display_entry name="EntityDamage" title_key="statEntityDamageRanged" tags="perkGunslinger,revolver,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin,perkClassOfficer,perkClassUrbanWarrior,perkClassSharpshooter,perkClassInfantry,perkClassSupporter"/>
+	<display_entry name="MagazineSize" title_key="statMagazineSize" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin,perkClassOfficer,perkClassUrbanWarrior,perkClassSharpshooter,perkClassInfantry,perkClassSupporter"/>
+	<display_entry name="RoundsPerMinute" title_key="statRoundsPerMinute" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin,perkClassOfficer,perkClassUrbanWarrior,perkClassSharpshooter,perkClassInfantry,perkClassSupporter"/>
+	<display_entry name="DamageFalloffRange" title_key="statDamageFalloffRange" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin,perkClassOfficer,perkClassUrbanWarrior,perkClassSharpshooter,perkClassInfantry,perkClassSupporter"/>
+	<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin,perkClassOfficer,perkClassUrbanWarrior,perkClassSharpshooter,perkClassInfantry,perkClassSupporter"/>
+</item_display_info>
+<item_display_info display_type="rangedESnipGun" display_group="groupRanged">
+	<display_entry name="dEliteWeapon" title_key="[A42ACC]ELITE WEAPON - DEAD EYE"/>
+	<display_entry name="EntityDamage" title_key="statEntityDamageRanged" tags="perkGunslinger,revolver,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin,perkClassOfficer,perkClassUrbanWarrior,perkClassSharpshooter,perkClassInfantry,perkClassSupporter"/>
+	<display_entry name="MagazineSize" title_key="statMagazineSize" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin,perkClassOfficer,perkClassUrbanWarrior,perkClassSharpshooter,perkClassInfantry,perkClassSupporter"/>
+	<display_entry name="RoundsPerMinute" title_key="statRoundsPerMinute" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin,perkClassOfficer,perkClassUrbanWarrior,perkClassSharpshooter,perkClassInfantry,perkClassSupporter"/>
+	<display_entry name="DamageFalloffRange" title_key="statDamageFalloffRange" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin,perkClassOfficer,perkClassUrbanWarrior,perkClassSharpshooter,perkClassInfantry,perkClassSupporter"/>
+	<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin,perkClassOfficer,perkClassUrbanWarrior,perkClassSharpshooter,perkClassInfantry,perkClassSupporter"/>
+	<display_entry name="dEntityDamageSneak" title_key="statEntityDamageSneak" display_type="Percent" display_leading_plus="true"/>
+</item_display_info>
+<item_display_info display_type="rangedEBow" display_group="groupRanged">
+	<display_entry name="dEliteWeapon" title_key="[A42ACC]ELITE WEAPON - ARCHERY"/>
+	<display_entry name="EntityDamage" title_key="statEntityDamageRanged" tags="perkArchery,admin,perkClassArcherMan"/>
+	<display_entry name="ProjectileVelocity" title_key="statProjectileVelocity" tags="perkArchery,admin,perkClassArcherMan"/>
+	<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkArchery,admin,perkClassArcherMan"/>
+	<display_entry name="BurstRoundCount" title_key="Arrows Per Shot" tags="perkArchery,admin,perkClassArcherMan"/>
+	<display_entry name="MagazineSize" title_key="statMagazineSize" tags="perkArchery,admin,perkClassArcherMan"/>
+	<display_entry name="dEntityDamageSneak" title_key="[FFFF00]Sneak Damage Bonus" display_type="Percent" display_leading_plus="true"/>
+</item_display_info>
+<item_display_info display_type="rangedEShotgun" display_group="groupRanged">
+	<display_entry name="dEliteWeapon" title_key="[A42ACC]ELITE WEAPON - SHOTGUN"/>
+	<display_entry name="EntityDamage" title_key="statEntityDamageShotgun" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin,perkClassOfficer,perkClassUrbanWarrior,perkClassSharpshooter,perkClassInfantry,perkClassSupporter"/>
+	<display_entry name="RoundRayCount" title_key="statRoundRayCount" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin,perkClassOfficer,perkClassUrbanWarrior,perkClassSharpshooter,perkClassInfantry,perkClassSupporter"/>
+	<display_entry name="MagazineSize" title_key="statMagazineSize" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin,perkClassOfficer,perkClassUrbanWarrior,perkClassSharpshooter,perkClassInfantry,perkClassSupporter"/>
+	<display_entry name="RoundsPerMinute" title_key="statRoundsPerMinute" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin,perkClassOfficer,perkClassUrbanWarrior,perkClassSharpshooter,perkClassInfantry,perkClassSupporter"/>
+	<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin,perkClassOfficer,perkClassUrbanWarrior,perkClassSharpshooter,perkClassInfantry,perkClassSupporter"/>
+	<display_entry name="dStatStunEffect" title_key="statStunEffect" display_type="Time"/>
+</item_display_info>
+<item_display_info display_type="rangedPhoton" display_group="groupRanged">
+	<display_entry name="dEliteWeapon" title_key="[A42ACC]ELITE WEAPON - DEMOLITION"/>
+	<display_entry name="EntityDamage" title_key="statEntityDamageRangedImpact" tags="perkDemolitionsExpert,admin,perkClassUrbanWarrior"/>
+	<display_entry name="MagazineSize" title_key="statMagazineSize" tags="perkDemolitionsExpert,admin,perkClassUrbanWarrior"/>
+	<display_entry name="DamageFalloffRange" title_key="statDamageFalloffRange" tags="perkDemolitionsExpert,admin,perkClassUrbanWarrior"/>
+	<display_entry name="ProjectileVelocity" title_key="statProjectileVelocity" tags="perkDemolitionsExpert,admin,perkClassUrbanWarrior"/>
+	<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkDemolitionsExpert,admin"/>
+	<display_entry name="dPhoton" title_key="[ffff00]Ignore 100% enemy armor"/>
+</item_display_info>
+<item_display_info display_type="rangedGoldenGun" display_group="groupRanged">
+	<display_entry name="dEliteWeapon" title_key="[A42ACC]ELITE WEAPON - GUNSLINGER"/>
+	<display_entry name="EntityDamage" title_key="statEntityDamageRanged" tags="perkGunslinger,revolver,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin,perkClassOfficer,perkClassUrbanWarrior,perkClassSharpshooter,perkClassInfantry,perkClassSupporter"/>
+	<display_entry name="MagazineSize" title_key="statMagazineSize" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin,perkClassOfficer,perkClassUrbanWarrior,perkClassSharpshooter,perkClassInfantry,perkClassSupporter"/>
+	<display_entry name="RoundsPerMinute" title_key="statRoundsPerMinute" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin,perkClassOfficer,perkClassUrbanWarrior,perkClassSharpshooter,perkClassInfantry,perkClassSupporter"/>
+	<display_entry name="DamageFalloffRange" title_key="statDamageFalloffRange" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin,perkClassOfficer,perkClassUrbanWarrior,perkClassSharpshooter,perkClassInfantry,perkClassSupporter"/>
+	<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin,perkClassOfficer,perkClassUrbanWarrior,perkClassSharpshooter,perkClassInfantry,perkClassSupporter"/>
+	<display_entry name="dSMGToggle" title_key="[ffff00]SMG Toggle"/>
+</item_display_info>
+<item_display_info display_type="rangedMG42Gun" display_group="groupRanged">
+	<display_entry name="dEliteWeapon" title_key="[A42ACC]ELITE WEAPON - DEAD EYE"/>
+	<display_entry name="EntityDamage" title_key="statEntityDamageRanged" tags="perkGunslinger,revolver,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin,perkClassOfficer,perkClassUrbanWarrior,perkClassSharpshooter,perkClassInfantry,perkClassSupporter"/>
+	<display_entry name="MagazineSize" title_key="statMagazineSize" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin,perkClassOfficer,perkClassUrbanWarrior,perkClassSharpshooter,perkClassInfantry,perkClassSupporter"/>
+	<display_entry name="RoundsPerMinute" title_key="statRoundsPerMinute" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin,perkClassOfficer,perkClassUrbanWarrior,perkClassSharpshooter,perkClassInfantry,perkClassSupporter"/>
+	<display_entry name="DamageFalloffRange" title_key="statDamageFalloffRange" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin,perkClassOfficer,perkClassUrbanWarrior,perkClassSharpshooter,perkClassInfantry,perkClassSupporter"/>
+	<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin,perkClassOfficer,perkClassUrbanWarrior,perkClassSharpshooter,perkClassInfantry,perkClassSupporter"/>
+	<display_entry name="dSniperToggle" title_key="[ffff00]Sniper Toggle (x3 DMG sneaking)"/>
+</item_display_info>
+<item_display_info display_type="rangedETurret" display_group="groupRanged">
+	<display_entry name="dEliteWeapon" title_key="[A42ACC]ELITE WEAPON - TURRET"/>
+	<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageRanged" tags="perkTurrets,perkClassSupporter"/>
+	<display_entry name="MagazineSize" title_key="statMagazineSize" tags="turretRanged,perkClassSupporter"/>
+	<display_entry name="RoundsPerMinute" title_key="statRoundsPerMinute" tags="turretRanged,perkClassSupporter"/>
+	<display_entry name="DamageFalloffRange" title_key="statDamageFalloffRange" tags="perkTurrets,perkClassSupporter"/>
+	<display_entry name="DegradationMax" title_key="statDegradationHPMax" tags="perkTurrets"/>
+</item_display_info>
+<item_display_info display_type="ETool" display_group="groupMelee">
+	<display_entry name="dEliteWeapon" title_key="[A42ACC]ELITE TOOL"/>
+	<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageMelee"/>
+	<display_entry name="EntityDamage" display_type="Decimal1" title_key="statPowerAttack"/>
+	<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage"/>
+	<display_entry name="StaminaLoss" display_type="Decimal1" title_key="statStaminaLoss" negative_preferred="true"/>
+	<display_entry name="AttacksPerMinute" title_key="statAttacksPerMinute"/>
+</item_display_info>
+<item_display_info display_type="motorETool" display_group="groupMelee">
+	<display_entry name="dEliteWeapon" title_key="[A42ACC]ELITE TOOL"/>
+	<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageMelee" tags="perkMiner69r"/>
+	<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkMiner69r"/>
+	<display_entry name="MagazineSize" title_key="statFuelCapacity" tags="perkMiner69r"/>
+	<display_entry name="RoundsPerMinute" title_key="statAttacksPerMinute" tags="perkMiner69r"/>
+	<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkMiner69r,admin"/>
+</item_display_info>
+<item_display_info display_type="Emelee" display_group="groupMelee">
+	<display_entry name="dEliteWeapon" title_key="[A42ACC]ELITE TOOL"/>
+	<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageMelee" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+	<display_entry name="EntityDamage" display_type="Decimal1" title_key="statPowerAttack" tags="secondary,perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+	<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+	<display_entry name="StaminaLoss" display_type="Decimal1" title_key="statStaminaLoss" negative_preferred="true"/>
+	<display_entry name="AttacksPerMinute" title_key="statAttacksPerMinute" tags="perkFlurryOfBlows,perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+	<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+</item_display_info>
+<item_display_info display_type="foodwaterHeatResist" display_group="groupConsumables">
+	<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
+	<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
+	<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
+	<display_entry name="dHyperthermalResist" title_key="statHyperthermalResist"/>
+	<display_entry name="FoodPoisoningRisk" title_key="statFoodPoisoningRisk" display_type="Percent" negative_preferred="true"/>
+</item_display_info>
+<item_display_info display_type="foodwaterColdResist" display_group="groupConsumables">
+	<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
+	<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
+	<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
+	<display_entry name="dHypothermalResist" title_key="statHyperthermalResist"/>
+	<display_entry name="FoodPoisoningRisk" title_key="statFoodPoisoningRisk" display_type="Percent" negative_preferred="true"/>
+</item_display_info>
+<item_display_info display_type="drinkMoonshine" display_group="groupConsumables">
+	<display_entry name="dPhysicalDamageResist" title_key="statPhysicalDamageResist"/>
+	<display_entry name="dHyperthermalResist" title_key="statHyperthermalResist"/>
+	<display_entry name="staminaAmount" title_key="statStaminaAmount" display_type="Percent"/>
+	<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
+</item_display_info>		
+<item_display_info display_type="medicalInstantHealth" display_group="groupConsumables">
+	<display_entry name="dInstantHealth" title_key="statShowInstantHealth" display_leading_plus="true"/>
+	<display_entry name="dDelay" title_key="Delay times per used" display_type="Time"/>
+</item_display_info>
+<item_display_info display_type="medicalInstantStamina" display_group="groupConsumables">
+	<display_entry name="dInstantStamina" title_key="Stamina" display_leading_plus="true"/>
+	<display_entry name="dDelay" title_key="Delay times per used" display_type="Time"/>
+</item_display_info>
+<item_display_info display_type="drugEnergyTabletDisplay" display_group="groupConsumables">
+	<display_entry name="dReloadSpeedMultiplier" title_key="xuiSkillReloadSpeed" display_type="Percent" display_leading_plus="true"/>
+	<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
+	<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent"/>
+	<display_entry name="dRunSpeed" title_key="statRunSpeed" display_type="Percent" display_leading_plus="true"/>
+	<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+</item_display_info>
+<item_display_info display_type="drinkSnowberryGinDisplay" display_group="groupConsumables">
+	<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent" display_leading_plus="true"/>
+	<display_entry name="dBlockDamage" title_key="xuiSkillBlockDamage" display_type="Percent"/>
+	<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+</item_display_info>
+<item_display_info display_type="drinkVodkaDisplay" display_group="groupConsumables">
+	<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent" display_leading_plus="true"/>
+      <display_entry name="dBartering" title_key="statBarteringSellBuy" display_type="Percent" display_leading_plus="true"/>
+	<display_entry name="dStunResist" title_key="statStunResist" display_type="Percent" display_leading_plus="true"/>
+	<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+</item_display_info>
+<item_display_info display_type="foodHungerDrinkDisplay" display_group="groupConsumables">
+	<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
+	<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
+	<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent"/>
+</item_display_info>
+<item_display_info display_type="drugSnowberryCandyDisplay" display_group="groupConsumables">
+	<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
+	<display_entry name="dEfficientDigestion" title_key="statEfficientDigestion" display_type="Percent" display_leading_plus="true"/>
+	<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+</item_display_info>
+<item_display_info display_type="foodWaterHealthDisplay" display_group="groupConsumables">
+	<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
+	<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
+	<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent"/>
+</item_display_info>
+<item_display_info display_type="foodIceDrinkDisplay" display_group="groupConsumables">
+	<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
+	<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent"/>
+	<display_entry name="dHyperthermalResist" title_key="statHyperthermalResist" display_leading_plus="true"/>
+	<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+</item_display_info>
+</append>
+<!-- Vanilla Change -->
+<append xpath="/ui_display_info/crafting_category_display/crafting_category_list[@display_type='chemistryStation']">
+<crafting_category name="Food/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFoodCooking" />
+</append>
+<append xpath="/ui_display_info/item_display/item_display_info[@display_type='rangedBow']">
+<display_entry name="BurstRoundCount" title_key="Arrows Per Shot" tags="perkArchery,admin"/>
+<display_entry name="MagazineSize" title_key="statMagazineSize" tags="perkArchery,admin"/>
+</append>
+<append xpath="/ui_display_info/item_display/item_display_info[contains(@display_type,'armor')]">
+<display_entry name="HealthMax" title_key="Health+"/>
+</append>
+<append xpath="/ui_display_info/item_display/item_display_info[@display_type='clothingCigar']">
+<display_entry name="AttributeLevel" tags="attPerception" title_key="statShowPerception" display_leading_plus="true"/>
+<display_entry name="AttributeLevel" tags="attFortitude" title_key="statShowFortitude" display_leading_plus="true"/>
+<display_entry name="AttributeLevel" tags="attAgility" title_key="statShowAgility" display_leading_plus="true"/>
+<display_entry name="AttributeLevel" tags="attIntellect" title_key="statShowIntellect" display_leading_plus="true"/>
+</append>
+</configs>		

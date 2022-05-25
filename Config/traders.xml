@@ -1,0 +1,152 @@
+<config>
+<!-- \/ Traders setting -->
+<set xpath="/traders/trader_info[@id='5']/@rent_time">300</set>
+<set xpath="/traders/trader_info[@id='5']/@rent_cost">100</set>
+<set xpath="/traders/trader_info[@id='4']/@reset_interval">3</set>
+<set xpath="/traders/trader_info[@id='4']/@override_buy_markup">1.5</set>
+<set xpath="/traders/trader_info[@id='4']/@min_inventory">15</set>
+<set xpath="/traders/trader_info[@id='4']/@min_items_swapped">15</set>
+<set xpath="/traders/trader_info[@id='4']/@max_inventory">25</set>
+<set xpath="/traders/trader_info[@id='4']/@max_items_swapped">25</set>
+
+<!-- <set xpath="/traders/trader_info[@id='1']/@open_time">0:01</set>
+<set xpath="/traders/trader_info[@id='1']/@close_time">0:00</set>
+<set xpath="/traders/trader_info[@id='2']/@open_time">0:01</set>
+<set xpath="/traders/trader_info[@id='2']/@close_time">0:00</set> -->
+<!-- /\ Traders setting -->
+<append xpath="/traders/trader_item_groups">
+		<trader_item_group name="ammoVending">
+			<item name="ammo9mmBulletBall" count="1000"/>
+			<item name="ammo9mmBulletAP" count="1000"/>
+			<item name="ammo762mmBulletBall" count="1000"/>
+			<item name="ammo762mmBulletAP" count="1000"/>
+			<item name="ammo556mmBulletBall" count="1000"/>
+			<item name="ammo556mmBulletAP" count="1000"/>
+			<item name="ammo44MagnumBulletBall" count="1000"/>
+			<item name="ammo44MagnumBulletAP" count="1000"/>
+			<item name="ammoShotgunShell" count="1000"/>
+			<item name="ammoShotgunSlug" count="1000"/>
+			<item name="ammoRocketHE" count="1000"/>
+			<item name="ammoRocketFrag" count="1000"/>
+			<item name="ammoArrowIron" count="1000"/>
+			<item name="ammoArrowSteelAP" count="1000"/>
+			<item name="ammoCrossbowBoltIron" count="1000"/>
+			<item name="ammoCrossbowBoltSteelAP" count="1000"/>
+		</trader_item_group>
+		<trader_item_group name="ammoSuppliesVending">
+			<item name="resourceBulletCasing" count="1000"/>
+			<item name="resourceBulletTip" count="1000"/>
+			<item name="resourceBuckshot" count="1000"/>
+			<item name="resourceGunPowder" count="1000"/>
+			<item name="resourcePaper" count="1000"/>
+			<item name="resourceArrowHeadIron" count="1000"/>
+			<item name="resourceArrowHeadSteelAP" count="1000"/>
+			<item name="resourceFeather" count="1000"/>
+		</trader_item_group>
+		<trader_item_group name="resourcesVending">
+			<item name="resourceWood" count="1000"/>
+			<item name="resourceYuccaFibers" count="1000"/>
+			<item name="resourceCrushedSand" count="1000"/>
+			<item name="resourceScrapIron" count="1000"/>
+			<item name="resourceScrapPolymers" count="1000"/>
+			<item name="resourceForgedIron" count="1000"/>
+			<item name="resourceForgedSteel" count="1000"/>
+			<item name="resourceMetalPipe" count="1000"/>
+			<item name="resourceOilShale" count="1000"/>
+			<item name="resourceLeather" count="1000"/>
+			<item name="resourceScrapBrass" count="1000"/>
+			<item name="resourceClayLump" count="1000"/>
+			<item name="resourceScrapLead" count="1000"/>
+			<item name="resourceCloth" count="1000"/>
+			<item name="resourceCoal" count="1000"/>
+			<item name="resourcePotassiumNitratePowder" count="1000"/>
+		</trader_item_group>
+</append>
+<append xpath="/traders/trader_item_groups/trader_item_group[@name='preparedFood']">
+	<item name="foodSugar" count="1,10"/>
+	<item name="foodHoneyGlazedSham" count="1,5"/>
+	<item name="foodChickenNoodleSoup" count="1,5"/>
+	<item name="foodDogBeefStew" count="1,5"/>
+	<item name="foodOatsCatFood" count="1,5"/>
+	<item name="foodFruitPie" count="1,5"/>
+	<item name="foodBoneBrew" count="1,5"/>
+	<item name="foodPieceOfPizza" count="1,5"/>
+	<item name="foodPizza" count="1,5"/>
+	<item name="foodPieCrust" count="1,5"/>
+	<item name="foodJelloFruitSalad" count="1,5"/>
+	<item name="foodMeatSauceSpeghetti" count="1,5"/>
+	<item name="foodSpeghetti" count="1,5"/>
+	<item name="foodTunaSaladSandwich" count="1,5"/>
+	<item name="foodMisoRamen" count="1,5"/>
+	<item name="foodLambKheema" count="1,5"/>
+	<item name="foodBeefAndBarleySoup" count="1,5"/>
+	<item name="foodYangzhouFriedRice" count="1,5"/>
+	<item name="foodPho" count="1,5"/>
+	<item name="foodTomYumGoong" count="1,5"/>
+	<item name="foodYuccaChips" count="1,5"/>
+	<item name="foodHashbrown" count="1,5"/>
+	<item name="foodMashedPotato" count="1,5"/>
+	<item name="foodCornGrits" count="1,5"/>
+	<item name="foodBlueberryJam" count="1,5"/>
+	<item name="foodYuccaJam" count="1,5"/>
+	<item name="foodEggSalad" count="1,5"/>
+	<item name="foodFriedMeat" count="1,5"/>
+	<item name="foodCornChips" count="1,5"/>
+	<item name="foodBlueberryJamSandwich" count="1,5"/>
+	<item name="foodCoffeeCake" count="1,5"/>
+	<item name="foodMushroomPie" count="1,5"/>
+	<item name="foodMeatAndBeerPie" count="1,5"/>
+	<item name="foodFriedMushrooms" count="1,5"/>
+	<item name="foodFriedEgg" count="1,5"/>
+	<item name="foodFrenchToast" count="1,5"/>
+	<item name="foodHoneyGlazedMeat" count="1,5"/>
+	<item name="foodSpongeCake" count="1,5"/>
+	<item name="foodBlueberrySpongeCake" count="1,5"/>
+	<item name="foodYuccaSpongeCake" count="1,5"/>
+	<item name="drugPlainFudge" count="1,5"/>
+	<item name="foodCustardPie" count="1,5"/>
+</append>
+<append xpath="/traders/trader_item_groups/trader_item_group[@name='preparedDrink']">
+	<item name="drinkBlueberrySoda" count="1,5"/>
+	<item name="drinkKvassSoda" count="1,5"/>
+	<item name="drinkCarbonatedWater" count="1,5"/>
+	<item name="drinkDistilledVodka" count="1,5"/>
+	<item name="drinkSnowberryGin" count="1,5"/>
+	<item name="drinkBerryTea" count="1,5"/>
+	<item name="drinkIcedMixedTea" count="1,5"/>
+	<item name="drinkIcedCoffee" count="1,5"/>
+	<item name="drinkGoldenrodMoonshine" count="1,5"/>
+</append>
+<append xpath="/traders/trader_item_groups/trader_item_group[@name='foodVending']">
+	<item group="foodAll" count="1" prob="0.25"/>
+	<item group="seeds" count="1" prob="0.15"/>
+</append>
+ <append xpath="/traders">
+	<!-- Ammo vending machine -->
+	<trader_info id="16" full_reset="true" reset_interval="7" override_buy_markup="1.0" allow_sell="false" min_inventory="13" max_inventory="28" min_items_swapped="1" max_items_swapped="1">
+		<trader_items count="all">
+			<item group="ammoVending" />
+			<item group="ammoSuppliesVending" />
+		</trader_items>
+	</trader_info>
+	<!-- Resource vending machine -->
+	<trader_info id="17" full_reset="true" reset_interval="7" override_buy_markup="1.0" allow_sell="false" min_inventory="13" max_inventory="28" min_items_swapped="1" max_items_swapped="1">
+		<trader_items count="all">
+			<item group="resourcesVending" />
+		</trader_items>
+	</trader_info>
+	<!-- Buy sell vending machine -->
+	<trader_info id="18" full_reset="false" reset_interval="7" override_buy_markup="1.0" allow_sell="true">
+		<trader_items count="all">
+		</trader_items>
+	</trader_info>
+	<!-- Gas can vending machine -->
+	<trader_info id="22" reset_interval="13" override_buy_markup="30" allow_sell="false" min_inventory="100" max_inventory="100" min_items_swapped="1" max_items_swapped="100">
+		<trader_items count="10">
+			<item name="ammoGasCan" count="300"/>
+		</trader_items>
+	</trader_info>
+
+</append>
+
+</config>

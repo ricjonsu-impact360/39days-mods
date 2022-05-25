@@ -1,0 +1,58 @@
+<configs>
+<append xpath="/gamestages"> 
+	<!-- spawner name -->
+	<!-- <group name="S_-Group_Super_Boss_Zombie" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+		<spawner name="zombieSuperBoss" count="5,6"/>
+	</group> -->
+	
+	<!-- entitygroup.xml group name -->
+	<group name="S_-Group_WasteLandBoss_Zombie" decoyChance="0" decoy1hpChance="0">
+		<spawner name="ZombiesBossSpawnWasteLand" count="1,1"/>
+	</group>
+	<spawner name="ZombiesBossSpawnWasteLand">
+		<gamestage stage="1">
+			<spawn group="ZombiesBossSpawnWasteLandGS1" num="1" maxAlive="1" duration="10"/>
+		</gamestage>
+		<gamestage stage="50">
+			<spawn group="ZombiesBossSpawnWasteLandGS50" num="1" maxAlive="1" duration="10"/>
+		</gamestage>
+		<gamestage stage="100">
+			<spawn group="ZombiesBossSpawnWasteLandGS100" num="1" maxAlive="1" duration="10"/>
+		</gamestage>
+		<gamestage stage="200">
+			<spawn group="ZombiesBossSpawnWasteLandGS200" num="1" maxAlive="1" duration="10"/>
+		</gamestage>
+		<gamestage stage="400">
+			<spawn group="ZombiesBossSpawnWasteLandGS400" num="1" maxAlive="1" duration="10"/>
+		</gamestage>
+		<gamestage stage="800">
+			<spawn group="ZombiesBossSpawnWasteLandGS800" num="1" maxAlive="1" duration="10"/>
+		</gamestage>
+	</spawner>
+	<spawner name="zombieSuperBossSpawner">
+		<gamestage stage="1">
+			<spawn group="ZombiesSuperBoss" num="1" maxAlive="1" duration="10"/>
+		</gamestage>
+	</spawner>
+	<spawner name="zombieBossSpawner">
+		<gamestage stage="1">
+			<spawn group="ZombiesUMABoss" num="1" maxAlive="1" duration="10"/>
+		</gamestage>
+	</spawner>
+	<spawner name="zombieMiniBossSpawner">
+		<gamestage stage="1">
+			<spawn group="ZombiesMiniBoss" num="1" maxAlive="1" duration="10"/>
+		</gamestage>
+	</spawner>
+	<spawner name="zombieHellSpawner">
+		<gamestage stage="1">
+			<spawn group="zombieHell" num="1" maxAlive="1" duration="10"/>
+		</gamestage>
+	</spawner>
+	<spawner name="zombieMutantSpawner">
+		<gamestage stage="1">
+			<spawn group="zombieMutant" num="1" maxAlive="1" duration="10"/>
+		</gamestage>
+	</spawner>
+</append>
+</configs>
