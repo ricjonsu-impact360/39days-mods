@@ -199,6 +199,18 @@
 	<property name="forge_category" value="gunBotInsaneAutoTurretPart"/>
 	<property name="Experience" value="6"/>
 </material>
+<material id="MEliteKnucklesParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="meleeEliteKnucklesPart"/>
+	<property name="Experience" value="6"/>
+</material>
+<material id="MEliteBattleAxeParts">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="meleeEliteBattleAxePart"/>
+	<property name="Experience" value="6"/>
+</material>
 
 <!-- Elite armor part mat -->
 <material id="MEliteTitaniumHelmetParts">

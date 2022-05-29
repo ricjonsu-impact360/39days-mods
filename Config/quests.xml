@@ -2647,14 +2647,14 @@
 		<quest id="tier1_heist"/>
         <quest id="tier2_heist"/>
         <quest id="tier3_heist"/>
-		<quest id="tier1_night_fetch" prob=".5"/>
+		<!-- <quest id="tier1_night_fetch" prob=".5"/>
 		<quest id="tier2_night_fetch" prob=".5"/>
 		<quest id="tier3_night_fetch" prob=".5"/>
 		<quest id="tier1_night_clear" prob=".5"/>
 		<quest id="tier2_night_clear" prob=".5"/>
 		<quest id="tier3_night_clear" prob=".5"/>
 		<quest id="tier4_night_clear" prob=".5"/>
-		<quest id="tier5_night_clear" prob=".5"/>
+		<quest id="tier5_night_clear" prob=".5"/> -->
 		<quest id="tier2_night_fetch_clear" prob=".5"/>
 		<quest id="tier3_night_fetch_clear" prob=".5"/>
 		<quest id="tier4_night_fetch_clear" prob=".5"/>
@@ -2670,9 +2670,9 @@
 		<quest id="tier3_shiftintonightmare" prob=".5"/>
 		<quest id="tier4_shiftintonightmare" prob=".3"/>
 		<quest id="tier5_shiftintonightmare" prob=".1"/> -->
-		<quest id="tier3_killminiboss" prob=".5"/>
-		<quest id="tier4_killboss" prob=".3"/>
-		<quest id="tier5_killsuperboss" prob=".1"/>
+		<quest id="tier3_killminiboss" prob=".6"/>
+		<quest id="tier4_killboss" prob=".4"/>
+		<quest id="tier5_killsuperboss" prob=".2"/>
 </insertAfter>
 
 <append xpath="/quests/quest[@id='tier1_clear']">

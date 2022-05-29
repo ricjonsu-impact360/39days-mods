@@ -20025,8 +20025,8 @@ questRewardGyrocopterPartsBundle
 	<property name="CustomIconTint" value="FFFF00"/>
 	<property name="DescriptionKey" value="bookInfantrySkillDesc"/>
 	<property name="Unlocks" value="perkInfantry1"/>
-	<property name="Group" value="Books,Mods,BooksOnly"/>
 	<property name="NoScrapping" value="true"/>
+	<property name="Group" value="Books,Mods,BooksOnly"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -20121,8 +20121,8 @@ questRewardGyrocopterPartsBundle
 	<property name="CustomIconTint" value="FFFF00"/>
 	<property name="DescriptionKey" value="bookGunFighterSkillDesc"/>
 	<property name="Unlocks" value="perkGunFighter1"/>
-	<property name="Group" value="Books,Mods,BooksOnly"/>
 	<property name="NoScrapping" value="true"/>
+	<property name="Group" value="Books,Mods,BooksOnly"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -20217,8 +20217,8 @@ questRewardGyrocopterPartsBundle
 	<property name="CustomIconTint" value="FFFF00"/>
 	<property name="DescriptionKey" value="bookSharpshooterSkillDesc"/>
 	<property name="Unlocks" value="perkSharpshooter1"/>
-	<property name="Group" value="Books,Mods,BooksOnly"/>
 	<property name="NoScrapping" value="true"/>
+	<property name="Group" value="Books,Mods,BooksOnly"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -20313,8 +20313,8 @@ questRewardGyrocopterPartsBundle
 	<property name="CustomIconTint" value="FFFF00"/>
 	<property name="DescriptionKey" value="bookArcherManSkillDesc"/>
 	<property name="Unlocks" value="perkArcherMan1"/>
-	<property name="Group" value="Books,Mods,BooksOnly"/>
 	<property name="NoScrapping" value="true"/>
+	<property name="Group" value="Books,Mods,BooksOnly"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -20409,8 +20409,8 @@ questRewardGyrocopterPartsBundle
 	<property name="CustomIconTint" value="FFFF00"/>
 	<property name="DescriptionKey" value="bookUrbanWarriorSkillDesc"/>
 	<property name="Unlocks" value="perkUrbanWarrior1"/>
-	<property name="Group" value="Books,Mods,BooksOnly"/>
 	<property name="NoScrapping" value="true"/>
+	<property name="Group" value="Books,Mods,BooksOnly"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -20505,8 +20505,8 @@ questRewardGyrocopterPartsBundle
 	<property name="CustomIconTint" value="FFFF00"/>
 	<property name="DescriptionKey" value="bookAssassinSkillDesc"/>
 	<property name="Unlocks" value="perkAssassin1"/>
-	<property name="Group" value="Books,Mods,BooksOnly"/>
 	<property name="NoScrapping" value="true"/>
+	<property name="Group" value="Books,Mods,BooksOnly"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -20601,8 +20601,8 @@ questRewardGyrocopterPartsBundle
 	<property name="CustomIconTint" value="FFFF00"/>
 	<property name="DescriptionKey" value="bookBerserkerSkillDesc"/>
 	<property name="Unlocks" value="perkBerserker1"/>
-	<property name="Group" value="Books,Mods,BooksOnly"/>
 	<property name="NoScrapping" value="true"/>
+	<property name="Group" value="Books,Mods,BooksOnly"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -20697,8 +20697,8 @@ questRewardGyrocopterPartsBundle
 	<property name="CustomIconTint" value="FFFF00"/>
 	<property name="DescriptionKey" value="bookSupporterSkillDesc"/>
 	<property name="Unlocks" value="perkSupporter1"/>
-	<property name="Group" value="Books,Mods,BooksOnly"/>
 	<property name="NoScrapping" value="true"/>
+	<property name="Group" value="Books,Mods,BooksOnly"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -20793,8 +20793,8 @@ questRewardGyrocopterPartsBundle
 	<property name="CustomIconTint" value="FFFF00"/>
 	<property name="DescriptionKey" value="bookDonatorSkillDesc"/>
 	<property name="Unlocks" value="perkDonator1"/>
-	<property name="Group" value="Books,Mods,BooksOnly"/>
 	<property name="NoScrapping" value="true"/>
+	<property name="Group" value="Books,Mods,BooksOnly"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
@@ -21169,6 +21169,172 @@ questRewardGyrocopterPartsBundle
 	<property name="Extends" value="questMaster"/>
 	<property class="Action0">
 		<property name="QuestGiven" value="challenge_killsuperboss"/>
+	</property>
+</item>
+
+<!-- add more -->
+<item name="meleeEliteKnuckles">
+	<property name="Extends" value="meleeWpnKnucklesT1IronKnuckles"/>
+	<property name="DescriptionKey" value="meleeObsidianKnucklesDesc"/>
+	<property name="CustomIcon" value="meleeWpnKnucklesT3SteelKnuckles"/>
+	<property name="CustomIconTint" value="FFFF00"/>
+	<property name="TintColor" value="255,255,0"/>
+	<property name="ItemTypeIcon" value="star"/>
+	<property name="DisplayType" value="Emelee"/>
+	<property name="Material" value="MEliteKnucklesParts"/>
+	<property name="Weight" value="14"/>
+	<property name="RepairTools" value="EliteRepairKit"/>
+	<property name="Meshfile" value="#Other/Items?Weapons/Melee/Knuckles/knucklesSpikedRight_Prefab.prefab"/>
+	<property name="HoldType" value="79"/>
+	<property class="Action0">
+		<property name="ToolCategory.Butcher" value="5" param1="1.5"/>
+		<requirement name="PlayerLevel" operation="GTE" value="50"/>
+		<property class="HitSounds">
+			<property name="Override0" value="organic" param1="metalstaborganic"/>
+		</property>
+		<property class="GrazeSounds">
+			<property name="Override0" value="organic" param1="metalgrazeorganic"/>
+		</property>
+	</property>
+	<property class="Action1">
+		<property name="ToolCategory.Butcher" value="0" param1="1.5"/>
+		<requirement name="PlayerLevel" operation="GTE" value="50"/>
+		<property class="HitSounds">
+			<property name="Override0" value="organic" param1="metalstaborganic"/>
+		</property>
+		<property class="GrazeSounds">
+			<property name="Override0" value="organic" param1="metalgrazeorganic"/>
+		</property>
+	</property>
+	<effect_group name="meleeWpnKnucklesT3SteelKnuckles">
+		<passive_effect name="EntityDamage" operation="base_set" value="32.6" tags="perkBrawler"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="23.2" tags="perkBrawler"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="140" tags="perkBrawler"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="10.2" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="300,700" tier="1,6" tags="perkBrawler"/>
+		<passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tags="perkBrawler"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkBrawler"/>
+		<passive_effect name="MaxRange" operation="base_set" value="2.0" tags="perkBrawler"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3" tags="perkBrawler"/>
+		<passive_effect name="ModSlots" operation="base_set" value="1,1,1,1,1,1" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModSlots" operation="perc_add" value="4"/>
+		<passive_effect name="DegradationMax" operation="perc_add" value="-.1,.1"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15" tags="perkBrawler"/>
+		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkBrawler"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15" tags="perkBrawler"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkBrawler"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="metal"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1.7" tags="organic"/>
+		<passive_effect name="HarvestCount" operation="base_set" value="1" tags="butcherHarvest"/>
+		<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="LeftKnuckles" prefab="#Other/Items?Weapons/Melee/Knuckles/knucklesSpikedLeft_Prefab.prefab" parentTransform="Propjoint" localPos="0,0,0" localRot="0,0,0">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="LeftKnuckles" prefab="#Other/Items?Weapons/Melee/Knuckles/knucklesSpikedLeft_Prefab.prefab" parentTransform="LeftHand" localPos="-0.1171,0.004,-0.0187" localRot="-30.53241,-11.3179,135.1055">
+			<requirement name="!IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="LeftKnuckles"/>
+	</effect_group>
+	<effect_group name="Power Attack">
+		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
+		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="17.3" tags="secondary"/>
+	</effect_group>
+	<effect_group name="sneak damage bonus">
+		<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1" />
+		<requirement name="CVarCompare" cvar="_notAlerted" operation="GT" value="0" target="other" />
+			<passive_effect name="DamageBonus" operation="base_add" value="5" />
+			<passive_effect name="EntityDamage" operation="perc_add" value="5" tags="perkBrawler" />
+			<display_value name="dEntityDamageSneak" value="5" />
+		<passive_effect name="TargetArmor" operation="perc_add" value="-1"/>
+	</effect_group>
+</item>
+<item name="meleeEliteBattleAxe">
+	<property name="Extends" value="meleeToolAxeT1IronFireaxe"/>
+	<property name="Tags" value="blunt,melee,grunting,heavy,sledge,weapon,meleeWeapon,longShaft,attStrength,perkSkullCrusher,canHaveCosmetic"/>
+	<property name="DescriptionKey" value="toolEliteFireaxeDesc"/>
+	<property name="CustomIcon" value="meleeToolAxeT2SteelAxe"/> 
+	<property name="CustomIconTint" value="FFFF00"/>
+	<property name="TintColor" value="255,255,0"/>
+	<property name="ItemTypeIcon" value="star"/>
+	<property name="DisplayType" value="Emelee"/>
+	<property name="Meshfile" value="#Other/Items?Weapons/Melee/Axe/steelAxePrefab.prefab"/>
+	<property name="EconomicValue" value="15000"/>
+	<property name="Material" value="MEliteBattleAxeParts"/> <property name="Weight" value="14"/>
+	<property name="RepairTools" value="EliteRepairKit"/>
+	<property class="Action0">
+		<requirement name="PlayerLevel" operation="GTE" value="150"/>
+	</property>
+	<property class="Action1">
+		<requirement name="PlayerLevel" operation="GTE" value="150"/>
+	</property>
+	<effect_group name="Deco">
+		<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="Base1" prefab="#Other/Items?Weapons/Melee/ClubIron/clubIron.fbx" parentTransform="#HeldItemRoot" localPos="0,.0,0" localRot="0,180,0"/>
+		<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="Base2" prefab="#Other/Items?Weapons/Melee/Club/Club_Wood_Spiked.FBX" parentTransform="#HeldItemRoot" localPos="0,0,0" localRot="0,90,0"/>
+		<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="Base1"/>
+		<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="Base2"/>
+	</effect_group>
+	<effect_group name="meleeEliteBattleAxe">
+		<passive_effect name="MaxRange" operation="base_set" value="2.6"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3.5"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="65"/>
+		<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15"/>
+		<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="105"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="84"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="27.6" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="400,800" tier="1,6" tags="perkSkullCrusher"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="10" tags="perkSkullCrusher"/>
+		<passive_effect name="ModSlots" operation="base_set" value="1,1,1,1,1,1" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModSlots" operation="perc_add" value="4"/>
+		<passive_effect name="DegradationMax" operation="perc_add" value="-.1,.1"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+		<passive_effect name="DismemberChance" operation="base_add" value=".1" tags="primary"/>
+		<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="allHarvest"/>
+		<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="allToolsHarvest"/>
+		<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="oreWoodHarvest"/>
+	</effect_group>
+	<effect_group name="Power Attack">
+		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="40.3" tags="secondary"/>
+	</effect_group>
+</item>
+<item name="meleeEliteKnucklesPart">
+	<property name="Extends" value="resourceEliteItemPart"/>
+	<property name="DescriptionKey" value="meleeEliteKnucklesPartDesc"/>
+	<property name="CustomIcon" value="meleeWpnKnucklesT3SteelKnuckles"/>
+	<property name="CustomIconTint" value="FFFF00"/>
+	<property name="Material" value="MEliteHeavySledgehammerParts"/>
+</item>
+<item name="meleeEliteBattleAxePart">
+	<property name="Extends" value="resourceEliteItemPart"/>
+	<property name="DescriptionKey" value="meleeEliteBattleAxePartDesc"/>
+	<property name="CustomIcon" value="meleeToolAxeT2SteelAxe"/>
+	<property name="CustomIconTint" value="FFFF00"/>
+	<property name="Material" value="MEliteVampireGauntletsParts"/>
+</item>
+<item name="meleeEliteKnucklesBox">
+	<property name="Extends" value="treasureBoxMaster"/>
+	<property name="DescriptionKey" value="treasureBoxEliteMeleeDesc"/>
+	<property class="Action0">
+		<property name="Create_item" value="meleeEliteKnuckles"/>
+		<property name="Create_item_count" value="1-6"/>
+	</property>
+</item>
+<item name="meleeEliteBattleAxeBox">
+	<property name="Extends" value="treasureBoxMaster"/>
+	<property name="DescriptionKey" value="treasureBoxEliteMeleeDesc"/>
+	<property class="Action0">
+		<property name="Create_item" value="meleeEliteBattleAxe"/>
+		<property name="Create_item_count" value="1-6"/>
 	</property>
 </item>
 </append>

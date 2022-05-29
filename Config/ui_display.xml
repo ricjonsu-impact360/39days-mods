@@ -215,7 +215,7 @@
 	<display_entry name="DegradationMax" title_key="statDegradationHPMax" tags="perkTurrets"/>
 </item_display_info>
 <item_display_info display_type="ETool" display_group="groupMelee">
-	<display_entry name="dEliteWeapon" title_key="[A42ACC]ELITE TOOL"/>
+	<display_entry name="dEliteWeapon" title_key="[A42ACC]ELITE MELEE"/>
 	<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageMelee"/>
 	<display_entry name="EntityDamage" display_type="Decimal1" title_key="statPowerAttack"/>
 	<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage"/>
@@ -223,7 +223,7 @@
 	<display_entry name="AttacksPerMinute" title_key="statAttacksPerMinute"/>
 </item_display_info>
 <item_display_info display_type="motorETool" display_group="groupMelee">
-	<display_entry name="dEliteWeapon" title_key="[A42ACC]ELITE TOOL"/>
+	<display_entry name="dEliteWeapon" title_key="[A42ACC]ELITE MELEE"/>
 	<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageMelee" tags="perkMiner69r"/>
 	<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkMiner69r"/>
 	<display_entry name="MagazineSize" title_key="statFuelCapacity" tags="perkMiner69r"/>
@@ -231,7 +231,7 @@
 	<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkMiner69r,admin"/>
 </item_display_info>
 <item_display_info display_type="Emelee" display_group="groupMelee">
-	<display_entry name="dEliteWeapon" title_key="[A42ACC]ELITE TOOL"/>
+	<display_entry name="dEliteWeapon" title_key="[A42ACC]ELITE MELEE"/>
 	<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageMelee" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
 	<display_entry name="EntityDamage" display_type="Decimal1" title_key="statPowerAttack" tags="secondary,perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
 	<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>

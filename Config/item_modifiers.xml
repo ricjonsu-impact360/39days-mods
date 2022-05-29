@@ -56,19 +56,18 @@
 	<!-- Muzzle brake: Directs some of the gases upwards to reduce recoil. Typically increases visibility of the gun/shooter as a result. -->
 	<effect_group tiered="false">
 		<passive_effect name="DamageFalloffRange" operation="perc_add" value=".2"/>
-		<passive_effect name="MaxRange" operation="perc_add" value=".2"/>
-		<passive_effect name="SpreadMultiplierHip" operation="perc_add" value=".25"/>
-		<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.25"/>
-		<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-.2"/>
-		<passive_effect name="KickDegreesVerticalMax" operation="base_set" value=".2"/>
-		<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.1"/>
-		<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".1"/>
-		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2.6"/>
-		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="2.6"/>
-		<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".05"/>
-		<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2"/>
-		<passive_effect name="WeaponHandling" operation="base_set" value="1.2"/>
-		<requirement name="CVarCompare" cvar="@$isDonator" operation="Equals" value="1"/>
+        <passive_effect name="MaxRange" operation="perc_add" value=".2"/>
+        <passive_effect name="SpreadMultiplierHip" operation="perc_add" value=".25"/>
+        <passive_effect name="KickDegreesVerticalMin" operation="base_set" value="-.1"/>
+        <passive_effect name="KickDegreesVerticalMax" operation="base_set" value=".1"/>
+        <passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.1"/>
+        <passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".1"/>
+        <passive_effect name="SpreadDegreesVertical" operation="base_set" value="1"/>
+        <passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="1"/>
+        <passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".05"/>
+        <passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1"/>
+        <passive_effect name="WeaponHandling" operation="base_set" value="1.2"/>
+        <requirement name="CVarCompare" cvar="@$isDonator" operation="Equals" value="1"/>
 	</effect_group>
 </item_modifier>
 <item_modifier name="modDNTFuelTank" installable_tags="motorTool" modifier_tags="fuel" type="attachment">
@@ -3212,9 +3211,6 @@
 		<triggered_effect trigger="onSelfItemActivate" action="SetPartActive" part="HeadLightTPV" active="@!.IsFPV"/>
 		<triggered_effect trigger="onSelfItemActivate" action="SetPartActive" part="HeadLightFPV" active="@.IsFPV"/>
 		<triggered_effect trigger="onSelfItemDeactivate" action="SetPartActive" part="HeadLightTPV" active="false"/>
-		<triggered_effect trigger="onSelfItemDeactivate" action="SetPartActive" part="HeadLightFPV" active="false"/>
-		<triggered_effect trigger="onSelfChangedView" action="SetPartActive" part="HeadLightTPV" active="@!.IsFPV"/>
-		<triggered_effect trigger="onSelfChangedView" action="SetPartActive" part="HeadLightFPV" active="@.IsFPV"/>
 	</effect_group>
 </item_modifier>
 <item_modifier name="modSilentJade2" installable_tags="jewelry" modifier_tags="modSilentJade" type="attachment" blocked_tags="noMods" rarity="1">
@@ -3242,9 +3238,6 @@
 		<triggered_effect trigger="onSelfItemActivate" action="SetPartActive" part="HeadLightTPV" active="@!.IsFPV"/>
 		<triggered_effect trigger="onSelfItemActivate" action="SetPartActive" part="HeadLightFPV" active="@.IsFPV"/>
 		<triggered_effect trigger="onSelfItemDeactivate" action="SetPartActive" part="HeadLightTPV" active="false"/>
-		<triggered_effect trigger="onSelfItemDeactivate" action="SetPartActive" part="HeadLightFPV" active="false"/>
-		<triggered_effect trigger="onSelfChangedView" action="SetPartActive" part="HeadLightTPV" active="@!.IsFPV"/>
-		<triggered_effect trigger="onSelfChangedView" action="SetPartActive" part="HeadLightFPV" active="@.IsFPV"/>
 	</effect_group>
 </item_modifier>
 <item_modifier name="modSilentJade3" installable_tags="jewelry" modifier_tags="modSilentJade" type="attachment" blocked_tags="noMods" rarity="1">
@@ -3272,9 +3265,6 @@
 		<triggered_effect trigger="onSelfItemActivate" action="SetPartActive" part="HeadLightTPV" active="@!.IsFPV"/>
 		<triggered_effect trigger="onSelfItemActivate" action="SetPartActive" part="HeadLightFPV" active="@.IsFPV"/>
 		<triggered_effect trigger="onSelfItemDeactivate" action="SetPartActive" part="HeadLightTPV" active="false"/>
-		<triggered_effect trigger="onSelfItemDeactivate" action="SetPartActive" part="HeadLightFPV" active="false"/>
-		<triggered_effect trigger="onSelfChangedView" action="SetPartActive" part="HeadLightTPV" active="@!.IsFPV"/>
-		<triggered_effect trigger="onSelfChangedView" action="SetPartActive" part="HeadLightFPV" active="@.IsFPV"/>
 	</effect_group>
 </item_modifier>
 <item_modifier name="modSpeedJade1" installable_tags="jewelry" modifier_tags="modSpeedJade" type="attachment" blocked_tags="noMods" rarity="1">

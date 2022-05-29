@@ -176,6 +176,8 @@
 </lootgroup>
 <lootgroup name="groupSpecialParts">
 	<item name="meleeEliteTwinBladesPart"/>
+	<item name="meleeEliteKnucklesPart"/>
+	<item name="meleeEliteBattleAxePart"/>
 	<item name="gunElitePP19BizonPart"/>
 	<item name="gunEliteRugerMP9Part"/>
 	<item name="gunEliteSpringfieldSaintPart"/>
@@ -349,6 +351,8 @@
 <insertAfter xpath="/lootcontainers/lootgroup[@name='twitch_T4_Rewards']">
 <lootgroup name="groupEliteWeaponBoxs">
 	<item name="meleeEliteTwinBladesBox"/>
+	<item name="meleeEliteKnucklesBox"/>
+	<item name="meleeEliteBattleAxeBox"/>
 	<item name="gunElitePP19BizonBox"/>
 	<item name="gunEliteRugerMP9Box"/>
 	<item name="gunEliteSpringfieldSaintBox"/>
@@ -497,6 +501,8 @@
 </lootgroup>
 <lootgroup name="EliteParts">
 	<item name="meleeEliteTwinBladesPart"/>
+	<item name="meleeEliteKnucklesPart"/>
+	<item name="meleeEliteBattleAxePart"/>
 	<item name="gunElitePP19BizonPart"/>
 	<item name="gunEliteRugerMP9Part"/>
 	<item name="gunEliteSpringfieldSaintPart"/>
@@ -754,6 +760,8 @@
 	<item name="gunEliteAWMBox"/>
 	<item name="meleeEliteScytheBox"/>
 	<item name="meleeEliteTwinBladesBox"/>
+	<item name="meleeEliteKnucklesBox"/>
+	<item name="meleeEliteBattleAxeBox"/>
 	<item name="meleeEliteHeavySledgehammerBox" prob="0.1"/>
 	<item name="gunEliteQuadBarrelsShotgunBox"/>
 	<item name="gunEliteQuantumGunBox"/>
@@ -1184,6 +1192,8 @@
 	<item name="gunEliteSpringfieldSaintBox" prob="0.5"/>
 	<item name="gunEliteM368VectorBox" prob="0.5"/>
 	<item name="meleeEliteTwinBladesBox" prob="0.5"/>
+	<item name="meleeEliteKnucklesBox" prob="0.5"/>
+	<item name="meleeEliteBattleAxeBox" prob="0.5"/>
 	<item name="meleeEliteHeavySledgehammerBox" prob="0.5"/>
 	<item name="treasureBoxEliteTitaniumHelmet" prob="0.5"/>
 	<item name="treasureBoxEliteTitaniumVest" prob="0.5"/>
@@ -1300,6 +1310,8 @@
 	<item name="gunEliteSterlingSAR87Box"/>
 	<item name="gunEliteRugerMP9Box"/>
 	<item name="meleeEliteTwinBladesBox"/>
+	<item name="meleeEliteKnucklesBox"/>
+	<item name="meleeEliteBattleAxeBox"/>
 	<item name="meleeEliteHeavySledgehammerBox"/>
 </lootcontainer>
 <lootcontainer id="155" name="EliteArmorBoxLoot" count="1" size="1,1" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate" loot_quality_template="qualQ456Template">

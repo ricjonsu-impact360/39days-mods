@@ -110,6 +110,8 @@
 <recipe name="bowEliteBolterOfTitansPart" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
 <recipe name="gunBotEliteAutoTurretPart" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
 <recipe name="gunBotInsaneAutoTurretPart" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+<recipe name="meleeEliteKnucklesPart" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+<recipe name="meleeEliteBattleAxePart" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
 <!-- /\ Materials scrapping recipes -->	
 <!-- \/ Donator Items Recipes -->
 <recipe name="treasureRandomDonorLootBox" count="1" craft_time="1" tags="learnable"><ingredient name="DonorGem" count="1"/></recipe>
@@ -201,6 +203,8 @@
 <recipe name="gunEliteGatingBox" count="1" craft_time="1"><ingredient name="resourceGloryCoin" count="330"/></recipe>
 <recipe name="gunEliteAWMBox" count="1" craft_time="1"><ingredient name="resourceGloryCoin" count="300"/></recipe>
 <recipe name="meleeEliteScytheBox" count="1" craft_time="1"><ingredient name="resourceGloryCoin" count="300"/></recipe>
+<recipe name="meleeEliteKnucklesBox" count="1" craft_time="1"><ingredient name="resourceGloryCoin" count="300"/></recipe>
+<recipe name="meleeEliteBattleAxeBox" count="1" craft_time="1"><ingredient name="resourceGloryCoin" count="300"/></recipe>
 <recipe name="meleeEliteTwinBladesBox" count="1" craft_time="1"><ingredient name="resourceGloryCoin" count="300"/></recipe>
 <recipe name="gunEliteQuadBarrelsShotgunBox" count="1" craft_time="1"><ingredient name="resourceGloryCoin" count="300"/></recipe>
 <recipe name="gunEliteQuantumGunBox" count="1" craft_time="1"><ingredient name="resourceGloryCoin" count="300"/></recipe>
@@ -253,6 +257,8 @@
 <recipe name="gunEliteGatingBox" count="1" craft_time="1"><ingredient name="resourceGloryCoin" count="100"/><ingredient name="gunEliteGating" count="1"/></recipe>
 <recipe name="gunEliteAWMBox" count="1" craft_time="1"><ingredient name="resourceGloryCoin" count="100"/><ingredient name="gunEliteAWM" count="1"/></recipe>
 <recipe name="meleeEliteScytheBox" count="1" craft_time="1"><ingredient name="resourceGloryCoin" count="100"/><ingredient name="meleeEliteScythe" count="1"/></recipe>
+<recipe name="meleeEliteKnucklesBox" count="1" craft_time="1"><ingredient name="resourceGloryCoin" count="100"/><ingredient name="meleeEliteKnuckles" count="1"/></recipe>
+<recipe name="meleeEliteBattleAxeBox" count="1" craft_time="1"><ingredient name="resourceGloryCoin" count="100"/><ingredient name="meleeEliteBattleAxe" count="1"/></recipe>
 <recipe name="meleeEliteTwinBladesBox" count="1" craft_time="1"><ingredient name="resourceGloryCoin" count="100"/><ingredient name="meleeEliteTwinBlades" count="1"/></recipe>
 <recipe name="gunEliteQuadBarrelsShotgunBox" count="1" craft_time="1"><ingredient name="resourceGloryCoin" count="100"/><ingredient name="gunEliteQuadBarrelsShotgun" count="1"/></recipe>
 <recipe name="gunEliteQuantumGunBox" count="1" craft_time="1"><ingredient name="resourceGloryCoin" count="100"/><ingredient name="gunEliteQuantumGun" count="1"/></recipe>
@@ -341,6 +347,8 @@
 <recipe name="gunEliteGatingBox" count="1" craft_time="1"><ingredient name="gunEliteGatingPart" count="30"/></recipe>
 <recipe name="gunEliteAWMBox" count="1" craft_time="1"><ingredient name="gunEliteAWMPart" count="30"/></recipe>
 <recipe name="meleeEliteScytheBox" count="1" craft_time="1"><ingredient name="meleeEliteScythePart" count="30"/></recipe>
+<recipe name="meleeEliteKnucklesBox" count="1" craft_time="1"><ingredient name="meleeEliteKnucklesPart" count="30"/></recipe>
+<recipe name="meleeEliteBattleAxeBox" count="1" craft_time="1"><ingredient name="meleeEliteBattleAxePart" count="30"/></recipe>
 <recipe name="meleeEliteTwinBladesBox" count="1" craft_time="1"><ingredient name="meleeEliteTwinBladesPart" count="30"/></recipe>
 <recipe name="meleeEliteHeavySledgehammerBox" count="1" craft_time="1"><ingredient name="meleeEliteHeavySledgehammerPart" count="30"/></recipe>
 <recipe name="gunEliteQuadBarrelsShotgunBox" count="1" craft_time="1"><ingredient name="gunEliteQuadBarrelsShotgunPart" count="30"/></recipe>
@@ -394,6 +402,8 @@
 <recipe name="gunEliteGatingPart" count="1" craft_time="1"><ingredient name="gunMGT1AK47Parts" count="40"/><ingredient name="resourceGloryCoin" count="5"/></recipe>
 <recipe name="gunEliteAWMPart" count="1" craft_time="1"><ingredient name="gunRifleT1HuntingRifleParts" count="40"/><ingredient name="resourceGloryCoin" count="5"/></recipe>
 <recipe name="meleeEliteScythePart" count="1" craft_time="1"><ingredient name="meleeWpnSpearT3SteelSpearParts" count="40"/><ingredient name="resourceGloryCoin" count="5"/></recipe>
+<recipe name="meleeEliteKnucklesPart" count="1" craft_time="1"><ingredient name="meleeWpnKnucklesT3SteelKnucklesParts" count="40"/><ingredient name="resourceGloryCoin" count="5"/></recipe>
+<recipe name="meleeEliteBattleAxePart" count="1" craft_time="1"><ingredient name="meleeToolAllSteelParts" count="40"/><ingredient name="resourceGloryCoin" count="5"/></recipe>
 <recipe name="meleeEliteTwinBladesPart" count="1" craft_time="1"><ingredient name="meleeWpnBladeT3MacheteParts" count="40"/><ingredient name="resourceGloryCoin" count="5"/></recipe>
 <recipe name="meleeEliteHeavySledgehammerPart" count="1" craft_time="1"><ingredient name="meleeWpnSledgeT3SteelSledgehammerParts" count="80"/><ingredient name="resourceGloryCoin" count="10"/></recipe>
 <recipe name="gunEliteQuadBarrelsShotgunPart" count="1" craft_time="1"><ingredient name="gunShotgunT1DoubleBarrelParts" count="40"/><ingredient name="resourceGloryCoin" count="5"/></recipe>
@@ -447,6 +457,8 @@
 <recipe name="gunEliteGatingPart" count="1" craft_time="1"><ingredient name="resourceWhiteRiverMedal" count="5"/><ingredient name="resourceGloryCoin" count="5"/></recipe>
 <recipe name="gunEliteAWMPart" count="1" craft_time="1"><ingredient name="resourceWhiteRiverMedal" count="5"/><ingredient name="resourceGloryCoin" count="5"/></recipe>
 <recipe name="meleeEliteScythePart" count="1" craft_time="1"><ingredient name="resourceWhiteRiverMedal" count="5"/><ingredient name="resourceGloryCoin" count="5"/></recipe>
+<recipe name="meleeEliteKnucklesPart" count="1" craft_time="1"><ingredient name="resourceWhiteRiverMedal" count="5"/><ingredient name="resourceGloryCoin" count="5"/></recipe>
+<recipe name="meleeEliteBattleAxePart" count="1" craft_time="1"><ingredient name="resourceWhiteRiverMedal" count="5"/><ingredient name="resourceGloryCoin" count="5"/></recipe>
 <recipe name="meleeEliteTwinBladesPart" count="1" craft_time="1"><ingredient name="resourceWhiteRiverMedal" count="5"/><ingredient name="resourceGloryCoin" count="5"/></recipe>
 <recipe name="meleeEliteHeavySledgehammerPart" count="1" craft_time="1"><ingredient name="resourceWhiteRiverMedal" count="10"/><ingredient name="resourceGloryCoin" count="10"/></recipe>
 <recipe name="gunEliteQuadBarrelsShotgunPart" count="1" craft_time="1"><ingredient name="resourceWhiteRiverMedal" count="5"/><ingredient name="resourceGloryCoin" count="5"/></recipe>
