@@ -1706,7 +1706,7 @@
 			<property name="nav_object" value="rally" />
 		</objective>
 		<action type="SpawnGSEnemy" id="zombieSuperBossSpawner" value="1" phase="3"/>
-		<action type="SpawnGSEnemy" id="zombieMiniBossSpawner" value="2" phase="3"/>
+		<!-- <action type="SpawnGSEnemy" id="zombieMiniBossSpawner" value="2" phase="3"/> -->
 		<objective type="ZombieKill" id="zombieAtheonSuperBoss,zombieTyrantSuperBoss,zombieSciFiSuperBoss,zombieRevenantSuperBoss,zombieUltimeciaSuperBoss" value="1" phase="3"/>
 		<objective type="StayWithin">
 			<property name="phase" value="3"/>
