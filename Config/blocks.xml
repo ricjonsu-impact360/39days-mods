@@ -2085,7 +2085,7 @@
 <set xpath="/blocks/block[@name='terrOreLead']/drop[@name='resourceScrapLead']/@count">30</set>
 <set xpath="/blocks/block[@name='terrOreCoal']/drop[@name='resourceCoal']/@count">30</set>
 <set xpath="/blocks/block[@name='terrOrePotassiumNitrate']/drop[@name='resourcePotassiumNitratePowder']/@count">30</set> -->
-<set xpath="blocks/block[@name='terrOreOilDeposit']/drop[@name='resourceOilShale']/@count">5</set>
+<!-- <set xpath="blocks/block[@name='terrOreOilDeposit']/drop[@name='resourceOilShale']/@count">5</set> -->
 
 
 <append xpath="/blocks/block[@name='terrStone']">
